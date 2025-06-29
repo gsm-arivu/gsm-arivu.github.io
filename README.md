@@ -23,7 +23,7 @@ This repository contains the **Arivu** custom CSS theme for Marp presentations, 
 
 ## ⚙️ Preferred Method: Using arivu.css URL in Marp for VS Code
 
-If you want to use the Arivu theme directly from GitHub **without manually downloading it**, you can add `https://raw.githubusercontent.com/gsm-india/arivu/refs/heads/main/arivu.css` in the Markdown:Marp>Themes Add Item section of Marp extension settings in VS Code.
+If you want to use the Arivu theme directly from GitHub **without manually downloading it**, you can add `https://gsm-arivu.github.io/css/arivu.css` in the Markdown:Marp>Themes Add Item section of Marp extension settings in VS Code.
 
 
 3️⃣ In your markdown frontmatter, set the theme:
