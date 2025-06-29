@@ -1,6 +1,6 @@
 # Arivu Marp Theme
 
-This repository contains the **Arivu** custom CSS theme for Marp presentations, designed for professional, beautiful, and flexible slides. It is built upon the base marp gaia theme and with some customization on the [awesome marp](https://github.com/favourhong/Awesome-Marp) theme.
+This repository contains the **Arivu** custom CSS theme for Marp presentations, designed for professional, beautiful, and flexible slides. It is built upon the base marp gaia theme. It also imports some of the classes of [awesome marp](https://github.com/favourhong/Awesome-Marp) theme.
 ---
 
 ## ✨ Features
