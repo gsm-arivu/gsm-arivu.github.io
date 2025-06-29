@@ -656,7 +656,7 @@ Usage Example:
 
 ## ➕ Additional html content
 
-- The markdown file contains some slide to illustrate how additional html content/tags/local styling can be done in marp slides.
+- The markdown file contains some slides to illustrate how additional html content/tags/local styling can be done in marp slides.
 
 ---
 
