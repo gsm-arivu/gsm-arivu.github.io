@@ -1,0 +1,180 @@
+{
+    "Insert Comment": {
+        "prefix": "co",
+        "body": [
+            "<!--",
+            "",
+            "-->"
+        ],
+        "description": "Insert HTML comment"
+    },
+    "Insert Class": {
+        "prefix": "cl",
+        "body": [
+            "<!-- _class:  -->"
+        ],
+        "description": "Insert HTML class"
+    },
+    "Insert Bullet Point": {
+        "prefix": "b",
+        "body": [
+            "",
+            "* "
+        ],
+        "description": "Insert an empty line and a bullet point"
+    },
+
+    "Slide Separator": {
+        "prefix": "ns",
+        "body": [
+            "",
+            "----",
+            "",
+            ""
+        ],
+        "description": "Insert four dash"
+    },
+    "Main Heading": {
+        "prefix": "mh",
+        "body": [
+            "# ",
+            "",
+            ""
+        ],
+        "description": "Insert main heading"
+    },
+    "Sub Heading": {
+        "prefix": "sh",
+        "body": [
+            "## ",
+            "",
+            ""
+        ],
+        "description": "Insert h2"
+    },
+    "Icon Bullet Slide": {
+  "prefix": "icon",
+  "body": [
+    "<!-- _class: icon_box  -->",
+    "",
+    "# heading",
+    "",
+    "* :+1:",
+    "",
+    "  - point one",
+    "",
+    "* :+1:",
+    "",
+    "  - point two",
+    "",
+    "* :+1:",
+    "",
+    "  - point three",
+    "",
+    "* :+1:",
+    "",
+    "  - point four",
+    "",
+    "* :+1:",
+    "",
+    "  - point five",
+    "",
+
+     
+    "---"
+    ],
+        "description": "Insert an icon panel markdown block"
+    },
+
+    "style block": {
+  "prefix": "st",
+  "body": [
+    "<style scoped >",
+    "li {",
+    "font-size: 0.8rem ;",
+    "}",
+    "</style>"
+    ],
+        "description": "Insert style block"
+    },
+
+    "div block": {
+  "prefix": "di",
+  "body": [
+    "<div class= >",
+    "",
+    "",
+    "</div>"
+    
+    ],
+        "description": "Insert div block"
+    },
+
+    "new section": {
+  "prefix": "se",
+  "body": [
+    "<!-- _class: lead invert -->",
+    "# <!--fit--> section",
+    "",
+    "---"
+    
+    
+    ],
+        "description": "Insert new section"
+    },
+
+  "horizontal rule": {
+  "prefix": "hr",
+  "body":  "<hr>",
+    "description": "Insert horizontal line"
+},
+
+"Insert new line": {
+  "prefix": "br",
+  "body": "<br>",
+  "description": "Insert new line"
+},
+
+"Insert fontawesome icon": {
+  "prefix": "af",
+  "body": [
+    "* <i class=\"fas fa-rocket \"></i>"
+  ],
+  "description": "Insert fontawesome icon"
+},
+
+  "Font Awesome Bullet Slide": {
+  "prefix": "fa",
+  "body": [
+    "<!-- _class: fa  -->",
+    "",
+    "# heading",
+    "",
+    "",
+    "* <i class=\"fa fa-rocket \"></i>"
+    "",
+    "  - point one",
+    "",
+    "* <i class=\"fa fa-rocket \"></i>"
+    "",
+    "  - point two",
+    "",    
+    "* <i class=\"fa fa-rocket \"></i>"
+    "",
+    "  - point three",
+    "",
+    "* <i class=\"fa fa-rocket \"></i>"
+    "",
+    "  - point four",
+    "",
+    "* <i class=\"fa fa-rocket \"></i>"
+    "",
+    "  - point five",
+    "",
+     
+    "---"
+    ],
+        "description": "Insert font-awesome markdown block"
+    }
+
+}
