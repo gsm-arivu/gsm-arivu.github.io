@@ -647,6 +647,7 @@ Usage Example:
 
 - `arivu.css` – The custom theme
 - `arivu-theme-example.md` – Example markdown showcasing all styles
+- `markdown.code-snippets` - VS Code markdown snippets for quickly inserting classes and bullets
 
 ---
 
