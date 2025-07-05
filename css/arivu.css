@@ -1835,6 +1835,7 @@ section.icon_box li:nth-child(3) > p:first-child { background-color: #16a085; }
 section.icon_box li:nth-child(4) > p:first-child { background-color: #d35400; }
 section.icon_box li:nth-child(5) > p:first-child { background-color: #061ab4; }
 section.icon_box li:nth-child(6) > p:first-child { background-color: #acb805; }
+section.icon_box li:nth-child(7) > p:first-child { background-color: coral; }
 
 section.icon_box li:nth-child(1) > ul { background-color: #ecf0f1; border:2px solid #2c3e50; }
 section.icon_box li:nth-child(2) > ul { background-color: #f5eef8; border:2px solid #8e44ad;}
@@ -1842,6 +1843,7 @@ section.icon_box li:nth-child(3) > ul { background-color: #e8f8f5; border:2px so
 section.icon_box li:nth-child(4) > ul { background-color: #fbeee6; border:2px solid #d35400; }
 section.icon_box li:nth-child(5) > ul { background-color: #e2e4f7; border:2px solid #061ab4; }
 section.icon_box li:nth-child(6) > ul { background-color: #f0f4ba; border:2px solid #acb805; }
+section.icon_box li:nth-child(7) > ul { background-color: rgba(255, 127, 80, 0.325); border:2px solid coral; }
 
 /* Responsive layout for small screens */
 @media (max-width: 768px) {
