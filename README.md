@@ -2,7 +2,7 @@
 
 ![](media/logo.png)
 
-**Arivu** is a custom CSS theme for [Marp](https://marp.app/) designed for creating professional and beautiful presentations. It builds on the `gaia` theme and incorporates features from the [Awesome Marp](https://github.com/favourhong/Awesome-Marp) theme.
+**Arivu** is a custom CSS theme for [Marp](https://marp.app/) designed for creating professional and beautiful presentations. It builds on the `gaia` theme and imports some clases from the [Awesome Marp](https://github.com/favourhong/Awesome-Marp) theme.
 
 ## ✨ Features
 
