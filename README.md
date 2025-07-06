@@ -8,7 +8,7 @@
 
 *   **30+ Slide Layouts:** A wide variety of styles for bullet points, cards, panels, and timelines.
 *   **Customizable:** Easily add headers, footers, and logos.
-*   **Icon Support:** Use Font Awesome icons in your slides.
+*   **Icon Support:** Use github emoticons or Font Awesome icons in your slides.
 *   **Animations:** Add visual flair with effects like `shine` and `crawl`.
 *   **Video Backgrounds:** Embed videos as slide backgrounds.
 *   **Responsive Design:** Slides look great on any screen size.
