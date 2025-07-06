@@ -59,6 +59,10 @@ Combine these with other classes for more dynamic slides:
 *   `arivu-theme-example.md`: A comprehensive example presentation.
 *   `vs code/snippets/markdown.code-snippets`: VS Code snippets for faster authoring.
 
+## :tv:Preview
+
+Visit [https://gsm-arivu.github.io](https://gsm-arivu.github.io) to see how the markdown is rendered in html. 
+
 ## 📜 License
 
 This project is licensed under the MIT License.
