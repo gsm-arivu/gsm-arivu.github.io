@@ -8,7 +8,7 @@ header: |
 
   <div class="icon-header">
     <img src="https://gsm-arivu.github.io/media/logo.png" alt="Logo">
-    <p>Marp Presentation Stylized in Arivu Theme</p>
+    <p>Arivu Theme &mdash; Complete Class Showcase</p>
   </div>
 
 
@@ -32,1043 +32,3139 @@ footer: <span class="date"></span>
 
 <div class=ldiv>
 
-# Presentation Title
-`Author Name`
-
-</div>
-
----
-
-<!-- _class: box shine -->
-
-# box bullets
-
-* :car: lorem ipsum dolor
-* :joy: lorem ipsum dolor
-* :rocket: lorem ipsum dolor
-* :train: lorem ipsum dolor
-* :a: lorem ipsum dolor
-
-----
-
-<!-- _class: capsule shine -->
-
-# capsule bullets
-
-* :car: lorem ipsum dolor
-* :joy: lorem ipsum dolor
-* :rocket: lorem ipsum dolor
-* :train: lorem ipsum dolor
-* :a: lorem ipsum dolor
-
-----
-
-<!-- _class: white marchants -->
-
-# white bullets
-
-* :car: lorem ipsum dolor
-* :joy: lorem ipsum dolor
-* :rocket: lorem ipsum dolor
-* :train: lorem ipsum dolor
-* :a: lorem ipsum dolor
-
----
-
-<!-- _class: white_circle crawl  -->
-
-# white_circle bullets
-
-* :car: lorem ipsum dolor
-* :joy: lorem ipsum dolor
-* :rocket: lorem ipsum dolor
-* :train: lorem ipsum dolor
-* :a: lorem ipsum dolor
-
----
-
-<!-- _class: white_delta  -->
-
-# white_delta bullets
-
-* :car: lorem ipsum dolor
-* :joy: lorem ipsum dolor
-* :rocket: lorem ipsum dolor
-* :train: lorem ipsum dolor
-* :a: lorem ipsum dolor
-
----
-
-<!-- _class: card  -->
-
-# card grid
-
-* :car: lorem ipsum dolor
-* :joy: lorem ipsum dolor
-* :rocket: lorem ipsum dolor
-* :train: lorem ipsum dolor
-* :a: lorem ipsum dolor
-* :phone: lorem ipsum dolor
-
----
-
-<!-- _class: card_color shine -->
-
-# color card grid
-
-* :car: lorem ipsum dolor
-* :joy: lorem ipsum dolor
-* :rocket: lorem ipsum dolor
-* :train: lorem ipsum dolor
-* :a: lorem ipsum dolor
-* :phone: lorem ipsum dolor
-* :one: lorem ipsum dolor
-* :a: lorem ipsum dolor
-* :smile: lorem ipsum dolor
-
----
-
-<!-- _class: panel shine -->
-
-# panel
-
-* Panel 1
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
----
-
-<!-- _class: panel_card  -->
-
-### panel card
-
-* :+1:
-  - **dfdad** 
-* :book:
-  - **dfdad** <br> ddfsfsdfds 
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds 
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds fdf
-
-* :+1:
-  - **dfdad** 
-* :book:
-  - **dfdad** <br> ddfsfsdfds 
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds 
-
----
-
-<!-- _class: panel_transparent  -->
-
-### panel_transparent
-
-* :+1:
-  - **dfdad** <br> ddfsfsdfds 
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds 
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds 
-
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds 
-
-
-  
----
-
-<!-- _class: panel_capsule   -->
-
-# panel capsule
-
-* :rocket:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
----
-
-<!-- _class: panel_shirt   -->
-
-# panel shirt
-
-* :rocket:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
----
-
-<!-- _class: icon_shirt4   -->
-
-# icon shirt  2X2 layout
-
-* :rocket:
-  - **dfdad** <br> ddfsfsdfds  
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds fdssfd
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds fdssfd 
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf  asdlkfjs  lkajsdf a fasdjfalsj 
-  
----
-
-<!-- _class: icon_shirt   -->
-
-# icon shirt 3X2 layout
-
-* :rocket:
-  - **dfdad** <br> ddfsfsdfds  
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds fdssfd
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds fdssfd 
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds fdssfd
-
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds fdssfd 
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds fdssfd    
----
-
-
-<!-- _class: panel_pillar  -->
-
-# panel pillar
-
-* :rocket:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
- 
----
-
-
-
-<!-- _class: icon_pillar  -->
-
-# icon pillar
-
-* :rocket:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-
----
-
-
-<!-- _class: icon_pillar4  -->
-
-### icon pillar 2X2 layout
-
-* :rocket:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-
-
----
-
-
-<!-- _class: icon_card  -->
-
-### icon card
-
-* :rocket:
-  - **dfdad** <br> ddfsfsdfds 
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds 
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds 
-  
-* :rofl:
-  - **dfdad** <br> ddfsfsdfds 
-
-* :train:
-  - **dfdad** <br> ddfsfsdfds
-  
-* :pilot:
-  - **dfdad** <br> ddfsfsdfds 
-
-* :train:
-  - **dfdad** <br> ddfsfsdfds 
-  
-* :pilot:
-  - **dfdad** <br> ddfsfsdfds 
-
-
-* :train:
-  - **dfdad** <br> ddfsfsdfds 
-  
-* :pilot:
-  - **dfdad** <br> ddfsfsdfds 
-
----
-
-# icon box
-
-<!-- _class: icon_box shine -->
-
-* :rocket:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf fdf dfsfsdfs
-  
-* :book:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :bulb:  
-   - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :rofl:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-
-* :train:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf
-  
-* :pilot:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf
-
-----
-
-### icon box with multiple sub-bullets
-
-<!-- _class: icon_box  -->
-
-* :rocket:
-  
-  - sub-bullet 1
-  
-  * sub-bullet 2
-  
-  
-* :book:
-    
-  - sub-bullet 1
-  * sub-bullet 2
-  
-* :bulb:  
-    
-  - sub-bullet 1
-  * sub-bullet 2
-  
-* :rofl:
-    
-  - sub-bullet 1
-  * sub-bullet 2
-
-* :train:
-    
-  - sub-bullet 1
-  * sub-bullet 2
-  
-* :pilot:
-    
-  - sub-bullet 1
-  * sub-bullet 2
-
-----
-
-# icon capsule
-
-<!-- _class: icon_capsule shine -->
-
-* :rocket:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf fdf dfsfsdfs
-  
-* :book:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :bulb:  
-   - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :rofl:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-
-* :train:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf
-  
-* :pilot:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf
-
-----
-
-# icon flower
-
-<!-- _class: icon_flower shine -->
-
-* :rocket:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf fdf dfsfsdfs
-  
-* :book:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :bulb:  
-   - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :rofl:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-
-* :train:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf
-  
-* :pilot:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf
-
-----
-
-
-# card color round
-
-<!-- _class: card_color_round shine -->
-
-* :+1:point one
-* point 2
-* point 3
-* point 4
-* point fasdf asdflk
-* point six
-
-----
-
-# hexagon bullets
-
-<!-- _class: hexagon  -->
-
-* point one
-* point 2
-* point 3
-* point 4
-* point fasdf asdflk
-* point six
-
-----
-
-# caterpillar bullets
-
-<!-- _class: caterpillar  -->
-
-* point one
-* point 2
-* point 3
-* point 4
-* point five
-
-----
-
-# triangle bullets
-
-<!-- _class: triangle -->
-
-* point one
-* point 2
-* point 3
-* point 4
-* point five
-
-----
-
-# arrow bullets
-
-<!-- _class: arrow -->
-
-* point one
-* point 2
-* point 3 adfsadf  adf fasdf asdf adf
-* point 4
-* point five
-
----
-
-# timeline bullets
-
-<!-- _class: timeline  -->
-
-* 1940
-  - Event one
-  
-* 1950
-  - Event two
-* 1960
-  - Event three
-  
-* 1970
-  - Event four
-  
-* 1980
-  - Event five
-  
----
-
-# timeline bullets with icons
-
-<!-- _class: timeline -->
-
-<style scoped>
-
-/* Assigning emoticons per list index using nth-child */
-section.timeline > ul > li:nth-child(1)::before { content: "⭐"; }
-section.timeline > ul > li:nth-child(2)::before { content: "🏛️"; }
-section.timeline > ul > li:nth-child(3)::before { content: "🇨🇳"; }
-section.timeline > ul > li:nth-child(4)::before { content: "⚔️"; }
-section.timeline > ul > li:nth-child(5)::before { content: "🕊️"; }
-section.timeline > ul > li:nth-child(6)::before { content: "🏆"; }
-
-</style>
-
-
-* 1940
-  - Event one
-  
-* 1950
-  - Event two
-* 1960
-  - Event three
-  
-* 1970
-  - Event four
-  
-* 1980
-  - Event five
-  
----
-
-# timeline2 bullets
-
-<!-- _class: timeline2  -->
-
-* **point one**
-  dfasdf asdf jaslk  
-  
-* point 2
-
-* point 33 
-
-* point 44
-  
-* point five 
-  
----
-
-# roadmap top to bottom bullets
-
-<!-- _class: roadmap -->
-
-* point one
-  
-* point 2
-
-* point 3 
-
-* point 4
-  
-* point five 
-
----
-
-# roadmap bottom to top bullets
-
-<!-- _class: roadmap2 -->
-
-* point one
-  
-* point 2
-
-* point 3
-
-* point 4
-
-* point 5
-  
-
-
----
-
-## flower bullets
-
-<!-- _class: flower  -->
-
-* :rocket:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf fdf dfsfsdfs
-  
-* :book:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :bulb:  
-   - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :rofl:
-  - **dfdad**  ddfsfsdfds fdssfd askjdhf  alksdjf 
-
----
-
-## zigsaw bullets
-
-<!-- _class: zigsaw  -->
-
-* :adult:
-  - point one
-  
-* :desktop_computer:
-  - **lorem** <br> ipsum dolor <br>point two
-  
-* :family:  
-   - point three
-  
-* :vibration_mode:
-  - point four <br>dsfasfd
-
----
-
-## paintbrush bullets
-
-<!-- _class: paintbrush  -->
-
-* :rocket:
-  - **dfdad** <br> lorem ipsum dolor
-  
-* :book:
-  - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :bulb:  
-   - **dfdad** <br> ddfsfsdfds fdssfd askjdhf  alksdjf 
-  
-* :rofl:
-  - **dfdad** <br>  ddfsfsdfds fdssfd askjdhf  alksdjf 
-
- 
----
-
-### pyramid bullets (top to bottom)
-
-<!-- _class: pyramid  -->
-
-* :rocket:
-  - **dfdad** <br> lorem ipsum dolor
-  
-* :book:
-  - **dfdad** <br> lorem ipsum dolor 
-  
-* :bulb:  
-   - **dfdad** <br> lorem ipsum dolor
-  
-* :rofl:
-  - **dfdad** <br>  lorem ipsum dolor
- 
----
-
-### pyramid2 bullets (botttom to top)
-
-<!-- _class: pyramid2 -->
-
-* :rocket:   **dfdad** <br> lorem ipsum dolor lorem ipsum dolor
-  
-* :book:
-  - **dfdad** <br> lorem ipsum dolor lorem ipsum dolor
-  
-* **bulb**  
-   - **dfdad** <br> lorem ipsum dolor lorem ipsum dolor
-  
-* :rofl:
-  - **dfdad** <br>  lorem ipsum dolor <br>lorem ipsum dolor
-
- 
----
-
-
-
-# Blockquote purple
-
-<!-- _class: bq-purple -->
-
-
-> Lorem ipsum dolor
->
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
-
----
-
-# Blockquote blue
-
-<!-- _class: bq-blue -->
-
-
-> Lorem ipsum dolor
->
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
->
-----
-
-# Blockquote green
-
-<!-- _class: bq-green -->
-
-
-> Lorem ipsum dolor
->
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
-
-
-----
-
-# Blockquote red
-
-<!-- _class: bq-red -->
-
-
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
- 
-----
-
-
-
-<!-- _class: panel_shirt -->
-
-# single bullet formatting
-
-*  
-  :+1:
-
-  - **single point** <br> ipsum dolor <br>point two
-
-----
-
-<!-- _class: fa  -->
-
-### Font Awesome
-
-* <i class="fa fa-cogs"></i> 
-  - System Configuration
-
-* <i class="fa fa-check-circle"></i> 
-  - Quality Assurance Completed
-
-* <i class="fa fa-lightbulb"></i> 
-  - Innovative Feature Enabled
-
-* <i class="fa fa-chart-line"></i> 
-  - Performance Monitoring
-
-* <i class="fa fa-users"></i> 
-  - Stakeholder Engagement
-
-* <i class="fa fa-database"></i> 
-  - Data Integration Setup
-
-* <i class="fa fa-shield-alt"></i> 
-  - Security Protocol Enforced
-
-* <i class="fa fa-globe"></i> 
-  - Web Connectivity Established
-
-* <i class="fa fa-sync-alt"></i> 
-  - System Synchronization
-
----
-
-##### capsule bullets + awesome marp 60-40
-
-<!-- _class: cols-2-64 capsule -->
-
-<div class=limg>
-
-![w:700](https://gsm-arivu.github.io/media/front-cover.jpg)
-
-</div>
-
-<div class=rdiv>
-
-* point one
-* point two
-* point three
+# Arivu Theme Showcase
+`Part 1: dark animated &middot; Part 2: traditional`
 
 </div>
 
 ---
 
 <!-- _class: lead invert -->
-# <!--fit--> section
+# <!--fit--> PART 1 · DARK ANIMATED
 
 ---
 
-<!-- _class: icon_box -->
+<!-- _class: vortex box softfrag -->
 
-<style scoped>
+# box bullets · vortex
 
-li:nth-of-type(3) {
-  background: yellow;
-  border-color: black;
-  color: purple;
-  border-style: dashed;
-  
-}
-</style>
+* :car:
 
-### highlight and redbox classes with scoped styling
+  - lorem ipsum dolor sit amet
 
-* :+1:
-  - point one
+* :joy:
+
+  - consectetur adipiscing elit
+
+* :rocket:
+
+  - sed do eiusmod tempor
+
+* :train:
+
+  - incididunt ut labore
+
+* :bulb:
+
+  - et dolore magna aliqua
+
+* :phone:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: aurora capsule softfrag -->
+
+# capsule bullets · aurora
+
+* :car:
+
+  - lorem ipsum dolor sit amet
+
+* :joy:
+
+  - consectetur adipiscing elit
+
+* :rocket:
+
+  - sed do eiusmod tempor
+
+* :train:
+
+  - incididunt ut labore
+
+* :bulb:
+
+  - et dolore magna aliqua
+
+* :phone:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: ember white softfrag -->
+
+# white bullets · ember
+
+* :car:
+
+  - lorem ipsum dolor sit amet
+
+* :joy:
+
+  - consectetur adipiscing elit
+
+* :rocket:
+
+  - sed do eiusmod tempor
+
+* :train:
+
+  - incididunt ut labore
+
+* :bulb:
+
+  - et dolore magna aliqua
+
+* :phone:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: vortex white_circle softfrag -->
+
+# white_circle bullets · vortex
+
+* :car:
+
+  - lorem ipsum dolor sit amet
+
+* :joy:
+
+  - consectetur adipiscing elit
+
+* :rocket:
+
+  - sed do eiusmod tempor
+
+* :train:
+
+  - incididunt ut labore
+
+* :bulb:
+
+  - et dolore magna aliqua
+
+* :phone:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: aurora white_delta softfrag -->
+
+# white_delta bullets · aurora
+
+* :car:
+
+  - lorem ipsum dolor sit amet
+
+* :joy:
+
+  - consectetur adipiscing elit
+
+* :rocket:
+
+  - sed do eiusmod tempor
+
+* :train:
+
+  - incididunt ut labore
+
+* :bulb:
+
+  - et dolore magna aliqua
+
+* :phone:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: ember card softfrag -->
+
+# card grid · ember
+
+* :car:
+
+  - lorem ipsum
+
+* :joy:
+
+  - consectetur
+
+* :rocket:
+
+  - sed eiusmod
+
+* :train:
+
+  - ut labore
+
+* :bulb:
+
+  - dolore magna
+
+* :phone:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: vortex card_color softfrag -->
+
+# color card grid · vortex
+
+* :car:
+
+  - lorem ipsum
+
+* :joy:
+
+  - consectetur
+
+* :rocket:
+
+  - sed eiusmod
+
+* :train:
+
+  - ut labore
+
+* :bulb:
+
+  - dolore magna
+
+* :phone:
+
+  - minim veniam
+
+* :one:
+
+  - quis nostrud
+
+* :gem:
+
+  - exercitation
+
+* :smile:
+
+  - ullamco
+
+
+---
+
+<!-- _class: aurora card_color_round softfrag -->
+
+# card color round · aurora
+
+* :car:
+
+  - lorem ipsum
+
+* :joy:
+
+  - consectetur
+
+* :rocket:
+
+  - sed eiusmod
+
+* :train:
+
+  - ut labore
+
+* :bulb:
+
+  - dolore magna
+
+* :phone:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: ember glass softfrag -->
+
+# glass bullets · ember
+
+* :rocket:
+
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - sed do eiusmod tempor
+
+* :rofl:
+
+  - incididunt ut labore
+
+* :train:
+
+  - et dolore magna aliqua
+
+* :pilot:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: vortex neon softfrag -->
+
+# neon bullets · vortex
+
+* :zap:
+
+  - lorem ipsum dolor sit amet
+
+* :dizzy:
+
+  - consectetur adipiscing elit
+
+* :comet:
+
+  - sed do eiusmod tempor
+
+* :fire:
+
+  - incididunt ut labore
+
+* :star:
+
+  - et dolore magna aliqua
+
+* :bulb:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: aurora ribbon softfrag -->
+
+# ribbon banners · aurora
+
+* :trophy:
+
+  - lorem ipsum
+
+* :medal_sports:
+
+  - consectetur
+
+* :crown:
+
+  - sed eiusmod
+
+* :gem:
+
+  - ut labore
+
+* :star2:
+
+  - dolore magna
+
+* :bell:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: ember ticket softfrag -->
+
+# ticket stubs · ember
+
+* :ticket:
+
+  - lorem ipsum dolor sit amet
+
+* :clapper:
+
+  - consectetur adipiscing elit
+
+* :circus_tent:
+
+  - sed do eiusmod tempor
+
+* :tada:
+
+  - incididunt ut labore
+
+* :balloon:
+
+  - et dolore magna aliqua
+
+* :gift:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: vortex chat softfrag -->
+
+# chat bubbles · vortex
+
+* :speech_balloon:
+
+  - lorem ipsum dolor?
+
+* :thought_balloon:
+
+  - consectetur elit!
+
+* :question:
+
+  - sed do eiusmod?
+
+* :bulb:
+
+  - incididunt labore.
+
+* :grey_question:
+
+  - dolore magna?
+
+* :white_check_mark:
+
+  - minim veniam!
+
+
+---
+
+<!-- _class: aurora tag softfrag -->
+
+# label tags · aurora
+
+* :label:
+
+  - lorem ipsum
+
+* :bookmark:
+
+  - consectetur
+
+* :pushpin:
+
+  - sed eiusmod
+
+* :paperclip:
+
+  - ut labore
+
+* :link:
+
+  - dolore magna
+
+* :key:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: ember chevron softfrag -->
+
+# chevron process flow · ember
+
+* :one:
+
+  - Plan
 
 * :two:
-  - point <span class="highlight">three</span>
 
-* :helicopter:
-  - stylized list item
+  - Design
 
-some <span class="highlight">random</span> text
-another <span style="color: red;" >sample </span> text
-some text in <span class="redbox">red box</span>
-<p class="highlight redbox" > whole paragraph in two style classes</p>
+* :three:
 
-----
+  - Build
 
-# <span style="color: white; -webkit-text-stroke: 1px black;">Slide with Positioned Word</span>
+* :four:
 
-<style>
-span.positioned-word {
-  position: absolute;
-  left: 300px;
-  top: 375px;
-  color: black;
-  font-weight: bold;
-}
-</style>
+  - Test
 
+* :five:
 
-<span class="positioned-word redbox">text1</span>
+  - Ship
 
-![bg](https://gsm-arivu.github.io/media/front-cover.jpg)
-
-<span class="redbox" style="position: absolute; left: 1100px; top: 455px; color: yellow; font-weight: bold;">text2</span>
-
-----
-
-
-
-# markdown table
-
-<style scoped>
-
-table {
-  font-size: .6rem;
-}
-
-</style>
-
-| Feature             | Syntax Example                        | Notes                                  |
-|---------------------|----------------------------------------|----------------------------------------|
-| **Bold Text**       | `**bold**`                             | **bold**                               |
-| *Italic Text*       | `*italic*`                             | *italic*                               |
-| `Code`              | `` `code` ``                           | `code`                                 |
-| Left Align          | `:---`                                 | Name                                   |
-| Center Align        | `:---:`                                | Centered                               |
-| Right Align         | `---:`                                 |                         Aligned Right |
-| Multi-line Cell     | `Line1 <br> Line2`                     | Line1 <br> Line2                        |
-| Link                | `[OpenAI](https://openai.com)`         | [OpenAI](https://openai.com)           |
-| Image               | `![alt](url)`                          | ![dot](https://via.placeholder.com/15) |
-| Checkbox            | `- [x] Done`<br>`- [ ] Pending`        | - [x] Done <br> - [ ] Pending           |
-
-
-----
-
-# ascii table 
-
-```
-+-----+-----------+
-|     | L2 and L3 |
-| L1  +-----+-----+
-|     | L2  | L3  |
-+=====+=====+=====+
-|     | BBB | CCC |
-| AAA +-----+-----+
-|     |   DDDDD   |
-+-----+-----+-----+
-|           | FFF |
-|   EEEEE   +-----+
-|           | GGG |
-+-----------+-----+
-
-```
 
 ---
 
+<!-- _class: vortex leaf softfrag -->
 
-# html table - for merged cells
+# leaf pairs · vortex
 
-<table>
-  <tr>
-    <th colspan="2">Merged Header</th>
-  </tr>
-  <tr>
-    <th>Sub 1</th>
-    <th>Sub 2</th>
-  </tr>
-  <tr>
-    <td>Data 1</td>
-    <td>Data 2</td>
-  </tr>
-</table>
+* :leaves:
+
+  - lorem ipsum
+
+* :seedling:
+
+  - consectetur
+
+* :herb:
+
+  - sed eiusmod
+
+* :four_leaf_clover:
+
+  - ut labore
+
+* :deciduous_tree:
+
+  - dolore magna
+
+* :palm_tree:
+
+  - minim veniam
 
 
+---
 
-----
+<!-- _class: aurora bookmark softfrag -->
 
-# screen class + background video
+# bookmark ribbons · aurora
 
-<!-- _class:  screen -->
+* :books:
+
+  - lorem ipsum
+
+* :blue_book:
+
+  - consectetur
+
+* :green_book:
+
+  - eiusmod
+
+* :orange_book:
+
+  - ut labore
+
+* :notebook:
+
+  - magna
+
+
+---
+
+<!-- _class: ember stairs softfrag -->
+
+# stairs progression · ember
+
+* :baby:
+
+  - lorem ipsum dolor sit amet
+
+* :child:
+
+  - consectetur adipiscing elit
+
+* :runner:
+
+  - sed do eiusmod tempor
+
+* :bicyclist:
+
+  - incididunt ut labore
+
+* :mountain:
+
+  - et dolore magna aliqua
+
+* :checkered_flag:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: vortex fold softfrag -->
+
+# sticky notes · vortex
+
+* :memo:
+
+  - lorem ipsum
+
+* :pencil2:
+
+  - consectetur
+
+* :notebook:
+
+  - sed eiusmod
+
+* :clipboard:
+
+  - ut labore
+
+* :spiral_notepad:
+
+  - dolore magna
+
+* :bookmark_tabs:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: aurora hexagon softfrag -->
+
+# hexagon bullets · aurora
+
+* :rocket:
+
+  - lorem ipsum
+
+* :book:
+
+  - consectetur
+
+* :bulb:
+
+  - sed eiusmod
+
+* :rofl:
+
+  - ut labore
+
+* :train:
+
+  - dolore magna
+
+* :pilot:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: ember caterpillar softfrag -->
+
+# caterpillar · ember
+
+* :rocket:
+
+  - lorem ipsum
+
+* :book:
+
+  - consectetur
+
+* :bulb:
+
+  - sed eiusmod
+
+* :rofl:
+
+  - ut labore
+
+* :train:
+
+  - dolore magna
+
+* :pilot:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: vortex triangle softfrag -->
+
+# triangle bullets · vortex
+
+* :rocket:
+
+  - lorem ipsum
+
+* :book:
+
+  - consectetur
+
+* :bulb:
+
+  - sed eiusmod
+
+* :rofl:
+
+  - ut labore
+
+* :train:
+
+  - dolore magna
+
+* :pilot:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: aurora arrow softfrag -->
+
+# arrow bullets · aurora
+
+* :rocket:
+
+  - lorem ipsum
+
+* :book:
+
+  - consectetur
+
+* :bulb:
+
+  - sed eiusmod
+
+* :rofl:
+
+  - ut labore
+
+* :train:
+
+  - dolore magna
+
+* :pilot:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: ember timeline softfrag -->
+
+# timeline bullets · ember
+
+* 1940
+
+  - Event one
+
+* 1950
+
+  - Event two
+
+* 1960
+
+  - Event three
+
+* 1970
+
+  - Event four
+
+* 1980
+
+  - Event five
+
+* 1990
+
+  - Event six
+
+
+---
+
+<!-- _class: vortex timeline2 softfrag -->
+
+# timeline2 bullets · vortex
+
+* :seedling:
+
+  - point one
+
+* :herb:
+
+  - point two
+
+* :deciduous_tree:
+
+  - point three
+
+* :palm_tree:
+
+  - point four
+
+* :evergreen_tree:
+
+  - point five
+
+
+---
+
+<!-- _class: aurora roadmap softfrag -->
+
+# roadmap top to bottom · aurora
+
+* :seedling:
+
+  - point one
+
+* :herb:
+
+  - point two
+
+* :deciduous_tree:
+
+  - point three
+
+* :palm_tree:
+
+  - point four
+
+* :evergreen_tree:
+
+  - point five
+
+
+---
+
+<!-- _class: ember roadmap2 softfrag -->
+
+# roadmap bottom to top · ember
+
+* :seedling:
+
+  - point one
+
+* :herb:
+
+  - point two
+
+* :deciduous_tree:
+
+  - point three
+
+* :palm_tree:
+
+  - point four
+
+* :evergreen_tree:
+
+  - point five
+
+
+---
+
+<!-- _class: vortex panel softfrag -->
+
+# panel · vortex
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: aurora panel_card softfrag -->
+
+### panel card · aurora
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: ember panel_transparent softfrag -->
+
+### panel_transparent · ember
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: vortex panel_capsule softfrag -->
+
+# panel capsule · vortex
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: aurora panel_shirt softfrag -->
+
+# panel shirt · aurora
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: ember panel_pillar softfrag -->
+
+# panel pillar · ember
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: vortex panel frost softfrag -->
+
+# panel + frost · vortex
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: aurora panel_card frost softfrag -->
+
+### panel card + frost · aurora
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: ember panel_capsule frost softfrag -->
+
+# panel capsule + frost · ember
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: vortex panel_shirt frost softfrag -->
+
+# panel shirt + frost · vortex
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: aurora panel_pillar frost softfrag -->
+
+# panel pillar + frost · aurora
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: ember icon_box frost softfrag -->
+
+# icon box + frost · ember
+
+* :rocket:
+
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - sed do eiusmod tempor
+
+* :rofl:
+
+  - incididunt ut labore
+
+* :train:
+
+  - et dolore magna aliqua
+
+* :pilot:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: vortex icon_box softfrag -->
+
+# icon box · vortex
+
+* :rocket:
+
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - sed do eiusmod tempor
+
+* :rofl:
+
+  - incididunt ut labore
+
+* :train:
+
+  - et dolore magna aliqua
+
+* :pilot:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: aurora icon_capsule softfrag -->
+
+# icon capsule · aurora
+
+* :rocket:
+
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - sed do eiusmod tempor
+
+* :rofl:
+
+  - incididunt ut labore
+
+* :train:
+
+  - et dolore magna aliqua
+
+* :pilot:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: ember icon_card softfrag -->
+
+### icon card · ember
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: vortex icon_flower softfrag -->
+
+# icon flower · vortex
+
+* :rocket:
+
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - sed do eiusmod tempor
+
+* :rofl:
+
+  - incididunt ut labore
+
+* :train:
+
+  - et dolore magna aliqua
+
+* :pilot:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: aurora icon_pillar softfrag -->
+
+# icon pillar · aurora
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: ember icon_pillar4 softfrag -->
+
+### icon pillar 2X2 · ember
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: vortex icon_shirt softfrag -->
+
+# icon shirt 3X2 · vortex
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: aurora icon_shirt4 softfrag -->
+
+# icon shirt 2X2 · aurora
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: ember flower softfrag -->
+
+## flower bullets · ember
+
+* :rocket:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> lorem ipsum dolor
+
+* :bulb:
+
+  - **charlie** <br> lorem ipsum dolor
+
+* :rofl:
+
+  - **delta** <br> lorem ipsum dolor
+
+
+---
+
+<!-- _class: vortex zigsaw softfrag -->
+
+## zigsaw bullets · vortex
+
+* :adult:
+
+  - point one
+
+* :desktop_computer:
+
+  - **lorem** <br> ipsum
+
+* :family:
+
+  - point three
+
+* :vibration_mode:
+
+  - point four
+
+
+---
+
+<!-- _class: aurora paintbrush softfrag -->
+
+## paintbrush bullets · aurora
+
+* :rocket:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> lorem ipsum dolor
+
+* :bulb:
+
+  - **charlie** <br> lorem ipsum dolor
+
+* :rofl:
+
+  - **delta** <br> lorem ipsum dolor
+
+
+---
+
+<!-- _class: ember pyramid softfrag -->
+
+### pyramid (top to bottom) · ember
+
+* :rocket:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> lorem ipsum dolor
+
+* :bulb:
+
+  - **charlie** <br> lorem ipsum dolor
+
+* :rofl:
+
+  - **delta** <br> lorem ipsum dolor
+
+
+---
+
+<!-- _class: vortex pyramid2 softfrag -->
+
+### pyramid2 (bottom to top) · vortex
+
+* :rocket:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> lorem ipsum dolor
+
+* :bulb:
+
+  - **charlie** <br> lorem ipsum dolor
+
+* :rofl:
+
+  - **delta** <br> lorem ipsum dolor
+
+
+---
+
+<!-- _class: vortex fa softfrag -->
+
+### Font Awesome · vortex
+
+* <i class="fa fa-cogs"></i>
+
+  - System Configuration
+
+* <i class="fa fa-check-circle"></i>
+
+  - Quality Assurance
+
+* <i class="fa fa-lightbulb"></i>
+
+  - Innovative Feature
+
+* <i class="fa fa-chart-line"></i>
+
+  - Performance Monitoring
+
+* <i class="fa fa-users"></i>
+
+  - Stakeholder Engagement
+
+* <i class="fa fa-database"></i>
+
+  - Data Integration
+
+
+---
+
+<!-- _class: lead invert -->
+# <!--fit--> PART 2 · TRADITIONAL
+
+---
+
+<!-- _class: box shine softfrag -->
+
+# box bullets
+
+* :car:
+
+  - lorem ipsum dolor sit amet
+
+* :joy:
+
+  - consectetur adipiscing elit
+
+* :rocket:
+
+  - sed do eiusmod tempor
+
+* :train:
+
+  - incididunt ut labore
+
+* :bulb:
+
+  - et dolore magna aliqua
+
+* :phone:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: capsule shine softfrag -->
+
+# capsule bullets
+
+* :car:
+
+  - lorem ipsum dolor sit amet
+
+* :joy:
+
+  - consectetur adipiscing elit
+
+* :rocket:
+
+  - sed do eiusmod tempor
+
+* :train:
+
+  - incididunt ut labore
+
+* :bulb:
+
+  - et dolore magna aliqua
+
+* :phone:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: white softfrag -->
+
+# white bullets
+
+* :car:
+
+  - lorem ipsum dolor sit amet
+
+* :joy:
+
+  - consectetur adipiscing elit
+
+* :rocket:
+
+  - sed do eiusmod tempor
+
+* :train:
+
+  - incididunt ut labore
+
+* :bulb:
+
+  - et dolore magna aliqua
+
+* :phone:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: white_circle softfrag -->
+
+# white_circle bullets
+
+* :car:
+
+  - lorem ipsum dolor sit amet
+
+* :joy:
+
+  - consectetur adipiscing elit
+
+* :rocket:
+
+  - sed do eiusmod tempor
+
+* :train:
+
+  - incididunt ut labore
+
+* :bulb:
+
+  - et dolore magna aliqua
+
+* :phone:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: white_delta softfrag -->
+
+# white_delta bullets
+
+* :car:
+
+  - lorem ipsum dolor sit amet
+
+* :joy:
+
+  - consectetur adipiscing elit
+
+* :rocket:
+
+  - sed do eiusmod tempor
+
+* :train:
+
+  - incididunt ut labore
+
+* :bulb:
+
+  - et dolore magna aliqua
+
+* :phone:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: card softfrag -->
+
+# card grid
+
+* :car:
+
+  - lorem ipsum
+
+* :joy:
+
+  - consectetur
+
+* :rocket:
+
+  - sed eiusmod
+
+* :train:
+
+  - ut labore
+
+* :bulb:
+
+  - dolore magna
+
+* :phone:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: card_color shine softfrag -->
+
+# color card grid
+
+* :car:
+
+  - lorem ipsum
+
+* :joy:
+
+  - consectetur
+
+* :rocket:
+
+  - sed eiusmod
+
+* :train:
+
+  - ut labore
+
+* :bulb:
+
+  - dolore magna
+
+* :phone:
+
+  - minim veniam
+
+* :one:
+
+  - quis nostrud
+
+* :gem:
+
+  - exercitation
+
+* :smile:
+
+  - ullamco
+
+
+---
+
+<!-- _class: card_color_round softfrag -->
+
+# card color round
+
+* :car:
+
+  - lorem ipsum
+
+* :joy:
+
+  - consectetur
+
+* :rocket:
+
+  - sed eiusmod
+
+* :train:
+
+  - ut labore
+
+* :bulb:
+
+  - dolore magna
+
+* :phone:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: glass softfrag -->
+
+# glass bullets
+
+* :rocket:
+
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - sed do eiusmod tempor
+
+* :rofl:
+
+  - incididunt ut labore
+
+* :train:
+
+  - et dolore magna aliqua
+
+* :pilot:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: neon softfrag -->
+
+# neon bullets
+
+* :zap:
+
+  - lorem ipsum dolor sit amet
+
+* :dizzy:
+
+  - consectetur adipiscing elit
+
+* :comet:
+
+  - sed do eiusmod tempor
+
+* :fire:
+
+  - incididunt ut labore
+
+* :star:
+
+  - et dolore magna aliqua
+
+* :bulb:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: ribbon softfrag -->
+
+# ribbon banners
+
+* :trophy:
+
+  - lorem ipsum
+
+* :medal_sports:
+
+  - consectetur
+
+* :crown:
+
+  - sed eiusmod
+
+* :gem:
+
+  - ut labore
+
+* :star2:
+
+  - dolore magna
+
+* :bell:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: ticket softfrag -->
+
+# ticket stubs
+
+* :ticket:
+
+  - lorem ipsum dolor sit amet
+
+* :clapper:
+
+  - consectetur adipiscing elit
+
+* :circus_tent:
+
+  - sed do eiusmod tempor
+
+* :tada:
+
+  - incididunt ut labore
+
+* :balloon:
+
+  - et dolore magna aliqua
+
+* :gift:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: chat softfrag -->
+
+# chat bubbles
+
+* :speech_balloon:
+
+  - lorem ipsum dolor?
+
+* :thought_balloon:
+
+  - consectetur elit!
+
+* :question:
+
+  - sed do eiusmod?
+
+* :bulb:
+
+  - incididunt labore.
+
+* :grey_question:
+
+  - dolore magna?
+
+* :white_check_mark:
+
+  - minim veniam!
+
+
+---
+
+<!-- _class: tag softfrag -->
+
+# label tags
+
+* :label:
+
+  - lorem ipsum
+
+* :bookmark:
+
+  - consectetur
+
+* :pushpin:
+
+  - sed eiusmod
+
+* :paperclip:
+
+  - ut labore
+
+* :link:
+
+  - dolore magna
+
+* :key:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: chevron softfrag -->
+
+# chevron process flow
+
+* :one:
+
+  - Plan
+
+* :two:
+
+  - Design
+
+* :three:
+
+  - Build
+
+* :four:
+
+  - Test
+
+* :five:
+
+  - Ship
+
+
+---
+
+<!-- _class: leaf softfrag -->
+
+# leaf pairs
+
+* :leaves:
+
+  - lorem ipsum
+
+* :seedling:
+
+  - consectetur
+
+* :herb:
+
+  - sed eiusmod
+
+* :four_leaf_clover:
+
+  - ut labore
+
+* :deciduous_tree:
+
+  - dolore magna
+
+* :palm_tree:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: bookmark softfrag -->
+
+# bookmark ribbons
+
+* :books:
+
+  - lorem ipsum
+
+* :blue_book:
+
+  - consectetur
+
+* :green_book:
+
+  - eiusmod
+
+* :orange_book:
+
+  - ut labore
+
+* :notebook:
+
+  - magna
+
+
+---
+
+<!-- _class: stairs softfrag -->
+
+# stairs progression
+
+* :baby:
+
+  - lorem ipsum dolor sit amet
+
+* :child:
+
+  - consectetur adipiscing elit
+
+* :runner:
+
+  - sed do eiusmod tempor
+
+* :bicyclist:
+
+  - incididunt ut labore
+
+* :mountain:
+
+  - et dolore magna aliqua
+
+* :checkered_flag:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: fold softfrag -->
+
+# sticky notes
+
+* :memo:
+
+  - lorem ipsum
+
+* :pencil2:
+
+  - consectetur
+
+* :notebook:
+
+  - sed eiusmod
+
+* :clipboard:
+
+  - ut labore
+
+* :spiral_notepad:
+
+  - dolore magna
+
+* :bookmark_tabs:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: hexagon softfrag -->
+
+# hexagon bullets
+
+* :rocket:
+
+  - lorem ipsum
+
+* :book:
+
+  - consectetur
+
+* :bulb:
+
+  - sed eiusmod
+
+* :rofl:
+
+  - ut labore
+
+* :train:
+
+  - dolore magna
+
+* :pilot:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: caterpillar softfrag -->
+
+# caterpillar
+
+* :rocket:
+
+  - lorem ipsum
+
+* :book:
+
+  - consectetur
+
+* :bulb:
+
+  - sed eiusmod
+
+* :rofl:
+
+  - ut labore
+
+* :train:
+
+  - dolore magna
+
+* :pilot:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: triangle softfrag -->
+
+# triangle bullets
+
+* :rocket:
+
+  - lorem ipsum
+
+* :book:
+
+  - consectetur
+
+* :bulb:
+
+  - sed eiusmod
+
+* :rofl:
+
+  - ut labore
+
+* :train:
+
+  - dolore magna
+
+* :pilot:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: arrow softfrag -->
+
+# arrow bullets
+
+* :rocket:
+
+  - lorem ipsum
+
+* :book:
+
+  - consectetur
+
+* :bulb:
+
+  - sed eiusmod
+
+* :rofl:
+
+  - ut labore
+
+* :train:
+
+  - dolore magna
+
+* :pilot:
+
+  - minim veniam
+
+
+---
+
+<!-- _class: timeline softfrag -->
+
+# timeline bullets
+
+* 1940
+
+  - Event one
+
+* 1950
+
+  - Event two
+
+* 1960
+
+  - Event three
+
+* 1970
+
+  - Event four
+
+* 1980
+
+  - Event five
+
+* 1990
+
+  - Event six
+
+
+---
+
+<!-- _class: timeline2 softfrag -->
+
+# timeline2 bullets
+
+* :seedling:
+
+  - point one
+
+* :herb:
+
+  - point two
+
+* :deciduous_tree:
+
+  - point three
+
+* :palm_tree:
+
+  - point four
+
+* :evergreen_tree:
+
+  - point five
+
+
+---
+
+<!-- _class: roadmap softfrag -->
+
+# roadmap top to bottom
+
+* :seedling:
+
+  - point one
+
+* :herb:
+
+  - point two
+
+* :deciduous_tree:
+
+  - point three
+
+* :palm_tree:
+
+  - point four
+
+* :evergreen_tree:
+
+  - point five
+
+
+---
+
+<!-- _class: roadmap2 softfrag -->
+
+# roadmap bottom to top
+
+* :seedling:
+
+  - point one
+
+* :herb:
+
+  - point two
+
+* :deciduous_tree:
+
+  - point three
+
+* :palm_tree:
+
+  - point four
+
+* :evergreen_tree:
+
+  - point five
+
+
+---
+
+<!-- _class: panel softfrag -->
+
+# panel
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: panel_card softfrag -->
+
+### panel card
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: panel_transparent softfrag -->
+
+### panel_transparent
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: panel_capsule softfrag -->
+
+# panel capsule
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: panel_shirt softfrag -->
+
+# panel shirt
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: panel_pillar softfrag -->
+
+# panel pillar
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: panel frost softfrag -->
+
+# panel + frost
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: panel_card frost softfrag -->
+
+### panel card + frost
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: panel_capsule frost softfrag -->
+
+# panel capsule + frost
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: panel_shirt frost softfrag -->
+
+# panel shirt + frost
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: panel_pillar frost softfrag -->
+
+# panel pillar + frost
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: icon_box frost softfrag -->
+
+# icon box + frost
+
+* :rocket:
+
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - sed do eiusmod tempor
+
+* :rofl:
+
+  - incididunt ut labore
+
+* :train:
+
+  - et dolore magna aliqua
+
+* :pilot:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: icon_box softfrag -->
+
+# icon box
+
+* :rocket:
+
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - sed do eiusmod tempor
+
+* :rofl:
+
+  - incididunt ut labore
+
+* :train:
+
+  - et dolore magna aliqua
+
+* :pilot:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: icon_capsule softfrag -->
+
+# icon capsule
+
+* :rocket:
+
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - sed do eiusmod tempor
+
+* :rofl:
+
+  - incididunt ut labore
+
+* :train:
+
+  - et dolore magna aliqua
+
+* :pilot:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: icon_card softfrag -->
+
+### icon card
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: icon_flower softfrag -->
+
+# icon flower
+
+* :rocket:
+
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - sed do eiusmod tempor
+
+* :rofl:
+
+  - incididunt ut labore
+
+* :train:
+
+  - et dolore magna aliqua
+
+* :pilot:
+
+  - ut enim ad minim veniam
+
+
+---
+
+<!-- _class: icon_pillar softfrag -->
+
+# icon pillar
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: icon_pillar4 softfrag -->
+
+### icon pillar 2X2
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: icon_shirt softfrag -->
+
+# icon shirt 3X2
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: icon_shirt4 softfrag -->
+
+# icon shirt 2X2
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: flower softfrag -->
+
+## flower bullets
+
+* :rocket:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> lorem ipsum dolor
+
+* :bulb:
+
+  - **charlie** <br> lorem ipsum dolor
+
+* :rofl:
+
+  - **delta** <br> lorem ipsum dolor
+
+
+---
+
+<!-- _class: zigsaw softfrag -->
+
+## zigsaw bullets
+
+* :adult:
+
+  - point one
+
+* :desktop_computer:
+
+  - **lorem** <br> ipsum
+
+* :family:
+
+  - point three
+
+* :vibration_mode:
+
+  - point four
+
+
+---
+
+<!-- _class: paintbrush softfrag -->
+
+## paintbrush bullets
+
+* :rocket:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> lorem ipsum dolor
+
+* :bulb:
+
+  - **charlie** <br> lorem ipsum dolor
+
+* :rofl:
+
+  - **delta** <br> lorem ipsum dolor
+
+
+---
+
+<!-- _class: pyramid softfrag -->
+
+### pyramid (top to bottom)
+
+* :rocket:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> lorem ipsum dolor
+
+* :bulb:
+
+  - **charlie** <br> lorem ipsum dolor
+
+* :rofl:
+
+  - **delta** <br> lorem ipsum dolor
+
+
+---
+
+<!-- _class: pyramid2 softfrag -->
+
+### pyramid2 (bottom to top)
+
+* :rocket:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> lorem ipsum dolor
+
+* :bulb:
+
+  - **charlie** <br> lorem ipsum dolor
+
+* :rofl:
+
+  - **delta** <br> lorem ipsum dolor
+
+
+---
+
+<!-- _class: fa softfrag -->
+
+### Font Awesome
+
+* <i class="fa fa-cogs"></i>
+
+  - System Configuration
+
+* <i class="fa fa-check-circle"></i>
+
+  - Quality Assurance
+
+* <i class="fa fa-lightbulb"></i>
+
+  - Innovative Feature
+
+* <i class="fa fa-chart-line"></i>
+
+  - Performance Monitoring
+
+* <i class="fa fa-users"></i>
+
+  - Stakeholder Engagement
+
+* <i class="fa fa-database"></i>
+
+  - Data Integration
+
+
+---
+
+<!-- _class: bq-purple softfrag -->
+
+# Blockquote purple
+
+> Lorem ipsum dolor
+>
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+---
+
+<!-- _class: bq-blue softfrag -->
+
+# Blockquote blue
+
+> Lorem ipsum dolor
+>
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+---
+
+<!-- _class:  screen glass softfrag -->
+
+# screen video + glass
 
 <video class="bg-video" autoplay muted loop playsinline>
   <source src="https://gsm-arivu.github.io/media/video2.mp4" type="video/mp4">
 </video>
 
-# <!--fit--> <span style="color: transparent; -webkit-text-stroke: 1px black;">Thank You</span>
+* :rocket:
 
+  - lorem ipsum dolor sit amet
 
----
+* :brain:
 
+  - consectetur adipiscing elit
 
+* :zap:
 
-<!-- _class: panel  -->
+  - sed do eiusmod tempor
 
-### hr and br 
+* :gem:
 
+  - incididunt ut labore
 
+* :star:
 
-* hr
-  - line one <hr> line two 
+  - et dolore magna aliqua
 
-* br
-  - line one <br> line two
+* :fire:
 
----
-
-<!-- _class: white -->
-
-#### fieldset
-
-<fieldset>
-<legend>group 1</legend>
-
-- one
-- two
-
-</fieldset>
-
-
-<fieldset>
-<legend>group 2</legend>
-
-- one
-- two
-
-</fieldset>
+  - ut enim ad minim veniam
 
 ---
 
-# html section id
+<!-- _class: vortex glass -->
 
-<section id="section-1"></section>
-
-some section content
-
-
-
----
-
-# link to section id
-
-[link to section-1](#section-1)
-
-
----
-
-# html abbreviations
-
-<p><acronym title="National Aeronautics and Space
-Administration">NASA</acronym> is in USA. 
-
-
-
-
-
-
-
+# <!--fit--> Thank You
