@@ -4995,9 +4995,16 @@ section.screen video.bg-video {
 }
 
 /* Ensure content appears on top */
-section.screen>* {
+section.screen>*:not(header):not(footer) {
   position: relative;
   z-index: 1;
+}
+
+/* Keep header/footer pinned to top/bottom regardless of content */
+section.screen>header,
+section.screen>footer {
+  position: absolute;
+  z-index: 2;
 }
 
 
