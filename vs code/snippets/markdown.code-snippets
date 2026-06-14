@@ -15,15 +15,21 @@
         ],
         "description": "Insert HTML class"
     },
-    "Insert Bullet Point": {
-        "prefix": "b",
+    "Insert section separator": {
+        "prefix": "sec",
         "body": [
+            "<!-- _class: lead screen invert -->",
+            "<video class=\"bg-video\" autoplay muted loop playsinline onplay=\"this.playbackRate = 0.5\">",
+            "  <source src=\"media/video1.mp4\" type=\"video/mp4\">",
+            "</video>",
             "",
-            "* "
+            "# <!--fit--> Section Separator",
+            "",
+            "---",
+            ""
         ],
-        "description": "Insert an empty line and a bullet point"
+        "description": "Insert section separator"
     },
-
     "Slide Separator": {
         "prefix": "ns",
         "body": [
@@ -34,12 +40,10 @@
         ],
         "description": "Insert four dash"
     },
-    "Main Heading": {
-        "prefix": "mh",
+    "Fit Heading": {
+        "prefix": "fit",
         "body": [
-            "# ",
-            "",
-            ""
+            "# <!--fit--> ",
         ],
         "description": "Insert main heading"
     },
@@ -53,128 +57,177 @@
         "description": "Insert h2"
     },
     "Icon Bullet Slide": {
-  "prefix": "icon",
-  "body": [
-    "<!-- _class: icon_box  -->",
-    "",
-    "# heading",
-    "",
-    "* :+1:",
-    "",
-    "  - point one",
-    "",
-    "* :+1:",
-    "",
-    "  - point two",
-    "",
-    "* :+1:",
-    "",
-    "  - point three",
-    "",
-    "* :+1:",
-    "",
-    "  - point four",
-    "",
-    "* :+1:",
-    "",
-    "  - point five",
-    "",
-
-     
-    "---"
-    ],
+        "prefix": "icon",
+        "body": [
+            "<!-- _class: icon_box invert frost softfrag aurora  -->",
+            "",
+            "# heading",
+            "",
+            "* :+1:",
+            "",
+            "  - point one",
+            "",
+            "* :+1:",
+            "",
+            "  - point two",
+            "",
+            "* :+1:",
+            "",
+            "  - point three",
+            "",
+            "* :+1:",
+            "",
+            "  - point four",
+            "",
+            "* :+1:",
+            "",
+            "  - point five",
+            "",
+            "---"
+        ],
         "description": "Insert an icon panel markdown block"
     },
-
     "style block": {
-  "prefix": "st",
-  "body": [
-    "<style scoped >",
-    "li {",
-    "font-size: 0.8rem ;",
-    "}",
-    "</style>"
-    ],
+        "prefix": "st",
+        "body": [
+            "<style scoped >",
+            "li {",
+            "font-size: 0.8rem ;",
+            "line-height: 1.4em;",
+            "}",
+            "</style>"
+        ],
         "description": "Insert style block"
     },
-
     "div block": {
-  "prefix": "di",
-  "body": [
-    "<div class= >",
-    "",
-    "",
-    "</div>"
-    
-    ],
+        "prefix": "di",
+        "body": [
+            "<div class= >",
+            "",
+            "",
+            "</div>"
+        ],
         "description": "Insert div block"
     },
-
     "new section": {
-  "prefix": "se",
-  "body": [
-    "<!-- _class: lead invert -->",
-    "# <!--fit--> section",
-    "",
-    "---"
-    
-    
-    ],
+        "prefix": "se",
+        "body": [
+            "<!-- _class: lead invert -->",
+            "# <!--fit--> section",
+            "",
+            "---"
+        ],
         "description": "Insert new section"
     },
-
-  "horizontal rule": {
-  "prefix": "hr",
-  "body":  "<hr>",
-    "description": "Insert horizontal line"
-},
-
-"Insert new line": {
-  "prefix": "br",
-  "body": "<br>",
-  "description": "Insert new line"
-},
-
-"Insert fontawesome icon": {
-  "prefix": "af",
-  "body": [
-    "* <i class=\"fas fa-rocket \"></i>"
-  ],
-  "description": "Insert fontawesome icon"
-},
-
-  "Font Awesome Bullet Slide": {
-  "prefix": "fa",
-  "body": [
-    "<!-- _class: fa  -->",
-    "",
-    "# heading",
-    "",
-    "",
-    "* <i class=\"fa fa-rocket \"></i>"
-    "",
-    "  - point one",
-    "",
-    "* <i class=\"fa fa-rocket \"></i>"
-    "",
-    "  - point two",
-    "",    
-    "* <i class=\"fa fa-rocket \"></i>"
-    "",
-    "  - point three",
-    "",
-    "* <i class=\"fa fa-rocket \"></i>"
-    "",
-    "  - point four",
-    "",
-    "* <i class=\"fa fa-rocket \"></i>"
-    "",
-    "  - point five",
-    "",
-     
-    "---"
-    ],
+    "horizontal rule": {
+        "prefix": "hr",
+        "body": "<hr>",
+        "description": "Insert horizontal line"
+    },
+    "Insert new line": {
+        "prefix": "br",
+        "body": "<br>",
+        "description": "Insert new line"
+    },
+    "Insert fontawesome icon": {
+        "prefix": "af",
+        "body": [
+            "* <i class=\"fas fa-rocket \"></i>"
+        ],
+        "description": "Insert fontawesome icon"
+    },
+    "Font Awesome Bullet Slide": {
+        "prefix": "fa",
+        "body": [
+            "<!-- _class: fa invert frost softfrag aurora -->",
+            "",
+            "# heading",
+            "",
+            "",
+            "* <i class=\"fa fa-rocket \"></i>",
+            "",
+            "  - point one",
+            "",
+            "* <i class=\"fa fa-rocket \"></i>",
+            "",
+            "  - point two",
+            "",
+            "* <i class=\"fa fa-rocket \"></i>",
+            "",
+            "  - point three",
+            "",
+            "* <i class=\"fa fa-rocket \"></i>",
+            "",
+            "  - point four",
+            "",
+            "* <i class=\"fa fa-rocket \"></i>",
+            "",
+            "  - point five",
+            "",
+            "---"
+        ],
         "description": "Insert font-awesome markdown block"
+    },
+    "Cap Card Slide": {
+        "prefix": "cc",
+        "body": [
+            "<!-- _class: cap_card -->",
+            "",
+            "## ${1:Slide Title}",
+            "",
+            "* :${2:rocket}:",
+            "",
+            "  - **${3:Card One}**",
+            "  - ${4:Description text here.}",
+            "",
+            "* :${5:bar_chart}:",
+            "",
+            "  - **${6:Card Two}**",
+            "  - ${7:Description text here.}",
+            "",
+            "* :${8:bulb}:",
+            "",
+            "  - **${9:Card Three}**",
+            "  - ${10:Description text here.}",
+            "",
+            "* :${11:handshake}:",
+            "",
+            "  - **${12:Card Four}**",
+            "  - ${13:Description text here.}",
+            "",
+            "---"
+        ],
+        "description": "Insert cap_card bold header card slide (coloured icon cap + white body)"
+    },
+    "Step Focus Slide": {
+        "prefix": "sf",
+        "body": [
+            "<!-- _class: envelop -->",
+            "",
+            "## Step Focus",
+            "",
+            "* :airplane:",
+            "",
+            "  - **Step One**",
+            "  - Description text here.",
+            "",
+            "* :car:",
+            "",
+            "  - **Step Two**",
+            "  - Description text here.",
+            "",
+            "* :bus:",
+            "",
+            "  - **Step Three**",
+            "  - Description text here.",
+            "",
+            "* :bicycle:",
+            "",
+            "  - **Step Four**",
+            "  - Description text here.",
+            "",
+            "---"
+        ],
+        "description": "Insert envelop lollipop card slide"
     }
-
 }

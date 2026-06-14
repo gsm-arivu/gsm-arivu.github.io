@@ -11071,11 +11071,265 @@ section.chevron_block > ul > li:nth-child(12n+12) { --chb-color: var(--arivu-pal
 
 
 /*--------------------------------------------------------------------
+  STEP FOCUS — portrait lollipop cards. Each card has a large colored
+               dome (flat top, elliptical bottom) containing a white
+               icon, an auto-numbered step badge at the dome / text
+               transition, and a centered text body below.
+               Best with 3–5 items per slide.
+               Usage:   <!-- _class: envelop -->
+               Markdown:
+                 * :icon:
+                   - **Bold Title**
+                   - Body text here…
+---------------------------------------------------------------------*/
+
+section.envelop {
+  display: flex;
+  flex-direction: column;
+  counter-reset: env-count;
+}
+
+section.envelop > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Portrait card — white base, rounded corners, shadow */
+section.envelop > ul > li {
+  --env-color: var(--arivu-palette-1);
+  counter-increment: env-count;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f6f8;
+  border-radius: var(--arivu-radius);
+  overflow: hidden;
+  box-shadow: var(--arivu-shadow);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+section.envelop > ul > li::marker { display: none; }
+
+section.envelop > ul > li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.20);
+}
+
+/* Dome — full card width, flat top, elliptical bottom; icon centered */
+section.envelop > ul > li > p:first-child {
+  flex: 0 0 54%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 50% 50%;
+  background-color: var(--env-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  line-height: 1;
+  color: #ffffff;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.20));
+}
+
+/* Text body — centered layout; padding-top clears the step badge */
+section.envelop > ul > li > ul {
+  flex: 1;
+  list-style: none;
+  padding: 26px 12px 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  text-align: center;
+  position: relative;
+}
+
+/* Step badge — auto-numbered circle sitting at the dome / text junction */
+section.envelop > ul > li > ul::before {
+  content: counter(env-count);
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--env-color);
+  color: #ffffff;
+  font-size: 0.85em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.30), inset 0 0 0 3px rgba(0, 0, 0, 0.14);
+}
+
+section.envelop > ul > li > ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.79em;
+  line-height: 1.45;
+  color: #444;
+}
+
+section.envelop > ul > li > ul > li:first-child {
+  font-size: 0.92em;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+/* Per-item palette colors */
+section.envelop > ul > li:nth-child(12n+1)  { --env-color: var(--arivu-palette-1);  }
+section.envelop > ul > li:nth-child(12n+2)  { --env-color: var(--arivu-palette-2);  }
+section.envelop > ul > li:nth-child(12n+3)  { --env-color: var(--arivu-palette-3);  }
+section.envelop > ul > li:nth-child(12n+4)  { --env-color: var(--arivu-palette-4);  }
+section.envelop > ul > li:nth-child(12n+5)  { --env-color: var(--arivu-palette-5);  }
+section.envelop > ul > li:nth-child(12n+6)  { --env-color: var(--arivu-palette-6);  }
+section.envelop > ul > li:nth-child(12n+7)  { --env-color: var(--arivu-palette-7);  }
+section.envelop > ul > li:nth-child(12n+8)  { --env-color: var(--arivu-palette-8);  }
+section.envelop > ul > li:nth-child(12n+9)  { --env-color: var(--arivu-palette-9);  }
+section.envelop > ul > li:nth-child(12n+10) { --env-color: var(--arivu-palette-10); }
+section.envelop > ul > li:nth-child(12n+11) { --env-color: var(--arivu-palette-11); }
+section.envelop > ul > li:nth-child(12n+12) { --env-color: var(--arivu-palette-12); }
+
+
+/*--------------------------------------------------------------------
+  CAP CARD — two-zone bordered cards: icon zone with a thick coloured
+             border, content zone with a grey border, stacked with a
+             small gap.  Best with 3–5 items per slide.
+             Markdown:
+               _class: cap_card
+               * :icon:
+                 - **Bold Title**
+                 - Body text here…
+---------------------------------------------------------------------*/
+
+section.cap_card {
+  display: flex;
+  flex-direction: column;
+}
+
+section.cap_card > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 14px;
+  align-items: stretch;
+}
+
+/* li = transparent flex column; zones connect with no gap, sharing corners */
+section.cap_card > ul > li {
+  --cap-color: var(--arivu-palette-1);
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: transparent;
+  overflow: visible;
+  filter: drop-shadow(2px 4px 12px rgba(0, 0, 0, 0.18));
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+section.cap_card > ul > li::marker { display: none; }
+
+section.cap_card > ul > li:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(4px 8px 20px rgba(0, 0, 0, 0.28));
+}
+
+/* Icon zone — thick coloured border top/left/right; no bottom border so it
+   flows directly into the content zone below */
+section.cap_card > ul > li > p:first-child {
+  margin: 0;
+  padding: 22px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  line-height: 1;
+  background: #ffffff;
+  border: 16px solid var(--cap-color);
+  border-bottom: none;
+  border-radius: var(--arivu-radius) var(--arivu-radius) 0 0;
+  flex-shrink: 0;
+}
+
+/* Content zone — same thickness grey border; no top border so zones share
+   a clean join; bottom corners rounded to complete the card shape */
+section.cap_card > ul > li > ul {
+  flex: 1;
+  list-style: none;
+  padding: 14px 16px 18px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+  background: #ffffff;
+  border: 16px solid #cccccc;
+  border-top: none;
+  border-radius: 0 0 var(--arivu-radius) var(--arivu-radius);
+}
+
+section.cap_card > ul > li > ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.78em;
+  line-height: 1.55;
+  color: #444;
+}
+
+/* Bold title row with a thin neutral separator */
+section.cap_card > ul > li > ul > li:first-child {
+  font-size: 1.0em;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+}
+
+/* Per-item palette */
+section.cap_card > ul > li:nth-child(12n+1)  { --cap-color: var(--arivu-palette-1);  }
+section.cap_card > ul > li:nth-child(12n+2)  { --cap-color: var(--arivu-palette-2);  }
+section.cap_card > ul > li:nth-child(12n+3)  { --cap-color: var(--arivu-palette-3);  }
+section.cap_card > ul > li:nth-child(12n+4)  { --cap-color: var(--arivu-palette-4);  }
+section.cap_card > ul > li:nth-child(12n+5)  { --cap-color: var(--arivu-palette-5);  }
+section.cap_card > ul > li:nth-child(12n+6)  { --cap-color: var(--arivu-palette-6);  }
+section.cap_card > ul > li:nth-child(12n+7)  { --cap-color: var(--arivu-palette-7);  }
+section.cap_card > ul > li:nth-child(12n+8)  { --cap-color: var(--arivu-palette-8);  }
+section.cap_card > ul > li:nth-child(12n+9)  { --cap-color: var(--arivu-palette-9);  }
+section.cap_card > ul > li:nth-child(12n+10) { --cap-color: var(--arivu-palette-10); }
+section.cap_card > ul > li:nth-child(12n+11) { --cap-color: var(--arivu-palette-11); }
+section.cap_card > ul > li:nth-child(12n+12) { --cap-color: var(--arivu-palette-12); }
+
+
+/*--------------------------------------------------------------------
   FROST EXTENSION — adds frost modifier support to parallelogram,
   folder_tab, pennant, banner_card, tab_card, chevron_panel,
-  fold_banner, dash_button, and chevron_block (not listed in the
-  original S9/S10
-  :is() selectors because they were added later).
+  fold_banner, dash_button, chevron_block, envelop, and cap_card
+  (not listed in the original S9/S10 :is() selectors because they
+  were added later).
 
   Usage: combine with a dark background class, e.g.:
     <!-- _class: aurora parallelogram frost -->
@@ -11085,6 +11339,7 @@ section.chevron_block > ul > li:nth-child(12n+12) { --chb-color: var(--arivu-pal
     <!-- _class: aurora chevron_panel frost -->
     <!-- _class: aurora fold_banner frost -->
     <!-- _class: aurora dash_button frost -->
+    <!-- _class: aurora cap_card frost -->
 ---------------------------------------------------------------------*/
 
 /* ---- parallelogram + folder_tab: li goes transparent (remove opaque bg) ---- */
@@ -11424,6 +11679,86 @@ section.frost.chevron_block > ul > li:nth-child(8) > p:first-child { background:
 /* dark-bg text override */
 section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_block > ul > li > ul,
 section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_block > ul > li > ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+
+/* ---- envelop: card → frosted glass base ---- */
+section.frost.envelop > ul > li {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  backdrop-filter: blur(14px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-top-color: rgba(255, 255, 255, 0.50);
+}
+
+/* dome → hue-tinted glass per card position */
+section.frost.envelop > ul > li > p:first-child {
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+  filter: none;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+section.frost.envelop > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.65); }
+section.frost.envelop > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.65); }
+section.frost.envelop > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.65); }
+section.frost.envelop > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.65); }
+section.frost.envelop > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.65); }
+section.frost.envelop > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.65); }
+section.frost.envelop > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.65); }
+section.frost.envelop > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.65); }
+
+/* badge → dark frosted glass circle */
+section.frost.envelop > ul > li > ul::before {
+  background: rgba(0, 0, 0, 0.32);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.20);
+}
+
+/* text → white */
+section.frost.envelop > ul > li > ul > li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.envelop > ul > li > ul > li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+
+/* ---- cap_card: li → transparent (zones carry own glass bg) ---- */
+section.frost.cap_card > ul > li { background: transparent; }
+
+/* ---- cap_card: icon zone → hue-tinted glass; border keeps palette hue ---- */
+section.frost.cap_card > ul > li > p:first-child {
+  backdrop-filter: blur(12px) saturate(160%);
+}
+section.frost.cap_card > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.55); border-color: rgba( 60,  90, 130, 0.80); }
+section.frost.cap_card > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.55); border-color: rgba(142,  68, 173, 0.80); }
+section.frost.cap_card > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.55); border-color: rgba( 22, 160, 133, 0.80); }
+section.frost.cap_card > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.55); border-color: rgba(211,  84,   0, 0.80); }
+section.frost.cap_card > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.55); border-color: rgba( 41, 128, 185, 0.80); }
+section.frost.cap_card > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.55); border-color: rgba(192,  57,  43, 0.80); }
+section.frost.cap_card > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.55); border-color: rgba( 39, 174,  96, 0.80); }
+section.frost.cap_card > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.55); border-color: rgba(243, 156,  18, 0.80); }
+
+/* ---- cap_card: content zone → dark frosted glass, white-tinted border ---- */
+section.frost.cap_card > ul > li > ul {
+  background: linear-gradient(150deg, rgba(22, 32, 52, 0.50) 0%, rgba(22, 32, 52, 0.34) 100%);
+  backdrop-filter: blur(14px) saturate(150%);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+section.frost.cap_card > ul > li > ul > li       { color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.4); }
+section.frost.cap_card > ul > li > ul > li:first-child { border-bottom-color: rgba(255,255,255,0.25); }
+
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.cap_card > ul > li > ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.cap_card > ul > li > ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }

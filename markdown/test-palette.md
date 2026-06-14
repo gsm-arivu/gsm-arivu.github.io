@@ -7,53 +7,129 @@ paginate: true
 
 
 
-<!-- _class: dash_button -->
 
-## Chevron Panel
 
-* :shield:
+<!-- _class: envelop -->
 
-  - **Security**
-  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
+## Step Focus
 
-* :heart:
+* :airplane:
 
-  - **Wellbeing**
-  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
+  - **Air Travel**
+  - Fast long-distance transport with reliable global connections.
 
-* :handshake:
+* :car:
 
-  - **Partnership**
-  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
+  - **Road Trip**
+  - Flexible routes at your own pace, door to door.
 
-* :link:
+* :bus:
 
-  - **Integration**
-  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
+  - **Bus Service**
+  - Affordable city and intercity connections.
+
+* :bicyclist:
+
+  - **Cycling**
+  - Eco-friendly last-mile urban transport.
 
 ---
 
-<!-- _class: dash_button invert aurora frost -->
+<!-- _class: envelop invert aurora frost -->
 
-## Chevron Panel (Frost)
 
-* :shield:
 
-  - **Security**
-  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :heart:
 
-  - **Wellbeing**
-  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
+# heading
+
+* :car:
+
+  - **car** <br>is good
+
+* :bus:
+
+  - **bus** <br> is better
+
+* :train:
+
+  - **train** <br> is best
+
+ 
+
+* :airplane:
+
+  - **airplane** <br> is costly
+
+* :bicyclist:
+
+  - **cycle** <br> is cheap
+
+---
+
+<!-- _class: envelop -->
+
+## Step Focus
+
+* :airplane:
+
+  - **Air Travel**
+  - Fast long-distance transport with reliable global connections.
+
+* :car:
+
+  - **Road Trip**
+  - Flexible routes at your own pace, door to door.
+
+---
+
+<!-- _class: cap_card -->
+
+## Bold Header Cards
+
+* :rocket:
+
+  - **Launch Strategy**
+  - Define goals, set milestones, and align the team before go-live.
+
+* :bar_chart:
+
+  - **Data Insights**
+  - Track KPIs in real time and act on what the numbers reveal.
+
+* :bulb:
+
+  - **Innovation Lab**
+  - Prototype fast, gather feedback early, and iterate with purpose.
 
 * :handshake:
 
-  - **Partnership**
-  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
+  - **Partnerships**
+  - Build lasting alliances that expand reach and share expertise.
 
-* :link:
+---
 
-  - **Integration**
-  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
+<!-- _class: aurora cap_card frost -->
+
+## Bold Header Cards — Frost
+
+* :rocket:
+
+  - **Launch Strategy**
+  - Define goals, set milestones, and align the team before go-live.
+
+* :bar_chart:
+
+  - **Data Insights**
+  - Track KPIs in real time and act on what the numbers reveal.
+
+* :bulb:
+
+  - **Innovation Lab**
+  - Prototype fast, gather feedback early, and iterate with purpose.
+
+* :handshake:
+
+  - **Partnerships**
+  - Build lasting alliances that expand reach and share expertise.
 
