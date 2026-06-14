@@ -10268,14 +10268,424 @@ section.folder_tab > ul > li:nth-child(12n+12) { --ft-color: var(--arivu-palette
 
 
 /*--------------------------------------------------------------------
+  BANNER CARD — white cards with a centered color-splash banner
+               protruding above the card top, holding the icon emoji.
+               Auto-numbered circular badge sits above the banner.
+               Best with 2–4 items per slide.
+               Markdown:
+                 _class: banner_card
+                 * :icon:
+                   - **Bold Title**
+                   - Body text here…
+---------------------------------------------------------------------*/
+
+section.banner_card {
+  display: flex;
+  flex-direction: column;
+  counter-reset: banner-card;
+}
+
+section.banner_card > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin-top: 78px;   /* headroom: 50px banner + 28px badge clearance */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 14px;
+  align-items: stretch;
+}
+
+/* Card container — overflow:visible lets banner protrude above; drop-shadow
+   follows the painted shape. Custom property --bc-color set per item below
+   to avoid specificity conflicts on ::before and p:first-child. */
+section.banner_card > ul > li {
+  --bc-color: var(--arivu-palette-1);
+  counter-increment: banner-card;
+  flex: 1 1 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: var(--arivu-radius);
+  overflow: visible;
+  background: #ffffff;
+  filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.18));
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+section.banner_card > ul > li::marker {
+  display: none;
+}
+
+section.banner_card > ul > li:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(4px 8px 18px rgba(0, 0, 0, 0.28));
+}
+
+/* Number badge — auto-counted circle above the banner top */
+section.banner_card > ul > li::before {
+  content: counter(banner-card);
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background: var(--bc-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.80em;
+  font-weight: 700;
+  line-height: 1;
+  z-index: 3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Banner — centered, pulls 50px above the card top via negative margin.
+   align-self:center + explicit width centers it horizontally. */
+section.banner_card > ul > li > p:first-child {
+  align-self: center;
+  margin: -50px 0 14px;
+  width: 62%;
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+  font-size: 2.5em;
+  line-height: 1;
+  color: #ffffff;
+  background-color: var(--bc-color);
+  border-radius: 14px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.20);
+}
+
+/* Content zone */
+section.banner_card > ul > li > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0 16px 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+section.banner_card > ul > li > ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.82em;
+  line-height: 1.5;
+  color: #333;
+}
+
+section.banner_card > ul > li > ul > li:first-child {
+  font-size: 1.0em;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+/* Per-item palette — custom property on li avoids specificity conflicts */
+section.banner_card > ul > li:nth-child(12n+1)  { --bc-color: var(--arivu-palette-1);  }
+section.banner_card > ul > li:nth-child(12n+2)  { --bc-color: var(--arivu-palette-2);  }
+section.banner_card > ul > li:nth-child(12n+3)  { --bc-color: var(--arivu-palette-3);  }
+section.banner_card > ul > li:nth-child(12n+4)  { --bc-color: var(--arivu-palette-4);  }
+section.banner_card > ul > li:nth-child(12n+5)  { --bc-color: var(--arivu-palette-5);  }
+section.banner_card > ul > li:nth-child(12n+6)  { --bc-color: var(--arivu-palette-6);  }
+section.banner_card > ul > li:nth-child(12n+7)  { --bc-color: var(--arivu-palette-7);  }
+section.banner_card > ul > li:nth-child(12n+8)  { --bc-color: var(--arivu-palette-8);  }
+section.banner_card > ul > li:nth-child(12n+9)  { --bc-color: var(--arivu-palette-9);  }
+section.banner_card > ul > li:nth-child(12n+10) { --bc-color: var(--arivu-palette-10); }
+section.banner_card > ul > li:nth-child(12n+11) { --bc-color: var(--arivu-palette-11); }
+section.banner_card > ul > li:nth-child(12n+12) { --bc-color: var(--arivu-palette-12); }
+
+
+/*--------------------------------------------------------------------
+  TAB CARD — white outline cards with a colored header band holding
+             a circular icon badge and bold title. A fold-corner
+             dog-ear at the top-right of the header adds depth.
+             Best with 2–4 items per slide.
+             Markdown:
+               _class: tab_card
+               * :icon:
+                 - **Bold Title**
+                 - Body text here…
+---------------------------------------------------------------------*/
+
+section.tab_card {
+  display: flex;
+  flex-direction: column;
+}
+
+section.tab_card > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Card — colored outline border; overflow:hidden clips header and fold corner
+   to border-radius. --tc-color set per item below to avoid specificity fights. */
+section.tab_card > ul > li {
+  --tc-color: var(--arivu-palette-1);
+  flex: 1 1 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 2.5px solid var(--tc-color);
+  border-radius: var(--arivu-radius);
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: var(--arivu-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+section.tab_card > ul > li::marker {
+  display: none;
+}
+
+section.tab_card > ul > li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* Fold-corner — white dog-ear triangle at the top-right of the header band */
+section.tab_card > ul > li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 26px 26px 0;
+  border-color: transparent #ffffff transparent transparent;
+  z-index: 3;
+}
+
+/* Icon circle — absolute, overlaid on the colored header band.
+   p:first-child is removed from flow so ul fills the full card height. */
+section.tab_card > ul > li > p:first-child {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6em;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+/* Content column — fills the full card height */
+section.tab_card > ul > li > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title — colored header band; 76px left padding clears icon (12+52+12) */
+section.tab_card > ul > li > ul > li:first-child {
+  list-style: none;
+  background-color: var(--tc-color);
+  color: #ffffff;
+  font-size: 1.0em;
+  font-weight: 700;
+  padding: 14px 36px 14px 76px;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Body text — flex:1 fills remaining card height; text starts at top with padding */
+section.tab_card > ul > li > ul > li:nth-child(n+2) {
+  list-style: none;
+  flex: 1;
+  padding: 16px 16px;
+  margin: 0;
+  font-size: 0.82em;
+  line-height: 1.55;
+  color: #333;
+  text-align: center;
+}
+
+/* Per-item palette */
+section.tab_card > ul > li:nth-child(12n+1)  { --tc-color: var(--arivu-palette-1);  }
+section.tab_card > ul > li:nth-child(12n+2)  { --tc-color: var(--arivu-palette-2);  }
+section.tab_card > ul > li:nth-child(12n+3)  { --tc-color: var(--arivu-palette-3);  }
+section.tab_card > ul > li:nth-child(12n+4)  { --tc-color: var(--arivu-palette-4);  }
+section.tab_card > ul > li:nth-child(12n+5)  { --tc-color: var(--arivu-palette-5);  }
+section.tab_card > ul > li:nth-child(12n+6)  { --tc-color: var(--arivu-palette-6);  }
+section.tab_card > ul > li:nth-child(12n+7)  { --tc-color: var(--arivu-palette-7);  }
+section.tab_card > ul > li:nth-child(12n+8)  { --tc-color: var(--arivu-palette-8);  }
+section.tab_card > ul > li:nth-child(12n+9)  { --tc-color: var(--arivu-palette-9);  }
+section.tab_card > ul > li:nth-child(12n+10) { --tc-color: var(--arivu-palette-10); }
+section.tab_card > ul > li:nth-child(12n+11) { --tc-color: var(--arivu-palette-11); }
+section.tab_card > ul > li:nth-child(12n+12) { --tc-color: var(--arivu-palette-12); }
+
+
+/*--------------------------------------------------------------------
+  CHEVRON PANEL — horizontal process cards in overlapping chevron
+                  (arrow) shape. Colored icon zone on top, light
+                  content zone below. Cards notch into each other
+                  to form a continuous process flow.
+                  Best with 3–5 items per slide.
+                  Usage:   <!-- _class: chevron_panel -->
+                  Markdown (same as folder_tab / parallelogram):
+                    * :icon:
+                      - **Bold Title**
+                      - Body text here…
+---------------------------------------------------------------------*/
+
+section.chevron_panel {
+  display: flex;
+  flex-direction: column;
+}
+
+section.chevron_panel > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: stretch;
+}
+
+/* Card: li is a plain flex column; only p:first-child gets the chevron
+   clip-path. --cp-color set per item below via custom properties. */
+section.chevron_panel > ul > li {
+  --cp-color: var(--arivu-palette-1);
+  flex: 1 1 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease;
+}
+
+section.chevron_panel > ul > li::marker {
+  display: none;
+}
+
+section.chevron_panel > ul > li:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon zone — flat left, right-pointing arrow. clip-path is on p:first-child
+   only so the text zone below stays a plain rectangle.
+   drop-shadow follows the clip shape for depth. */
+section.chevron_panel > ul > li > p:first-child {
+  flex: 0 0 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 36px;
+  margin: 0;   /* override gaia p margins */
+  font-size: 2.4em;
+  line-height: 1;
+  color: #ffffff;
+  background-color: var(--cp-color);
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 26px) 0%,
+    100% 50%,
+    calc(100% - 26px) 100%,
+    0% 100%
+  );
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.28));
+}
+
+/* Content zone — transparent rectangle; text is always within the safe
+   center column, clear of the chevron tips on either side */
+section.chevron_panel > ul > li > ul {
+  flex: 1;
+  list-style: none;
+  padding: 18px 32px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  background-color: transparent;
+}
+
+section.chevron_panel > ul > li > ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.82em;
+  line-height: 1.5;
+  color: #333;
+}
+
+section.chevron_panel > ul > li > ul > li:first-child {
+  font-size: 1.05em;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #111;
+}
+
+/* Per-item palette — custom properties on li avoid all specificity conflicts */
+section.chevron_panel > ul > li:nth-child(12n+1)  { --cp-color: var(--arivu-palette-1); }
+section.chevron_panel > ul > li:nth-child(12n+2)  { --cp-color: var(--arivu-palette-2); }
+section.chevron_panel > ul > li:nth-child(12n+3)  { --cp-color: var(--arivu-palette-3); }
+section.chevron_panel > ul > li:nth-child(12n+4)  { --cp-color: var(--arivu-palette-4); }
+section.chevron_panel > ul > li:nth-child(12n+5)  { --cp-color: var(--arivu-palette-5); }
+section.chevron_panel > ul > li:nth-child(12n+6)  { --cp-color: var(--arivu-palette-6); }
+section.chevron_panel > ul > li:nth-child(12n+7)  { --cp-color: var(--arivu-palette-7); }
+section.chevron_panel > ul > li:nth-child(12n+8)  { --cp-color: var(--arivu-palette-8); }
+section.chevron_panel > ul > li:nth-child(12n+9)  { --cp-color: var(--arivu-palette-9); }
+section.chevron_panel > ul > li:nth-child(12n+10) { --cp-color: var(--arivu-palette-10); }
+section.chevron_panel > ul > li:nth-child(12n+11) { --cp-color: var(--arivu-palette-11); }
+section.chevron_panel > ul > li:nth-child(12n+12) { --cp-color: var(--arivu-palette-12); }
+
+
+/*--------------------------------------------------------------------
   FROST EXTENSION — adds frost modifier support to parallelogram,
-  folder_tab, and pennant (not listed in the original S9/S10 :is()
-  selectors because they were added later).
+  folder_tab, pennant, banner_card, tab_card, and chevron_panel (not
+  listed in the original S9/S10 :is() selectors because they were
+  added later).
 
   Usage: combine with a dark background class, e.g.:
     <!-- _class: aurora parallelogram frost -->
     <!-- _class: aurora folder_tab frost -->
     <!-- _class: aurora pennant frost -->
+    <!-- _class: aurora banner_card frost -->
+    <!-- _class: aurora chevron_panel frost -->
 ---------------------------------------------------------------------*/
 
 /* ---- parallelogram + folder_tab: li goes transparent (remove opaque bg) ---- */
@@ -10350,6 +10760,137 @@ section.frost.pennant > ul > li:nth-child(n) {
 /* pennant number badge → dark glass tint */
 section.frost.pennant > ul > li::before {
   background: rgba(0, 0, 0, 0.30);
+}
+
+/* ---- banner_card: card (li) becomes the frosted pane so the banner
+   and body stay visually connected — transparent li would break them apart. ---- */
+section.frost.banner_card > ul > li {
+  background: linear-gradient(160deg,
+      rgba(22, 32, 52, 0.48) 0%,
+      rgba(22, 32, 52, 0.32) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  backdrop-filter: blur(14px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* ---- banner_card: ul body inherits the card pane — no separate bg ---- */
+section.frost.banner_card > ul > li > ul {
+  background: transparent;
+  color: #ffffff;
+}
+
+section.frost.banner_card > ul > li > ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+/* ---- banner_card: p:first-child → hue-tinted glass banner ---- */
+section.frost.banner_card > ul > li > p:first-child {
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+section.frost.banner_card > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.55); }
+section.frost.banner_card > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.55); }
+section.frost.banner_card > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.55); }
+section.frost.banner_card > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.55); }
+section.frost.banner_card > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.55); }
+section.frost.banner_card > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.55); }
+section.frost.banner_card > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.55); }
+section.frost.banner_card > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.55); }
+
+/* dark-bg text override */
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.banner_card > ul > li > ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.banner_card > ul > li > ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+/* ---- tab_card: card becomes a frosted glass pane; border goes glass-white ---- */
+section.frost.tab_card > ul > li {
+  background: rgba(255, 255, 255, 0.07);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  backdrop-filter: blur(14px) saturate(150%);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.20);
+}
+
+/* fold: semi-transparent on dark backgrounds */
+section.frost.tab_card > ul > li::after {
+  border-color: transparent rgba(255, 255, 255, 0.45) transparent transparent;
+}
+
+/* icon circle: subtle glass tint */
+section.frost.tab_card > ul > li > p:first-child {
+  background: rgba(255, 255, 255, 0.20);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+}
+
+/* header band: hue-tinted glass per card position */
+section.frost.tab_card > ul > li > ul > li:first-child {
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+  backdrop-filter: blur(10px) saturate(160%);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.40);
+}
+
+section.frost.tab_card > ul > li:nth-child(1) > ul > li:first-child { background: rgba( 60,  90, 130, 0.70); }
+section.frost.tab_card > ul > li:nth-child(2) > ul > li:first-child { background: rgba(142,  68, 173, 0.70); }
+section.frost.tab_card > ul > li:nth-child(3) > ul > li:first-child { background: rgba( 22, 160, 133, 0.70); }
+section.frost.tab_card > ul > li:nth-child(4) > ul > li:first-child { background: rgba(211,  84,   0, 0.70); }
+section.frost.tab_card > ul > li:nth-child(5) > ul > li:first-child { background: rgba( 41, 128, 185, 0.70); }
+section.frost.tab_card > ul > li:nth-child(6) > ul > li:first-child { background: rgba(192,  57,  43, 0.70); }
+section.frost.tab_card > ul > li:nth-child(7) > ul > li:first-child { background: rgba( 39, 174,  96, 0.70); }
+section.frost.tab_card > ul > li:nth-child(8) > ul > li:first-child { background: rgba(243, 156,  18, 0.70); }
+
+/* body text: white on dark background */
+section.frost.tab_card > ul > li > ul > li:nth-child(n+2) {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.tab_card > ul > li > ul > li:nth-child(n+2) {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+
+/* ---- chevron_panel: ul text zone stays transparent on dark backgrounds;
+   just ensure text is legible in white ---- */
+section.frost.chevron_panel > ul > li > ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+/* ---- chevron_panel: p:first-child → hue-tinted glass chevron ---- */
+section.frost.chevron_panel > ul > li > p:first-child {
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+section.frost.chevron_panel > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.65); }
+section.frost.chevron_panel > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.65); }
+section.frost.chevron_panel > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.65); }
+section.frost.chevron_panel > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.65); }
+section.frost.chevron_panel > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.65); }
+section.frost.chevron_panel > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.65); }
+section.frost.chevron_panel > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.65); }
+section.frost.chevron_panel > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.65); }
+
+/* dark-bg text override */
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_panel > ul > li > ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 

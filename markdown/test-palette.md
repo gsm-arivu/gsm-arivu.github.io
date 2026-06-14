@@ -7,158 +7,105 @@ paginate: true
 
 
 
-<!-- _class: folder_tab -->
+<!-- _class: chevron_panel -->
 
-## heading
+## Chevron Panel
 
-* :walking:
+* :shield:
 
-  - Crawl
+  - **Security**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :brain:
+* :heart:
 
-  - Think
+  - **Wellbeing**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :wrench:
+* :handshake:
 
-  - Build
+  - **Partnership**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :moneybag:
+* :link:
 
-  - Fund
-
-* :canary_islands:
-
-  - Canary Islands
-
----
-
-<!-- _class: folder_tab invert aurora fragment frost-->
-
-## heading
-
-* :walking:
-
-  - Crawl
-
-* :brain:
-
-  - Think
-
-* :wrench:
-
-  - Build
-
-* :moneybag:
-
-  - Fund
-
-* :canary_islands:
-
-  - Canary Islands
-
+  - **Integration**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
 ---
 
-<!-- _class: parallelogram -->
+<!-- _class: chevron_panel invert aurora frost -->
 
-## heading
+## Chevron Panel (Frost)
 
-* :walking:
+* :shield:
 
-  - Crawl
+  - **Security**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :brain:
+* :heart:
 
-  - Think
+  - **Wellbeing**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :wrench:
+* :handshake:
 
-  - Build
+  - **Partnership**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :moneybag:
+* :link:
 
-  - Fund
-
-* :canary_islands:
-
-  - Canary Islands
-
----
-
-<!-- _class: parallelogram invert aurora fragment frost-->
-
-## heading
-
-* :walking:
-
-  - Crawl
-
-* :brain:
-
-  - Think
-
-* :wrench:
-
-  - Build
-
-* :moneybag:
-
-  - Fund
-
-
-* :canary_islands:
-
-  - Canary Islands
+  - **Integration**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
 ---
 
-<!-- _class: pennant -->
+<!-- _class: tab_card -->
 
 ## heading
 
-* :walking:
+* :airplane:
 
-  - Crawl
+  - **Flights**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :brain:
+* :car:
 
-  - Think
+  - **Road Trips**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :wrench:
+* :bus:
 
-  - Build
+  - **Bus Routes**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :moneybag:
+* :bicyclist:
 
-  - Fund
-
-* :canary_islands:
-
-  - Canary Islands
+  - **Cycling**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
 ---
 
-<!-- _class: pennant invert aurora fragment frost-->
+<!-- _class: tab_card invert aurora fragment frost-->
 
 ## heading
 
-* :walking:
+* :airplane:
 
-  - Crawl
+  - **Flights**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :brain:
+* :car:
 
-  - Think
+  - **Road Trips**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :wrench:
+* :bus:
 
-  - Build
+  - **Bus Routes**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :moneybag:
+* :bicyclist:
 
-  - Fund
+  - **Cycling**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
-* :canary_islands:
-
-  - Canary Islands
