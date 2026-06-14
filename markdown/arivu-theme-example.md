@@ -1575,6 +1575,308 @@ footer: <span class="date"></span>
 
 ---
 
+<!-- _class: vortex pennant softfrag -->
+
+# pennant banners · vortex
+
+* :one:
+
+  - Plan
+
+* :two:
+
+  - Design
+
+* :three:
+
+  - Build
+
+* :four:
+
+  - Test
+
+* :five:
+
+  - Ship
+
+
+---
+
+<!-- _class: aurora parallelogram softfrag -->
+
+# parallelogram panels · aurora
+
+* :bulb:
+
+  - **Idea**
+  - lorem ipsum dolor
+
+* :book:
+
+  - **Research**
+  - consectetur elit
+
+* :rocket:
+
+  - **Launch**
+  - sed do eiusmod
+
+* :trophy:
+
+  - **Win**
+  - ut labore
+
+
+---
+
+<!-- _class: ember folder_tab softfrag -->
+
+# folder tab cards · ember
+
+* :bulb:
+
+  - **Planning**
+  - lorem ipsum dolor
+
+* :gear:
+
+  - **Design**
+  - consectetur elit
+
+* :wrench:
+
+  - **Build**
+  - sed do eiusmod
+
+* :checkered_flag:
+
+  - **Deploy**
+  - ut labore
+
+
+---
+
+<!-- _class: vortex banner_card softfrag -->
+
+### banner cards · vortex
+
+* :rocket:
+
+  - **Alpha**
+  - lorem ipsum dolor
+
+* :book:
+
+  - **Bravo**
+  - consectetur elit
+
+* :bulb:
+
+  - **Charlie**
+  - sed do eiusmod
+
+* :gem:
+
+  - **Delta**
+  - ut labore
+
+
+---
+
+<!-- _class: aurora tab_card softfrag -->
+
+### tab cards · aurora
+
+* :one:
+
+  - **Alpha**
+  - lorem ipsum dolor
+
+* :book:
+
+  - **Bravo**
+  - consectetur elit
+
+* :bulb:
+
+  - **Charlie**
+  - sed do eiusmod
+
+* :rofl:
+
+  - **Delta**
+  - ut labore
+
+
+---
+
+<!-- _class: ember chevron_panel softfrag -->
+
+# chevron panels · ember
+
+* :one:
+
+  - **Plan**
+  - lorem ipsum dolor
+
+* :two:
+
+  - **Design**
+  - consectetur elit
+
+* :three:
+
+  - **Build**
+  - sed do eiusmod
+
+* :four:
+
+  - **Test**
+  - ut labore
+
+* :five:
+
+  - **Ship**
+  - minim veniam
+
+
+---
+
+<!-- _class: vortex fold_banner softfrag -->
+
+# fold banners · vortex
+
+* :rocket:
+
+  - **Alpha**
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - **Bravo**
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - **Charlie**
+  - sed do eiusmod tempor
+
+* :gem:
+
+  - **Delta**
+  - incididunt ut labore
+
+
+---
+
+<!-- _class: aurora fold_banner frost softfrag -->
+
+# fold banners + frost · aurora
+
+* :rocket:
+
+  - **Alpha**
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - **Bravo**
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - **Charlie**
+  - sed do eiusmod tempor
+
+* :gem:
+
+  - **Delta**
+  - incididunt ut labore
+
+
+---
+
+<!-- _class: ember dash_button softfrag -->
+
+# dash buttons · ember
+
+* :rocket:
+
+  - **Launch**
+  - lorem ipsum dolor
+
+* :book:
+
+  - **Study**
+  - consectetur elit
+
+* :bulb:
+
+  - **Ideate**
+  - sed do eiusmod
+
+* :gem:
+
+  - **Achieve**
+  - ut labore
+
+
+---
+
+<!-- _class: vortex dash_button frost softfrag -->
+
+# dash buttons + frost · vortex
+
+* :rocket:
+
+  - **Launch**
+  - lorem ipsum dolor
+
+* :book:
+
+  - **Study**
+  - consectetur elit
+
+* :bulb:
+
+  - **Ideate**
+  - sed do eiusmod
+
+* :gem:
+
+  - **Achieve**
+  - ut labore
+
+
+---
+
+<!-- _class: aurora chevron_block softfrag -->
+
+# chevron blocks · aurora
+
+* :rocket:
+
+  - **Alpha**
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - **Bravo**
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - **Charlie**
+  - sed do eiusmod tempor
+
+* :gem:
+
+  - **Delta**
+  - incididunt ut labore
+
+
+---
+
 <!-- _class: lead invert -->
 # <!--fit--> PART 2 · TRADITIONAL
 
@@ -3107,6 +3409,254 @@ footer: <span class="date"></span>
 * <i class="fa fa-database"></i>
 
   - Data Integration
+
+
+---
+
+<!-- _class: pennant softfrag -->
+
+# pennant banners
+
+* :one:
+
+  - Plan
+
+* :two:
+
+  - Design
+
+* :three:
+
+  - Build
+
+* :four:
+
+  - Test
+
+* :five:
+
+  - Ship
+
+
+---
+
+<!-- _class: parallelogram softfrag -->
+
+# parallelogram panels
+
+* :bulb:
+
+  - **Idea**
+  - lorem ipsum dolor
+
+* :book:
+
+  - **Research**
+  - consectetur elit
+
+* :rocket:
+
+  - **Launch**
+  - sed do eiusmod
+
+* :trophy:
+
+  - **Win**
+  - ut labore
+
+
+---
+
+<!-- _class: folder_tab softfrag -->
+
+# folder tab cards
+
+* :bulb:
+
+  - **Planning**
+  - lorem ipsum dolor
+
+* :gear:
+
+  - **Design**
+  - consectetur elit
+
+* :wrench:
+
+  - **Build**
+  - sed do eiusmod
+
+* :checkered_flag:
+
+  - **Deploy**
+  - ut labore
+
+
+---
+
+<!-- _class: banner_card softfrag -->
+
+### banner cards
+
+* :rocket:
+
+  - **Alpha**
+  - lorem ipsum dolor
+
+* :book:
+
+  - **Bravo**
+  - consectetur elit
+
+* :bulb:
+
+  - **Charlie**
+  - sed do eiusmod
+
+* :gem:
+
+  - **Delta**
+  - ut labore
+
+
+---
+
+<!-- _class: tab_card softfrag -->
+
+### tab cards
+
+* :one:
+
+  - **Alpha**
+  - lorem ipsum dolor
+
+* :book:
+
+  - **Bravo**
+  - consectetur elit
+
+* :bulb:
+
+  - **Charlie**
+  - sed do eiusmod
+
+* :rofl:
+
+  - **Delta**
+  - ut labore
+
+
+---
+
+<!-- _class: chevron_panel softfrag -->
+
+# chevron panels
+
+* :one:
+
+  - **Plan**
+  - lorem ipsum dolor
+
+* :two:
+
+  - **Design**
+  - consectetur elit
+
+* :three:
+
+  - **Build**
+  - sed do eiusmod
+
+* :four:
+
+  - **Test**
+  - ut labore
+
+* :five:
+
+  - **Ship**
+  - minim veniam
+
+
+---
+
+<!-- _class: fold_banner softfrag -->
+
+# fold banners
+
+* :rocket:
+
+  - **Alpha**
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - **Bravo**
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - **Charlie**
+  - sed do eiusmod tempor
+
+* :gem:
+
+  - **Delta**
+  - incididunt ut labore
+
+
+---
+
+<!-- _class: dash_button softfrag -->
+
+# dash buttons
+
+* :rocket:
+
+  - **Launch**
+  - lorem ipsum dolor
+
+* :book:
+
+  - **Study**
+  - consectetur elit
+
+* :bulb:
+
+  - **Ideate**
+  - sed do eiusmod
+
+* :gem:
+
+  - **Achieve**
+  - ut labore
+
+
+---
+
+<!-- _class: chevron_block softfrag -->
+
+# chevron blocks
+
+* :rocket:
+
+  - **Alpha**
+  - lorem ipsum dolor sit amet
+
+* :book:
+
+  - **Bravo**
+  - consectetur adipiscing elit
+
+* :bulb:
+
+  - **Charlie**
+  - sed do eiusmod tempor
+
+* :gem:
+
+  - **Delta**
+  - incididunt ut labore
 
 
 ---

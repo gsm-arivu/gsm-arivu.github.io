@@ -10932,9 +10932,149 @@ section.dash_button > ul > li:nth-child(12n+12) { --db-color: var(--arivu-palett
 
 
 /*--------------------------------------------------------------------
+  CHEVRON BLOCK — stacked horizontal rows, alternating icon circle and
+                  chevron-arrow text panel. Odd rows: icon on the left,
+                  notch on text left edge (notch points left into the
+                  circle). Even rows: icon on the right, arrow on text
+                  right edge (arrow points right toward the circle).
+                  Best with 2–6 items per slide.
+                  Usage:   <!-- _class: chevron_block -->
+                  Markdown:
+                    * :icon:
+                      - **Bold Title**
+                      - Body text here…
+---------------------------------------------------------------------*/
+
+section.chevron_block {
+  display: flex;
+  flex-direction: column;
+}
+
+section.chevron_block > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Row: icon strip left, text panel right by default */
+section.chevron_block > ul > li {
+  --chb-color: var(--arivu-palette-1);
+  --chb-light: var(--arivu-palette-1-light);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 76px;
+  list-style: none;
+}
+
+section.chevron_block > ul > li::marker {
+  display: none;
+}
+
+section.chevron_block > ul > li:hover {
+  filter: brightness(1.04);
+}
+
+/* Even rows: icon strip right, text panel left */
+section.chevron_block > ul > li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Icon strip — solid-color band, right-pointing chevron arrow (odd rows).
+   Overlaps text panel by the chevron depth (34px) so the tip sits inside
+   the light-colored zone. drop-shadow follows the clipped shape. */
+section.chevron_block > ul > li > p:first-child {
+  margin: 0;
+  flex-shrink: 0;
+  width: 116px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px 0 16px;   /* shift icon left of the arrow tip */
+  font-size: 2.2em;
+  line-height: 1;
+  color: #ffffff;
+  background-color: var(--chb-color);
+  clip-path: polygon(0% 0%, calc(100% - 34px) 0%, 100% 50%, calc(100% - 34px) 100%, 0% 100%);
+  filter: drop-shadow(3px 0 6px rgba(0, 0, 0, 0.22));
+  position: relative;
+  z-index: 2;
+  margin-right: -34px;   /* overlap text panel by arrow depth */
+}
+
+/* Even rows: left-pointing chevron arrow; strip on right */
+section.chevron_block > ul > li:nth-child(even) > p:first-child {
+  clip-path: polygon(34px 0%, 100% 0%, 100% 100%, 34px 100%, 0% 50%);
+  padding: 0 16px 0 8px;
+  filter: drop-shadow(-3px 0 6px rgba(0, 0, 0, 0.22));
+  margin-right: 0;
+  margin-left: -34px;
+}
+
+/* Text panel — light color, rounded corners on the far (outer) end.
+   Left padding clears the overlapping chevron tip (odd rows). */
+section.chevron_block > ul > li > ul {
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 12px 22px 12px 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  background-color: var(--chb-light);
+  border-radius: 0 var(--arivu-radius) var(--arivu-radius) 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Even rows: rounded left corners, extra right padding for chevron clearance */
+section.chevron_block > ul > li:nth-child(even) > ul {
+  border-radius: var(--arivu-radius) 0 0 var(--arivu-radius);
+  padding: 12px 58px 12px 22px;
+}
+
+section.chevron_block > ul > li > ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.80em;
+  line-height: 1.45;
+  color: #333;
+}
+
+section.chevron_block > ul > li > ul > li:first-child {
+  font-size: 0.92em;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+/* Per-item palette — custom properties avoid specificity conflicts */
+section.chevron_block > ul > li:nth-child(12n+1)  { --chb-color: var(--arivu-palette-1);  --chb-light: var(--arivu-palette-1-light);  }
+section.chevron_block > ul > li:nth-child(12n+2)  { --chb-color: var(--arivu-palette-2);  --chb-light: var(--arivu-palette-2-light);  }
+section.chevron_block > ul > li:nth-child(12n+3)  { --chb-color: var(--arivu-palette-3);  --chb-light: var(--arivu-palette-3-light);  }
+section.chevron_block > ul > li:nth-child(12n+4)  { --chb-color: var(--arivu-palette-4);  --chb-light: var(--arivu-palette-4-light);  }
+section.chevron_block > ul > li:nth-child(12n+5)  { --chb-color: var(--arivu-palette-5);  --chb-light: var(--arivu-palette-5-light);  }
+section.chevron_block > ul > li:nth-child(12n+6)  { --chb-color: var(--arivu-palette-6);  --chb-light: var(--arivu-palette-6-light);  }
+section.chevron_block > ul > li:nth-child(12n+7)  { --chb-color: var(--arivu-palette-7);  --chb-light: var(--arivu-palette-7-light);  }
+section.chevron_block > ul > li:nth-child(12n+8)  { --chb-color: var(--arivu-palette-8);  --chb-light: var(--arivu-palette-8-light);  }
+section.chevron_block > ul > li:nth-child(12n+9)  { --chb-color: var(--arivu-palette-9);  --chb-light: var(--arivu-palette-9-light);  }
+section.chevron_block > ul > li:nth-child(12n+10) { --chb-color: var(--arivu-palette-10); --chb-light: var(--arivu-palette-10-light); }
+section.chevron_block > ul > li:nth-child(12n+11) { --chb-color: var(--arivu-palette-11); --chb-light: var(--arivu-palette-11-light); }
+section.chevron_block > ul > li:nth-child(12n+12) { --chb-color: var(--arivu-palette-12); --chb-light: var(--arivu-palette-12-light); }
+
+
+/*--------------------------------------------------------------------
   FROST EXTENSION — adds frost modifier support to parallelogram,
   folder_tab, pennant, banner_card, tab_card, chevron_panel,
-  fold_banner, and dash_button (not listed in the original S9/S10
+  fold_banner, dash_button, and chevron_block (not listed in the
+  original S9/S10
   :is() selectors because they were added later).
 
   Usage: combine with a dark background class, e.g.:
@@ -11246,6 +11386,44 @@ section.frost.dash_button > ul > li > ul > li {
 
 /* dark-bg text override */
 section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.dash_button > ul > li > ul > li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+
+/* ---- chevron_block: text panel → dark frosted glass ---- */
+section.frost.chevron_block > ul > li > ul {
+  background: linear-gradient(150deg, rgba(22, 32, 52, 0.52) 0%, rgba(22, 32, 52, 0.36) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  backdrop-filter: blur(14px) saturate(150%);
+}
+
+section.frost.chevron_block > ul > li > ul > li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+/* icon circle → hue-tinted glass per card position */
+section.frost.chevron_block > ul > li > p:first-child {
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+section.frost.chevron_block > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.65); }
+section.frost.chevron_block > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.65); }
+section.frost.chevron_block > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.65); }
+section.frost.chevron_block > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.65); }
+section.frost.chevron_block > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.65); }
+section.frost.chevron_block > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.65); }
+section.frost.chevron_block > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.65); }
+section.frost.chevron_block > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.65); }
+
+/* dark-bg text override */
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_block > ul > li > ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_block > ul > li > ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
