@@ -7327,7 +7327,106 @@ section.bookmark li:nth-child(12n+12) {
 
 
 /*--------------------------------------------------------------------
-  4h. NEON — glowing neon-outline pills on a dark slide
+  4h. PENNANT — numbered downward-pointing banners (process steps)
+               Auto-numbers 1–N. Best with 3–6 items.
+               Markdown:
+                 * :icon:
+
+                   - Label text
+---------------------------------------------------------------------*/
+section.pennant {
+  counter-reset: pennant;
+}
+
+section.pennant > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  align-items: flex-start;
+  margin-top: 0.5em;
+}
+
+section.pennant > ul > li {
+  counter-increment: pennant;
+  position: relative;
+  flex: 0 1 175px;
+  min-height: 280px;
+  padding: 90px 12px 72px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 50% 100%, 0 calc(100% - 60px));
+  filter: drop-shadow(3px 5px 8px rgba(0, 0, 0, 0.3));
+  transition: transform 0.25s ease;
+}
+
+/* Dark header zone with auto-number */
+section.pennant > ul > li::before {
+  content: counter(pennant);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: white;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* Icon from "* :emoji:" bullet */
+section.pennant > ul > li > p:first-child {
+  font-size: 2em;
+  margin: 0 0 6px;
+  line-height: 1;
+}
+
+/* Label from "  - Label text" sub-bullet */
+section.pennant > ul > li > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+section.pennant > ul > li > ul > li {
+  padding: 0;
+}
+
+section.pennant > ul > li:hover {
+  transform: translateY(8px);
+}
+
+section.pennant > ul > li:nth-child(12n+1)  { background: var(--arivu-palette-1); }
+section.pennant > ul > li:nth-child(12n+2)  { background: var(--arivu-palette-2); }
+section.pennant > ul > li:nth-child(12n+3)  { background: var(--arivu-palette-3); }
+section.pennant > ul > li:nth-child(12n+4)  { background: var(--arivu-palette-4); }
+section.pennant > ul > li:nth-child(12n+5)  { background: var(--arivu-palette-5); }
+section.pennant > ul > li:nth-child(12n+6)  { background: var(--arivu-palette-6); }
+section.pennant > ul > li:nth-child(12n+7)  { background: var(--arivu-palette-7); }
+section.pennant > ul > li:nth-child(12n+8)  { background: var(--arivu-palette-8); }
+section.pennant > ul > li:nth-child(12n+9)  { background: var(--arivu-palette-9); }
+section.pennant > ul > li:nth-child(12n+10) { background: var(--arivu-palette-10); }
+section.pennant > ul > li:nth-child(12n+11) { background: var(--arivu-palette-11); }
+section.pennant > ul > li:nth-child(12n+12) { background: var(--arivu-palette-12); }
+
+
+
+/*--------------------------------------------------------------------
+  4i. NEON — glowing neon-outline pills on a dark slide
              (pairs beautifully with aurora:  _class: aurora neon)
 ---------------------------------------------------------------------*/
 section.neon {
