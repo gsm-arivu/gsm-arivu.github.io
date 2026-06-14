@@ -1877,6 +1877,114 @@ footer: <span class="date"></span>
 
 ---
 
+<!-- _class: ember envelop softfrag -->
+
+# envelope cards · ember
+
+* :bulb:
+
+  - **Idea**
+  - lorem ipsum dolor
+
+* :gear:
+
+  - **Design**
+  - consectetur elit
+
+* :rocket:
+
+  - **Launch**
+  - sed do eiusmod
+
+* :trophy:
+
+  - **Achieve**
+  - ut labore
+
+
+---
+
+<!-- _class: vortex envelop frost softfrag -->
+
+# envelope cards + frost · vortex
+
+* :bulb:
+
+  - **Idea**
+  - lorem ipsum dolor
+
+* :gear:
+
+  - **Design**
+  - consectetur elit
+
+* :rocket:
+
+  - **Launch**
+  - sed do eiusmod
+
+* :trophy:
+
+  - **Achieve**
+  - ut labore
+
+
+---
+
+<!-- _class: aurora arrow_tab softfrag -->
+
+# arrow tab cards · aurora
+
+* :briefcase:
+
+  - **Strategy**
+  - lorem ipsum dolor
+
+* :handshake:
+
+  - **Partnerships**
+  - consectetur elit
+
+* :bulb:
+
+  - **Innovation**
+  - sed do eiusmod
+
+* :bar_chart:
+
+  - **Analytics**
+  - ut labore
+
+
+---
+
+<!-- _class: ember arrow_tab frost softfrag -->
+
+# arrow tab cards + frost · ember
+
+* :briefcase:
+
+  - **Strategy**
+  - lorem ipsum dolor
+
+* :handshake:
+
+  - **Partnerships**
+  - consectetur elit
+
+* :bulb:
+
+  - **Innovation**
+  - sed do eiusmod
+
+* :bar_chart:
+
+  - **Analytics**
+  - ut labore
+
+
+---
+
 <!-- _class: lead invert -->
 # <!--fit--> PART 2 · TRADITIONAL
 
@@ -3657,6 +3765,60 @@ footer: <span class="date"></span>
 
   - **Delta**
   - incididunt ut labore
+
+
+---
+
+<!-- _class: envelop softfrag -->
+
+# envelope cards
+
+* :bulb:
+
+  - **Idea**
+  - lorem ipsum dolor
+
+* :gear:
+
+  - **Design**
+  - consectetur elit
+
+* :rocket:
+
+  - **Launch**
+  - sed do eiusmod
+
+* :trophy:
+
+  - **Achieve**
+  - ut labore
+
+
+---
+
+<!-- _class: arrow_tab softfrag -->
+
+# arrow tab cards
+
+* :briefcase:
+
+  - **Strategy**
+  - lorem ipsum dolor
+
+* :handshake:
+
+  - **Partnerships**
+  - consectetur elit
+
+* :bulb:
+
+  - **Innovation**
+  - sed do eiusmod
+
+* :bar_chart:
+
+  - **Analytics**
+  - ut labore
 
 
 ---

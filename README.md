@@ -143,6 +143,8 @@ These classes were added most recently. All support the `frost` modifier when pa
 | `fold_banner` | Full-width rows with auto-number, diagonal fold, and icon zone | 2–6 |
 | `dash_button` | Tall pill cards with a centred icon circle; alternating layout | 2–4 |
 | `chevron_block` | Stacked rows alternating icon strip and chevron text panel | 2–6 |
+| `envelop` | Portrait lollipop cards with dome icon zone and step-counter badge | 3–5 |
+| `arrow_tab` | Portrait cards with a coloured pentagon (downward-arrow) icon zone and auto-counter badge | 3–5 |
 
 Markdown structure for all new shape classes:
 ```markdown
