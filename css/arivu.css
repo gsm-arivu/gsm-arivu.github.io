@@ -10809,10 +10809,133 @@ section.fold_banner > ul > li:nth-child(12n+12) { --fb-color: var(--arivu-palett
 
 
 /*--------------------------------------------------------------------
+  DASH BUTTON — tall portrait pill cards with a centered white icon
+               circle. Odd cards: icon at top, text at bottom.
+               Even cards: text at top, icon at bottom (alternating
+               rhythm matching the reference design).
+               Best with 2–4 items per slide.
+               Markdown:
+                 _class: dash_button
+                 * :icon:
+                   - **Bold Title**
+                   - Body text here…
+---------------------------------------------------------------------*/
+
+section.dash_button {
+  display: flex;
+  flex-direction: column;
+}
+
+section.dash_button > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Pill card — colored capsule; overflow:hidden clips icon circle to pill boundary */
+section.dash_button > ul > li {
+  --db-color: var(--arivu-palette-1);
+  flex: 1 1 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--db-color);
+  border-radius: 999px;
+  overflow: hidden;
+  padding: 32px 16px;
+  box-shadow: var(--arivu-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+section.dash_button > ul > li::marker {
+  display: none;
+}
+
+section.dash_button > ul > li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
+}
+
+/* Even cards: icon moves to bottom for alternating visual rhythm */
+section.dash_button > ul > li:nth-child(even) {
+  flex-direction: column-reverse;
+}
+
+/* Icon zone — white circle with palette-colored emoji */
+section.dash_button > ul > li > p:first-child {
+  margin: 0;
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2em;
+  line-height: 1;
+  color: var(--db-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+/* Body text zone */
+section.dash_button > ul > li > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0 8px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
+}
+
+section.dash_button > ul > li > ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.78em;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.90);
+}
+
+section.dash_button > ul > li > ul > li:first-child {
+  font-size: 0.90em;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+/* Per-item palette colors */
+section.dash_button > ul > li:nth-child(12n+1)  { --db-color: var(--arivu-palette-1);  }
+section.dash_button > ul > li:nth-child(12n+2)  { --db-color: var(--arivu-palette-2);  }
+section.dash_button > ul > li:nth-child(12n+3)  { --db-color: var(--arivu-palette-3);  }
+section.dash_button > ul > li:nth-child(12n+4)  { --db-color: var(--arivu-palette-4);  }
+section.dash_button > ul > li:nth-child(12n+5)  { --db-color: var(--arivu-palette-5);  }
+section.dash_button > ul > li:nth-child(12n+6)  { --db-color: var(--arivu-palette-6);  }
+section.dash_button > ul > li:nth-child(12n+7)  { --db-color: var(--arivu-palette-7);  }
+section.dash_button > ul > li:nth-child(12n+8)  { --db-color: var(--arivu-palette-8);  }
+section.dash_button > ul > li:nth-child(12n+9)  { --db-color: var(--arivu-palette-9);  }
+section.dash_button > ul > li:nth-child(12n+10) { --db-color: var(--arivu-palette-10); }
+section.dash_button > ul > li:nth-child(12n+11) { --db-color: var(--arivu-palette-11); }
+section.dash_button > ul > li:nth-child(12n+12) { --db-color: var(--arivu-palette-12); }
+
+
+/*--------------------------------------------------------------------
   FROST EXTENSION — adds frost modifier support to parallelogram,
-  folder_tab, pennant, banner_card, tab_card, chevron_panel, and
-  fold_banner (not listed in the original S9/S10 :is() selectors
-  because they were added later).
+  folder_tab, pennant, banner_card, tab_card, chevron_panel,
+  fold_banner, and dash_button (not listed in the original S9/S10
+  :is() selectors because they were added later).
 
   Usage: combine with a dark background class, e.g.:
     <!-- _class: aurora parallelogram frost -->
@@ -10821,6 +10944,7 @@ section.fold_banner > ul > li:nth-child(12n+12) { --fb-color: var(--arivu-palett
     <!-- _class: aurora banner_card frost -->
     <!-- _class: aurora chevron_panel frost -->
     <!-- _class: aurora fold_banner frost -->
+    <!-- _class: aurora dash_button frost -->
 ---------------------------------------------------------------------*/
 
 /* ---- parallelogram + folder_tab: li goes transparent (remove opaque bg) ---- */
@@ -11079,6 +11203,49 @@ section.frost.fold_banner > ul > li > ul > li {
 
 /* dark-bg text override */
 section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.fold_banner > ul > li > ul > li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+
+/* ---- dash_button: pill → frosted glass pane ---- */
+section.frost.dash_button > ul > li:nth-child(n) {
+  background: linear-gradient(160deg,
+      rgba(255, 255, 255, 0.18) 0%,
+      rgba(255, 255, 255, 0.06) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.40),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* icon circle → hue-tinted glass per card position */
+section.frost.dash_button > ul > li > p:first-child {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.20);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.50);
+}
+
+section.frost.dash_button > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.65); }
+section.frost.dash_button > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.65); }
+section.frost.dash_button > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.65); }
+section.frost.dash_button > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.65); }
+section.frost.dash_button > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.65); }
+section.frost.dash_button > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.65); }
+section.frost.dash_button > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.65); }
+section.frost.dash_button > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.65); }
+
+/* body text → white */
+section.frost.dash_button > ul > li > ul > li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+/* dark-bg text override */
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.dash_button > ul > li > ul > li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
