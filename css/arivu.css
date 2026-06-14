@@ -10675,10 +10675,144 @@ section.chevron_panel > ul > li:nth-child(12n+12) { --cp-color: var(--arivu-pale
 
 
 /*--------------------------------------------------------------------
+  FOLD BANNER — stacked full-width horizontal rows. Each row has an
+                auto-numbered colored left zone with a diagonal
+                "folded" right edge, a light content area (title +
+                body), and a matching colored icon zone on the right.
+                Best with 2–6 items per slide.
+                Usage:   <!-- _class: fold_banner -->
+                Markdown:
+                  * :icon:
+                    - **Bold Title**
+                    - Body text here…
+---------------------------------------------------------------------*/
+
+section.fold_banner {
+  display: flex;
+  flex-direction: column;
+  counter-reset: fold-banner;
+}
+
+section.fold_banner > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Row — horizontal strip; --fb-color cascades to ::before and p:first-child */
+section.fold_banner > ul > li {
+  --fb-color: var(--arivu-palette-1);
+  counter-increment: fold-banner;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 86px;
+  border-radius: var(--arivu-radius);
+  overflow: hidden;
+  background: #f0f2f5;
+  box-shadow: var(--arivu-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+section.fold_banner > ul > li::marker { display: none; }
+
+section.fold_banner > ul > li:hover {
+  transform: translateX(4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Number zone — auto-counted, diagonal right edge via clip-path gives the
+   "folded banner" look; drop-shadow bleeds into the content zone for depth.
+   No explicit order: ::before is DOM-first (index 0), ul is index 2, so
+   natural order places ::before first and ul second without any override. */
+section.fold_banner > ul > li::before {
+  content: counter(fold-banner, decimal-leading-zero);
+  flex: 0 0 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--fb-color);
+  color: #ffffff;
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  clip-path: polygon(0% 0%, 100% 0%, calc(100% - 26px) 100%, 0% 100%);
+  filter: drop-shadow(3px 0 5px rgba(0, 0, 0, 0.22));
+  z-index: 2;
+}
+
+/* Content zone — sits between number and icon in flex order */
+section.fold_banner > ul > li > ul {
+  flex: 1;
+  list-style: none;
+  padding: 14px 14px 14px 22px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+section.fold_banner > ul > li > ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.84em;
+  line-height: 1.5;
+  color: #444;
+}
+
+section.fold_banner > ul > li > ul > li:first-child {
+  font-size: 1.0em;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+/* Icon zone — order: 3 moves p:first-child after ul (which is DOM index 2,
+   so order 0 keeps ul before this at order 3). Width matches the number zone.
+   clip-path mirrors the number zone's diagonal: left edge goes from 26px at
+   top to 0px at bottom, creating a matching "folded" edge on the right side. */
+section.fold_banner > ul > li > p:first-child {
+  order: 3;
+  flex: 0 0 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-size: 2.0em;
+  line-height: 1;
+  background-color: var(--fb-color);
+  color: #ffffff;
+  clip-path: polygon(26px 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* Per-item palette — CSS custom property on li avoids specificity conflicts */
+section.fold_banner > ul > li:nth-child(12n+1)  { --fb-color: var(--arivu-palette-1);  }
+section.fold_banner > ul > li:nth-child(12n+2)  { --fb-color: var(--arivu-palette-2);  }
+section.fold_banner > ul > li:nth-child(12n+3)  { --fb-color: var(--arivu-palette-3);  }
+section.fold_banner > ul > li:nth-child(12n+4)  { --fb-color: var(--arivu-palette-4);  }
+section.fold_banner > ul > li:nth-child(12n+5)  { --fb-color: var(--arivu-palette-5);  }
+section.fold_banner > ul > li:nth-child(12n+6)  { --fb-color: var(--arivu-palette-6);  }
+section.fold_banner > ul > li:nth-child(12n+7)  { --fb-color: var(--arivu-palette-7);  }
+section.fold_banner > ul > li:nth-child(12n+8)  { --fb-color: var(--arivu-palette-8);  }
+section.fold_banner > ul > li:nth-child(12n+9)  { --fb-color: var(--arivu-palette-9);  }
+section.fold_banner > ul > li:nth-child(12n+10) { --fb-color: var(--arivu-palette-10); }
+section.fold_banner > ul > li:nth-child(12n+11) { --fb-color: var(--arivu-palette-11); }
+section.fold_banner > ul > li:nth-child(12n+12) { --fb-color: var(--arivu-palette-12); }
+
+
+/*--------------------------------------------------------------------
   FROST EXTENSION — adds frost modifier support to parallelogram,
-  folder_tab, pennant, banner_card, tab_card, and chevron_panel (not
-  listed in the original S9/S10 :is() selectors because they were
-  added later).
+  folder_tab, pennant, banner_card, tab_card, chevron_panel, and
+  fold_banner (not listed in the original S9/S10 :is() selectors
+  because they were added later).
 
   Usage: combine with a dark background class, e.g.:
     <!-- _class: aurora parallelogram frost -->
@@ -10686,6 +10820,7 @@ section.chevron_panel > ul > li:nth-child(12n+12) { --cp-color: var(--arivu-pale
     <!-- _class: aurora pennant frost -->
     <!-- _class: aurora banner_card frost -->
     <!-- _class: aurora chevron_panel frost -->
+    <!-- _class: aurora fold_banner frost -->
 ---------------------------------------------------------------------*/
 
 /* ---- parallelogram + folder_tab: li goes transparent (remove opaque bg) ---- */
@@ -10889,6 +11024,61 @@ section.frost.chevron_panel > ul > li:nth-child(8) > p:first-child { background:
 
 /* dark-bg text override */
 section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_panel > ul > li > ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+
+/* ---- fold_banner: row → frosted glass panel ---- */
+section.frost.fold_banner > ul > li {
+  background: linear-gradient(90deg,
+      rgba(22, 32, 52, 0.30) 0%,
+      rgba(22, 32, 52, 0.20) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  backdrop-filter: blur(14px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.30),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* ---- fold_banner: number + icon zones → hue-tinted glass ---- */
+section.frost.fold_banner > ul > li::before {
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+  backdrop-filter: blur(10px) saturate(160%);
+}
+
+section.frost.fold_banner > ul > li > p:first-child {
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+  backdrop-filter: blur(10px) saturate(160%);
+}
+
+/* per-position hue tints for number and icon zones */
+section.frost.fold_banner > ul > li:nth-child(1)::before,
+section.frost.fold_banner > ul > li:nth-child(1) > p:first-child { background-color: rgba( 60,  90, 130, 0.65); }
+section.frost.fold_banner > ul > li:nth-child(2)::before,
+section.frost.fold_banner > ul > li:nth-child(2) > p:first-child { background-color: rgba(142,  68, 173, 0.65); }
+section.frost.fold_banner > ul > li:nth-child(3)::before,
+section.frost.fold_banner > ul > li:nth-child(3) > p:first-child { background-color: rgba( 22, 160, 133, 0.65); }
+section.frost.fold_banner > ul > li:nth-child(4)::before,
+section.frost.fold_banner > ul > li:nth-child(4) > p:first-child { background-color: rgba(211,  84,   0, 0.65); }
+section.frost.fold_banner > ul > li:nth-child(5)::before,
+section.frost.fold_banner > ul > li:nth-child(5) > p:first-child { background-color: rgba( 41, 128, 185, 0.65); }
+section.frost.fold_banner > ul > li:nth-child(6)::before,
+section.frost.fold_banner > ul > li:nth-child(6) > p:first-child { background-color: rgba(192,  57,  43, 0.65); }
+section.frost.fold_banner > ul > li:nth-child(7)::before,
+section.frost.fold_banner > ul > li:nth-child(7) > p:first-child { background-color: rgba( 39, 174,  96, 0.65); }
+section.frost.fold_banner > ul > li:nth-child(8)::before,
+section.frost.fold_banner > ul > li:nth-child(8) > p:first-child { background-color: rgba(243, 156,  18, 0.65); }
+
+/* ---- fold_banner: content text → white ---- */
+section.frost.fold_banner > ul > li > ul > li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+/* dark-bg text override */
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.fold_banner > ul > li > ul > li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }

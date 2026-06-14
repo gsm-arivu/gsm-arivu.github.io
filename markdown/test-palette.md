@@ -109,3 +109,55 @@ paginate: true
   - **Cycling**
   - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam.
 
+---
+
+<!-- _class: fold_banner -->
+
+## Folded Banner
+
+* :busts_in_silhouette:
+
+  - **Partnership**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam magna nec quis, lorem nunc.
+
+* :speech_balloon:
+
+  - **Communication**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam magna nec quis, lorem nunc.
+
+* :gear:
+
+  - **Settings**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam magna nec quis, lorem nunc.
+
+* :fire:
+
+  - **Performance**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam magna nec quis, lorem nunc.
+
+---
+
+<!-- _class: fold_banner invert aurora fragment frost-->
+
+## Folded Banner (Frost)
+
+* :busts_in_silhouette:
+
+  - **Partnership**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam magna nec quis, lorem nunc.
+
+* :speech_balloon:
+
+  - **Communication**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam magna nec quis, lorem nunc.
+
+* :gear:
+
+  - **Settings**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam magna nec quis, lorem nunc.
+
+* :fire:
+
+  - **Performance**
+  - Lorem ipsum dolor sit amet, nibh est. A magna maecenas, quam magna nec quis, lorem nunc.
+
