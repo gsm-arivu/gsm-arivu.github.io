@@ -11325,6 +11325,136 @@ section.cap_card > ul > li:nth-child(12n+12) { --cap-color: var(--arivu-palette-
 
 
 /*--------------------------------------------------------------------
+  ARROW_TAB — portrait cards with a coloured pentagon upper zone
+              (downward-pointing arrow/pointer at the bottom) and
+              a light-tinted text zone beneath it. Auto-counter
+              number badge top-left, emoji icon centred in the dark
+              zone. Best with 3–5 items per slide.
+              Markdown:
+                _class: arrow_tab
+                * :icon:
+                  - **Bold Title**
+                  - Body text here…
+---------------------------------------------------------------------*/
+
+section.arrow_tab {
+  display: flex;
+  flex-direction: column;
+  counter-reset: arrow-tab;
+}
+
+section.arrow_tab > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Portrait card — tinted base, rounded corners, number counter */
+section.arrow_tab > ul > li {
+  --at-color: var(--arivu-palette-1);
+  --at-light: var(--arivu-palette-1-light);
+  counter-increment: arrow-tab;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: var(--at-light);
+  border-radius: var(--arivu-radius);
+  overflow: hidden;
+  box-shadow: var(--arivu-shadow);
+  position: relative;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+section.arrow_tab > ul > li::marker { display: none; }
+
+section.arrow_tab > ul > li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+}
+
+/* Auto-counter badge — upper-left of the coloured zone */
+section.arrow_tab > ul > li::before {
+  content: counter(arrow-tab, decimal-leading-zero);
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 1px;
+  z-index: 10;
+  line-height: 1;
+}
+
+/* Pentagon zone — clip-path creates the downward-pointing arrow.
+   Area clipped away on the sides shows --at-light through the li bg. */
+section.arrow_tab > ul > li > p:first-child {
+  flex: 0 0 60%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--at-color);
+  color: #ffffff;
+  font-size: 2.8em;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 76%, 50% 100%, 0% 76%);
+}
+
+/* Text zone — transparent so --at-light on li shows through seamlessly */
+section.arrow_tab > ul > li > ul {
+  flex: 1;
+  list-style: none;
+  padding: 16px 16px 14px;
+  margin: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+}
+
+section.arrow_tab > ul > li > ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.79em;
+  line-height: 1.45;
+  color: #333;
+}
+
+section.arrow_tab > ul > li > ul > li:first-child {
+  font-size: 0.92em;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+/* Per-item palette — both --at-color and --at-light set on li */
+section.arrow_tab > ul > li:nth-child(12n+1)  { --at-color: var(--arivu-palette-1);  --at-light: var(--arivu-palette-1-light);  }
+section.arrow_tab > ul > li:nth-child(12n+2)  { --at-color: var(--arivu-palette-2);  --at-light: var(--arivu-palette-2-light);  }
+section.arrow_tab > ul > li:nth-child(12n+3)  { --at-color: var(--arivu-palette-3);  --at-light: var(--arivu-palette-3-light);  }
+section.arrow_tab > ul > li:nth-child(12n+4)  { --at-color: var(--arivu-palette-4);  --at-light: var(--arivu-palette-4-light);  }
+section.arrow_tab > ul > li:nth-child(12n+5)  { --at-color: var(--arivu-palette-5);  --at-light: var(--arivu-palette-5-light);  }
+section.arrow_tab > ul > li:nth-child(12n+6)  { --at-color: var(--arivu-palette-6);  --at-light: var(--arivu-palette-6-light);  }
+section.arrow_tab > ul > li:nth-child(12n+7)  { --at-color: var(--arivu-palette-7);  --at-light: var(--arivu-palette-7-light);  }
+section.arrow_tab > ul > li:nth-child(12n+8)  { --at-color: var(--arivu-palette-8);  --at-light: var(--arivu-palette-8-light);  }
+section.arrow_tab > ul > li:nth-child(12n+9)  { --at-color: var(--arivu-palette-9);  --at-light: var(--arivu-palette-9-light);  }
+section.arrow_tab > ul > li:nth-child(12n+10) { --at-color: var(--arivu-palette-10); --at-light: var(--arivu-palette-10-light); }
+section.arrow_tab > ul > li:nth-child(12n+11) { --at-color: var(--arivu-palette-11); --at-light: var(--arivu-palette-11-light); }
+section.arrow_tab > ul > li:nth-child(12n+12) { --at-color: var(--arivu-palette-12); --at-light: var(--arivu-palette-12-light); }
+
+
+/*--------------------------------------------------------------------
   FROST EXTENSION — adds frost modifier support to parallelogram,
   folder_tab, pennant, banner_card, tab_card, chevron_panel,
   fold_banner, dash_button, chevron_block, envelop, and cap_card
@@ -11759,6 +11889,44 @@ section.frost.cap_card > ul > li > ul > li:first-child { border-bottom-color: rg
 
 section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.cap_card > ul > li > ul,
 section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.cap_card > ul > li > ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+
+/* ---- arrow_tab: li → frosted glass base (replaces --at-light bg) ---- */
+section.frost.arrow_tab > ul > li {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  backdrop-filter: blur(14px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-top-color: rgba(255, 255, 255, 0.50);
+}
+
+/* pentagon zone → hue-tinted glass per card position */
+section.frost.arrow_tab > ul > li > p:first-child {
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+section.frost.arrow_tab > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.65); }
+section.frost.arrow_tab > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.65); }
+section.frost.arrow_tab > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.65); }
+section.frost.arrow_tab > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.65); }
+section.frost.arrow_tab > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.65); }
+section.frost.arrow_tab > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.65); }
+section.frost.arrow_tab > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.65); }
+section.frost.arrow_tab > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.65); }
+
+/* text → white on frosted background */
+section.frost.arrow_tab > ul > li > ul > li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.arrow_tab > ul > li > ul > li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }

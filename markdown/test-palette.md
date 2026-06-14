@@ -133,3 +133,56 @@ paginate: true
   - **Partnerships**
   - Build lasting alliances that expand reach and share expertise.
 
+
+
+---
+
+<!-- _class: arrow_tab -->
+
+## Arrow Tab Cards
+
+* :briefcase:
+
+  - **Strategy**
+  - Define goals and align the team before go-live.
+
+* :handshake:
+
+  - **Partnerships**
+  - Build alliances that expand reach and share expertise.
+
+* :bulb:
+
+  - **Innovation**
+  - Prototype fast, gather feedback, and iterate with purpose.
+
+* :bar_chart:
+
+  - **Analytics**
+  - Track KPIs in real time and act on what the numbers reveal.
+
+---
+
+<!-- _class: aurora arrow_tab frost -->
+
+## Arrow Tab Cards — Frost
+
+* :briefcase:
+
+  - **Strategy**
+  - Define goals and align the team before go-live.
+
+* :handshake:
+
+  - **Partnerships**
+  - Build alliances that expand reach and share expertise.
+
+* :bulb:
+
+  - **Innovation**
+  - Prototype fast, gather feedback, and iterate with purpose.
+
+* :bar_chart:
+
+  - **Analytics**
+  - Track KPIs in real time and act on what the numbers reveal.
