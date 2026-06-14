@@ -4,15 +4,12 @@ theme: arivu
 paginate: true
 ---
 
-<!-- _class: title -->
-# Palette Test
 
 
----
 
+<!-- _class: folder_tab -->
 
-<!-- _class: pennant -->
-## pennant (5)
+## heading
 
 * :walking:
 
@@ -30,6 +27,138 @@ paginate: true
 
   - Fund
 
-* :unlock:
+* :canary_islands:
 
-  - Launch
+  - Canary Islands
+
+---
+
+<!-- _class: folder_tab invert aurora fragment frost-->
+
+## heading
+
+* :walking:
+
+  - Crawl
+
+* :brain:
+
+  - Think
+
+* :wrench:
+
+  - Build
+
+* :moneybag:
+
+  - Fund
+
+* :canary_islands:
+
+  - Canary Islands
+
+
+---
+
+<!-- _class: parallelogram -->
+
+## heading
+
+* :walking:
+
+  - Crawl
+
+* :brain:
+
+  - Think
+
+* :wrench:
+
+  - Build
+
+* :moneybag:
+
+  - Fund
+
+* :canary_islands:
+
+  - Canary Islands
+
+---
+
+<!-- _class: parallelogram invert aurora fragment frost-->
+
+## heading
+
+* :walking:
+
+  - Crawl
+
+* :brain:
+
+  - Think
+
+* :wrench:
+
+  - Build
+
+* :moneybag:
+
+  - Fund
+
+
+* :canary_islands:
+
+  - Canary Islands
+
+---
+
+<!-- _class: pennant -->
+
+## heading
+
+* :walking:
+
+  - Crawl
+
+* :brain:
+
+  - Think
+
+* :wrench:
+
+  - Build
+
+* :moneybag:
+
+  - Fund
+
+* :canary_islands:
+
+  - Canary Islands
+
+---
+
+<!-- _class: pennant invert aurora fragment frost-->
+
+## heading
+
+* :walking:
+
+  - Crawl
+
+* :brain:
+
+  - Think
+
+* :wrench:
+
+  - Build
+
+* :moneybag:
+
+  - Fund
+
+* :canary_islands:
+
+  - Canary Islands
