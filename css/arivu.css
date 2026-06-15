@@ -2912,6 +2912,122 @@ section.icon_card li:nth-child(12n+12)>ul {
   }
 }
 
+/* Horizontal icon_card_alt layout — alternating icon side */
+section.icon_card_alt ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+section.icon_card_alt>ul>li {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border-radius: var(--arivu-radius);
+  overflow: hidden;
+  box-shadow: var(--arivu-shadow-soft);
+  min-width: 320px;
+  min-height: 100px;
+  background-color: #f9f9f9;
+  margin: 0;
+  transition: var(--arivu-transition-std);
+}
+
+section.icon_card_alt>ul>li:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+section.icon_card_alt li::marker {
+  display: none;
+}
+
+section.icon_card_alt>ul>li>p:first-child {
+  background-color: #333;
+  color: #fff;
+  font-weight: normal;
+  margin: 0;
+  font-size: 2rem;
+  width: 100px;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+section.icon_card_alt>ul>li>ul {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding-left: 10px;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  list-style: none;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+section.icon_card_alt>ul>li>ul>li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Odd bullets: icon flips to the right */
+section.icon_card_alt>ul>li:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+section.icon_card_alt>ul>li:nth-child(odd)>ul {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+section.icon_card_alt li:nth-child(12n+1)>p:first-child  { background-color: var(--arivu-palette-1);  }
+section.icon_card_alt li:nth-child(12n+2)>p:first-child  { background-color: var(--arivu-palette-2);  }
+section.icon_card_alt li:nth-child(12n+3)>p:first-child  { background-color: var(--arivu-palette-3);  }
+section.icon_card_alt li:nth-child(12n+4)>p:first-child  { background-color: var(--arivu-palette-4);  }
+section.icon_card_alt li:nth-child(12n+5)>p:first-child  { background-color: var(--arivu-palette-5);  }
+section.icon_card_alt li:nth-child(12n+6)>p:first-child  { background-color: var(--arivu-palette-6);  }
+section.icon_card_alt li:nth-child(12n+7)>p:first-child  { background-color: var(--arivu-palette-7);  }
+section.icon_card_alt li:nth-child(12n+8)>p:first-child  { background-color: var(--arivu-palette-8);  }
+section.icon_card_alt li:nth-child(12n+9)>p:first-child  { background-color: var(--arivu-palette-9);  }
+section.icon_card_alt li:nth-child(12n+10)>p:first-child { background-color: var(--arivu-palette-10); }
+section.icon_card_alt li:nth-child(12n+11)>p:first-child { background-color: var(--arivu-palette-11); }
+section.icon_card_alt li:nth-child(12n+12)>p:first-child { background-color: var(--arivu-palette-12); }
+
+section.icon_card_alt li:nth-child(12n+1)>ul  { background-color: var(--arivu-palette-1-light);  border: 2px solid var(--arivu-palette-1);  }
+section.icon_card_alt li:nth-child(12n+2)>ul  { background-color: var(--arivu-palette-2-light);  border: 2px solid var(--arivu-palette-2);  }
+section.icon_card_alt li:nth-child(12n+3)>ul  { background-color: var(--arivu-palette-3-light);  border: 2px solid var(--arivu-palette-3);  }
+section.icon_card_alt li:nth-child(12n+4)>ul  { background-color: var(--arivu-palette-4-light);  border: 2px solid var(--arivu-palette-4);  }
+section.icon_card_alt li:nth-child(12n+5)>ul  { background-color: var(--arivu-palette-5-light);  border: 2px solid var(--arivu-palette-5);  }
+section.icon_card_alt li:nth-child(12n+6)>ul  { background-color: var(--arivu-palette-6-light);  border: 2px solid var(--arivu-palette-6);  }
+section.icon_card_alt li:nth-child(12n+7)>ul  { background-color: var(--arivu-palette-7-light);  border: 2px solid var(--arivu-palette-7);  }
+section.icon_card_alt li:nth-child(12n+8)>ul  { background-color: var(--arivu-palette-8-light);  border: 2px solid var(--arivu-palette-8);  }
+section.icon_card_alt li:nth-child(12n+9)>ul  { background-color: var(--arivu-palette-9-light);  border: 2px solid var(--arivu-palette-9);  }
+section.icon_card_alt li:nth-child(12n+10)>ul { background-color: var(--arivu-palette-10-light); border: 2px solid var(--arivu-palette-10); }
+section.icon_card_alt li:nth-child(12n+11)>ul { background-color: var(--arivu-palette-11-light); border: 2px solid var(--arivu-palette-11); }
+section.icon_card_alt li:nth-child(12n+12)>ul { background-color: var(--arivu-palette-12-light); border: 2px solid var(--arivu-palette-12); }
+
+@media (max-width: 768px) {
+  section.icon_card_alt ul {
+    flex-direction: column;
+  }
+}
+
 /*--------------------------------------------------*/
 
 
@@ -8449,6 +8565,7 @@ section.panel_shirt>ul>li>ul,
 section.icon_pillar>ul>li>p:first-child,
 section.icon_pillar4>ul>li>p:first-child,
 section.icon_card>ul>li>p:first-child,
+section.icon_card_alt>ul>li>p:first-child,
 section.icon_box>ul>li>p:first-child,
 section.icon_capsule>ul>li>p:first-child,
 section.icon_flower>ul>li>p:first-child,
@@ -8849,14 +8966,16 @@ section.icon_pillar4 li:nth-child(6)>ul {
 section.icon_box>ul>li,
 section.icon_capsule>ul>li,
 section.icon_flower>ul>li,
-section.icon_card>ul>li {
+section.icon_card>ul>li,
+section.icon_card_alt>ul>li {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 section.icon_box>ul>li:hover,
 section.icon_capsule>ul>li:hover,
 section.icon_flower>ul>li:hover,
-section.icon_card>ul>li:hover {
+section.icon_card>ul>li:hover,
+section.icon_card_alt>ul>li:hover {
   transform: translateY(-4px) scale(1.01);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
 }
@@ -9448,14 +9567,14 @@ section.shine ul>li {
 -----------------------------------------------------------------*/
 section:is(.vortex, .aurora, .ember, .backcolor, .neon):is(.panel,
   .panel_card, .panel_capsule, .panel_pillar, .icon_pillar,
-  .icon_pillar4, .icon_card, .icon_box, .icon_capsule, .icon_flower,
+  .icon_pillar4, .icon_card, .icon_card_alt, .icon_box, .icon_capsule, .icon_flower,
   .flower):not(.frost)>ul>li>ul {
   color: #25303f;
 }
 
 section:is(.vortex, .aurora, .ember, .backcolor, .neon):is(.panel,
   .panel_card, .panel_capsule, .panel_pillar, .icon_pillar,
-  .icon_pillar4, .icon_card, .icon_box, .icon_capsule, .icon_flower,
+  .icon_pillar4, .icon_card, .icon_card_alt, .icon_box, .icon_capsule, .icon_flower,
   .flower):not(.frost)>ul>li>ul strong {
   color: #101820;
 }
@@ -11931,5 +12050,48 @@ section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.arrow_tab > ul > l
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
+
+/* ---- icon_card_alt frost: card wrapper transparent so backdrop-filter sees the slide bg ---- */
+section.frost.icon_card_alt > ul > li {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* ---- icon_card_alt frost: same glass treatment as icon_card ---- */
+section.frost.icon_card_alt > ul > li > ul:nth-child(n) {
+  background-color: rgba(255, 255, 255, 0.09);
+  background-image: linear-gradient(150deg,
+      rgba(255, 255, 255, 0.16) 0%,
+      rgba(255, 255, 255, 0.04) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  backdrop-filter: blur(14px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-top-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+section.frost.icon_card_alt > ul > li > ul:nth-child(n) strong {
+  color: #ffffff;
+}
+
+section.frost.icon_card_alt > ul > li > ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+section.frost.icon_card_alt > ul > li > p:first-child {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.icon_card_alt > ul > li > ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.icon_card_alt > ul > li > ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
 
 /*===================== end of arivu fix layer 3 ==================*/

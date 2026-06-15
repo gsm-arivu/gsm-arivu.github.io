@@ -9,180 +9,114 @@ paginate: true
 
 
 
-<!-- _class: envelop -->
+<!-- _class: icon_shirt4 softfrag-->
 
-## Step Focus
+## heading
 
 * :airplane:
 
   - **Air Travel**
-  - Fast long-distance transport with reliable global connections.
+  
 
 * :car:
 
   - **Road Trip**
-  - Flexible routes at your own pace, door to door.
+  
 
 * :bus:
 
   - **Bus Service**
-  - Affordable city and intercity connections.
+ 
 
 * :bicyclist:
 
   - **Cycling**
-  - Eco-friendly last-mile urban transport.
+  
+
+
+
+
 
 ---
 
-<!-- _class: envelop invert aurora frost -->
+<!-- _class: icon_shirt4 invert softfrag ember frost-->
 
-
-
-
-
-# heading
-
-* :car:
-
-  - **car** <br>is good
-
-* :bus:
-
-  - **bus** <br> is better
-
-* :train:
-
-  - **train** <br> is best
-
- 
-
-* :airplane:
-
-  - **airplane** <br> is costly
-
-* :bicyclist:
-
-  - **cycle** <br> is cheap
-
----
-
-<!-- _class: envelop -->
-
-## Step Focus
+## heading
 
 * :airplane:
 
   - **Air Travel**
-  - Fast long-distance transport with reliable global connections.
+  
 
 * :car:
 
   - **Road Trip**
-  - Flexible routes at your own pace, door to door.
+  
+
+* :bus:
+
+  - **Bus Service**
+ 
+
+* :bicyclist:
+
+  - **Cycling**
+  
+
 
 ---
 
-<!-- _class: cap_card -->
+<!-- _class: icon_pillar4 softfrag-->
 
-## Bold Header Cards
+## heading
 
-* :rocket:
+* :airplane:
 
-  - **Launch Strategy**
-  - Define goals, set milestones, and align the team before go-live.
+  - **Air Travel**
+  
 
-* :bar_chart:
+* :car:
 
-  - **Data Insights**
-  - Track KPIs in real time and act on what the numbers reveal.
+  - **Road Trip**
+  
 
-* :bulb:
+* :bus:
 
-  - **Innovation Lab**
-  - Prototype fast, gather feedback early, and iterate with purpose.
+  - **Bus Service**
+ 
 
-* :handshake:
+* :bicyclist:
 
-  - **Partnerships**
-  - Build lasting alliances that expand reach and share expertise.
+  - **Cycling**
+  
 
----
 
-<!-- _class: aurora cap_card frost -->
 
-## Bold Header Cards — Frost
-
-* :rocket:
-
-  - **Launch Strategy**
-  - Define goals, set milestones, and align the team before go-live.
-
-* :bar_chart:
-
-  - **Data Insights**
-  - Track KPIs in real time and act on what the numbers reveal.
-
-* :bulb:
-
-  - **Innovation Lab**
-  - Prototype fast, gather feedback early, and iterate with purpose.
-
-* :handshake:
-
-  - **Partnerships**
-  - Build lasting alliances that expand reach and share expertise.
 
 
 
 ---
 
-<!-- _class: arrow_tab -->
+<!-- _class: icon_pillar4 invert softfrag ember frost-->
 
-## Arrow Tab Cards
+## heading
 
-* :briefcase:
+* :airplane:
 
-  - **Strategy**
-  - Define goals and align the team before go-live.
+  - **Air Travel**
+  
 
-* :handshake:
+* :car:
 
-  - **Partnerships**
-  - Build alliances that expand reach and share expertise.
+  - **Road Trip**
+  
 
-* :bulb:
+* :bus:
 
-  - **Innovation**
-  - Prototype fast, gather feedback, and iterate with purpose.
+  - **Bus Service**
+ 
 
-* :bar_chart:
+* :bicyclist:
 
-  - **Analytics**
-  - Track KPIs in real time and act on what the numbers reveal.
-
----
-
-<!-- _class: aurora arrow_tab frost -->
-
-## Arrow Tab Cards — Frost
-
-* :briefcase:
-
-  - **Strategy**
-  - Define goals and align the team before go-live.
-
-* :handshake:
-
-  - **Partnerships**
-  - Build alliances that expand reach and share expertise.
-
-* :bulb:
-
-  - **Innovation**
-  - Prototype fast, gather feedback, and iterate with purpose.
-
-* :bar_chart:
-
-  - **Analytics**
-  - Track KPIs in real time and act on what the numbers reveal.
+  - **Cycling**
+  
