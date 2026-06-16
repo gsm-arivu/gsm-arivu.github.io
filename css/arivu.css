@@ -23,41 +23,66 @@ section {
      4 bullets → 1-4 (red/blue/green/violet)   6 → +orange/teal
      8 bullets → +raspberry/turquoise           9 → +sienna
     10 bullets → +slate   11 → +plum   12 → +sapphire               */
-  --arivu-palette-1:  #C0392B;  /* Crimson Red    */
-  --arivu-palette-2:  #2980B9;  /* Cobalt Blue    */
-  --arivu-palette-3:  #27AE60;  /* Emerald Green  */
-  --arivu-palette-4:  #8E44AD;  /* Violet         */
-  --arivu-palette-5:  #D35400;  /* Burnt Orange   */
-  --arivu-palette-6:  #16A085;  /* Sea Teal       */
-  --arivu-palette-7:  #C2185B;  /* Raspberry      */
-  --arivu-palette-8:  #1ABC9C;  /* Turquoise      */
-  --arivu-palette-9:  #A0522D;  /* Sienna         */
-  --arivu-palette-10: #2C3E50;  /* Midnight Slate */
-  --arivu-palette-11: #7D3C98;  /* Plum           */
-  --arivu-palette-12: #1A5276;  /* Sapphire       */
+  --arivu-palette-1: #C0392B;
+  /* Crimson Red    */
+  --arivu-palette-2: #2980B9;
+  /* Cobalt Blue    */
+  --arivu-palette-3: #27AE60;
+  /* Emerald Green  */
+  --arivu-palette-4: #8E44AD;
+  /* Violet         */
+  --arivu-palette-5: #D35400;
+  /* Burnt Orange   */
+  --arivu-palette-6: #16A085;
+  /* Sea Teal       */
+  --arivu-palette-7: #C2185B;
+  /* Raspberry      */
+  --arivu-palette-8: #1ABC9C;
+  /* Turquoise      */
+  --arivu-palette-9: #A0522D;
+  /* Sienna         */
+  --arivu-palette-10: #2C3E50;
+  /* Midnight Slate */
+  --arivu-palette-11: #7D3C98;
+  /* Plum           */
+  --arivu-palette-12: #1A5276;
+  /* Sapphire       */
 
   /* Light tints (15 % of palette on white) for panel body backgrounds */
-  --arivu-palette-1-light:  #F6E1DF;  /* tint of Crimson Red    */
-  --arivu-palette-2-light:  #DFECF5;  /* tint of Cobalt Blue    */
-  --arivu-palette-3-light:  #DFF3E7;  /* tint of Emerald Green  */
-  --arivu-palette-4-light:  #EEE3F3;  /* tint of Violet         */
-  --arivu-palette-5-light:  #F8E5D9;  /* tint of Burnt Orange   */
-  --arivu-palette-6-light:  #DCF1ED;  /* tint of Sea Teal       */
-  --arivu-palette-7-light:  #F6DCE6;  /* tint of Raspberry      */
-  --arivu-palette-8-light:  #DDF5F0;  /* tint of Turquoise      */
-  --arivu-palette-9-light:  #F1E5E0;  /* tint of Sienna         */
-  --arivu-palette-10-light: #DFE2E5;  /* tint of Midnight Slate */
-  --arivu-palette-11-light: #ECE2F0;  /* tint of Plum           */
-  --arivu-palette-12-light: #DDE5EA;  /* tint of Sapphire       */
+  --arivu-palette-1-light: #F6E1DF;
+  /* tint of Crimson Red    */
+  --arivu-palette-2-light: #DFECF5;
+  /* tint of Cobalt Blue    */
+  --arivu-palette-3-light: #DFF3E7;
+  /* tint of Emerald Green  */
+  --arivu-palette-4-light: #EEE3F3;
+  /* tint of Violet         */
+  --arivu-palette-5-light: #F8E5D9;
+  /* tint of Burnt Orange   */
+  --arivu-palette-6-light: #DCF1ED;
+  /* tint of Sea Teal       */
+  --arivu-palette-7-light: #F6DCE6;
+  /* tint of Raspberry      */
+  --arivu-palette-8-light: #DDF5F0;
+  /* tint of Turquoise      */
+  --arivu-palette-9-light: #F1E5E0;
+  /* tint of Sienna         */
+  --arivu-palette-10-light: #DFE2E5;
+  /* tint of Midnight Slate */
+  --arivu-palette-11-light: #ECE2F0;
+  /* tint of Plum           */
+  --arivu-palette-12-light: #DDE5EA;
+  /* tint of Sapphire       */
 
   /* Spacing / radius tokens */
   --arivu-radius: 12px;
-  --arivu-gap:    14px;
+  --arivu-gap: 14px;
   --arivu-shadow: 3px 5px 15px rgba(0, 0, 0, 0.25);
-  --arivu-shadow-soft:     2px 4px 12px rgba(0, 0, 0, 0.2);
+  --arivu-shadow-soft: 2px 4px 12px rgba(0, 0, 0, 0.2);
   --arivu-transition-fast: transform 0.2s ease;
-  --arivu-transition-std:  transform 0.3s ease, box-shadow 0.3s ease;
+  --arivu-transition-std: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 /* ================================================================= */
 
 
@@ -180,6 +205,7 @@ section.box li:nth-child(12n+5) {
 section.box li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
+
 section.box li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -266,6 +292,7 @@ section.capsule li:nth-child(12n+5) {
 section.capsule li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
+
 section.capsule li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -603,6 +630,7 @@ section.panel li:nth-child(12n+4)>ul {
   background-color: var(--arivu-palette-4-light);
   border: 2px solid var(--arivu-palette-4);
 }
+
 section.panel li:nth-child(12n+5)>p:first-child {
   background-color: var(--arivu-palette-5);
 }
@@ -1004,6 +1032,7 @@ section.panel_card li:nth-child(12n+8)>ul {
   background-color: var(--arivu-palette-8-light);
   border: 2px solid var(--arivu-palette-8);
 }
+
 section.panel_card li:nth-child(12n+9)>p:first-child {
   background-color: var(--arivu-palette-9);
 }
@@ -1268,6 +1297,7 @@ section.panel_capsule li:nth-child(12n+4)>ul {
   background-color: var(--arivu-palette-4-light);
   border: 2px solid var(--arivu-palette-4);
 }
+
 section.panel_capsule li:nth-child(12n+5)>p:first-child {
   background-color: var(--arivu-palette-5);
 }
@@ -1277,6 +1307,7 @@ section.panel_capsule li:nth-child(12n+5)>ul {
   background-color: var(--arivu-palette-5-light);
   border: 2px solid var(--arivu-palette-5);
 }
+
 section.panel_capsule li:nth-child(12n+6)>p:first-child {
   background-color: var(--arivu-palette-6);
 }
@@ -1286,6 +1317,7 @@ section.panel_capsule li:nth-child(12n+6)>ul {
   background-color: var(--arivu-palette-6-light);
   border: 2px solid var(--arivu-palette-6);
 }
+
 section.panel_capsule li:nth-child(12n+7)>p:first-child {
   background-color: var(--arivu-palette-7);
 }
@@ -1489,6 +1521,7 @@ section.panel_shirt li:nth-child(12n+4)>ul {
   background-color: var(--arivu-palette-4);
   border: 2px solid var(--arivu-palette-4);
 }
+
 section.panel_shirt li:nth-child(12n+5)>p:first-child {
   background-color: var(--arivu-palette-5-light);
   border: 2px solid var(--arivu-palette-5);
@@ -1499,6 +1532,7 @@ section.panel_shirt li:nth-child(12n+5)>ul {
   background-color: var(--arivu-palette-5);
   border: 2px solid var(--arivu-palette-5);
 }
+
 section.panel_shirt li:nth-child(12n+6)>p:first-child {
   background-color: var(--arivu-palette-6-light);
   border: 2px solid var(--arivu-palette-6);
@@ -1509,6 +1543,7 @@ section.panel_shirt li:nth-child(12n+6)>ul {
   background-color: var(--arivu-palette-6);
   border: 2px solid var(--arivu-palette-6);
 }
+
 section.panel_shirt li:nth-child(12n+7)>p:first-child {
   background-color: var(--arivu-palette-7);
   border: 2px solid var(--arivu-palette-7);
@@ -1679,6 +1714,15 @@ section.icon_shirt4>ul>li>ul>li {
   padding: 0;
 }
 
+/* Right-column cards: circle on right edge */
+section.icon_shirt4>ul>li:nth-child(even)>p:first-child {
+  left: calc(100% - 50px);
+}
+
+section.icon_shirt4>ul>li:nth-child(even)>ul {
+  padding: 20px 20px 20px 10px;
+}
+
 /* Color themes */
 section.icon_shirt4 li:nth-child(12n+1)>p:first-child {
   background-color: var(--arivu-palette-1-light);
@@ -1733,6 +1777,7 @@ section.icon_shirt4 li:nth-child(12n+5)>ul {
 section.icon_shirt4 li:nth-child(12n+6)>ul {
   background-color: var(--arivu-palette-6);
 }
+
 section.icon_shirt4 li:nth-child(12n+7)>p:first-child {
   background-color: var(--arivu-palette-7);
   border: 2px solid var(--arivu-palette-7);
@@ -1943,6 +1988,7 @@ section.icon_shirt li:nth-child(12n+6)>p:first-child {
 section.icon_shirt li:nth-child(12n+6)>ul {
   background-color: var(--arivu-palette-6);
 }
+
 section.icon_shirt li:nth-child(12n+7)>p:first-child {
   background-color: var(--arivu-palette-7);
   border: 2px solid var(--arivu-palette-7);
@@ -2158,6 +2204,7 @@ section.panel_pillar li:nth-child(12n+4)>ul {
   background-color: var(--arivu-palette-4-light);
   border: 2px solid var(--arivu-palette-4);
 }
+
 section.panel_pillar li:nth-child(12n+5)>p:first-child {
   background-color: var(--arivu-palette-5);
   border: 2px solid var(--arivu-palette-5);
@@ -2429,6 +2476,7 @@ section.icon_pillar li:nth-child(12n+9)>ul {
   background-color: var(--arivu-palette-9-light);
   border: 2px solid var(--arivu-palette-9);
 }
+
 section.icon_pillar li:nth-child(12n+10)>p:first-child {
   background-color: var(--arivu-palette-10);
   border-color: var(--arivu-palette-10);
@@ -2578,6 +2626,19 @@ section.icon_pillar4>ul>li:hover>ul {
   background-color: #eaeaea;
 }
 
+/* Right-column cards: triangle on right edge, pointing left */
+section.icon_pillar4>ul>li:nth-child(even)>p:first-child {
+  left: calc(100% + 5px);
+  justify-content: right;
+  padding-left: unset;
+  padding-right: 0px;
+  clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+}
+
+section.icon_pillar4>ul>li:nth-child(even)>ul {
+  padding: 20px 10px 20px 16px;
+}
+
 /* Color themes */
 section.icon_pillar4 li:nth-child(12n+1)>p:first-child {
   background-color: var(--arivu-palette-1);
@@ -2618,6 +2679,7 @@ section.icon_pillar4 li:nth-child(12n+4)>ul {
   background-color: var(--arivu-palette-4-light);
   border: 2px solid var(--arivu-palette-4);
 }
+
 section.icon_pillar4 li:nth-child(12n+5)>p:first-child {
   background-color: var(--arivu-palette-5);
   border-color: var(--arivu-palette-5);
@@ -2886,6 +2948,7 @@ section.icon_card li:nth-child(12n+10)>ul {
   background-color: var(--arivu-palette-10-light);
   border: 2px solid var(--arivu-palette-10);
 }
+
 section.icon_card li:nth-child(12n+11)>p:first-child {
   background-color: var(--arivu-palette-11);
 }
@@ -2996,31 +3059,113 @@ section.icon_card_alt>ul>li:nth-child(odd)>ul {
   padding-right: 10px;
 }
 
-section.icon_card_alt li:nth-child(12n+1)>p:first-child  { background-color: var(--arivu-palette-1);  }
-section.icon_card_alt li:nth-child(12n+2)>p:first-child  { background-color: var(--arivu-palette-2);  }
-section.icon_card_alt li:nth-child(12n+3)>p:first-child  { background-color: var(--arivu-palette-3);  }
-section.icon_card_alt li:nth-child(12n+4)>p:first-child  { background-color: var(--arivu-palette-4);  }
-section.icon_card_alt li:nth-child(12n+5)>p:first-child  { background-color: var(--arivu-palette-5);  }
-section.icon_card_alt li:nth-child(12n+6)>p:first-child  { background-color: var(--arivu-palette-6);  }
-section.icon_card_alt li:nth-child(12n+7)>p:first-child  { background-color: var(--arivu-palette-7);  }
-section.icon_card_alt li:nth-child(12n+8)>p:first-child  { background-color: var(--arivu-palette-8);  }
-section.icon_card_alt li:nth-child(12n+9)>p:first-child  { background-color: var(--arivu-palette-9);  }
-section.icon_card_alt li:nth-child(12n+10)>p:first-child { background-color: var(--arivu-palette-10); }
-section.icon_card_alt li:nth-child(12n+11)>p:first-child { background-color: var(--arivu-palette-11); }
-section.icon_card_alt li:nth-child(12n+12)>p:first-child { background-color: var(--arivu-palette-12); }
+section.icon_card_alt li:nth-child(12n+1)>p:first-child {
+  background-color: var(--arivu-palette-1);
+}
 
-section.icon_card_alt li:nth-child(12n+1)>ul  { background-color: var(--arivu-palette-1-light);  border: 2px solid var(--arivu-palette-1);  }
-section.icon_card_alt li:nth-child(12n+2)>ul  { background-color: var(--arivu-palette-2-light);  border: 2px solid var(--arivu-palette-2);  }
-section.icon_card_alt li:nth-child(12n+3)>ul  { background-color: var(--arivu-palette-3-light);  border: 2px solid var(--arivu-palette-3);  }
-section.icon_card_alt li:nth-child(12n+4)>ul  { background-color: var(--arivu-palette-4-light);  border: 2px solid var(--arivu-palette-4);  }
-section.icon_card_alt li:nth-child(12n+5)>ul  { background-color: var(--arivu-palette-5-light);  border: 2px solid var(--arivu-palette-5);  }
-section.icon_card_alt li:nth-child(12n+6)>ul  { background-color: var(--arivu-palette-6-light);  border: 2px solid var(--arivu-palette-6);  }
-section.icon_card_alt li:nth-child(12n+7)>ul  { background-color: var(--arivu-palette-7-light);  border: 2px solid var(--arivu-palette-7);  }
-section.icon_card_alt li:nth-child(12n+8)>ul  { background-color: var(--arivu-palette-8-light);  border: 2px solid var(--arivu-palette-8);  }
-section.icon_card_alt li:nth-child(12n+9)>ul  { background-color: var(--arivu-palette-9-light);  border: 2px solid var(--arivu-palette-9);  }
-section.icon_card_alt li:nth-child(12n+10)>ul { background-color: var(--arivu-palette-10-light); border: 2px solid var(--arivu-palette-10); }
-section.icon_card_alt li:nth-child(12n+11)>ul { background-color: var(--arivu-palette-11-light); border: 2px solid var(--arivu-palette-11); }
-section.icon_card_alt li:nth-child(12n+12)>ul { background-color: var(--arivu-palette-12-light); border: 2px solid var(--arivu-palette-12); }
+section.icon_card_alt li:nth-child(12n+2)>p:first-child {
+  background-color: var(--arivu-palette-2);
+}
+
+section.icon_card_alt li:nth-child(12n+3)>p:first-child {
+  background-color: var(--arivu-palette-3);
+}
+
+section.icon_card_alt li:nth-child(12n+4)>p:first-child {
+  background-color: var(--arivu-palette-4);
+}
+
+section.icon_card_alt li:nth-child(12n+5)>p:first-child {
+  background-color: var(--arivu-palette-5);
+}
+
+section.icon_card_alt li:nth-child(12n+6)>p:first-child {
+  background-color: var(--arivu-palette-6);
+}
+
+section.icon_card_alt li:nth-child(12n+7)>p:first-child {
+  background-color: var(--arivu-palette-7);
+}
+
+section.icon_card_alt li:nth-child(12n+8)>p:first-child {
+  background-color: var(--arivu-palette-8);
+}
+
+section.icon_card_alt li:nth-child(12n+9)>p:first-child {
+  background-color: var(--arivu-palette-9);
+}
+
+section.icon_card_alt li:nth-child(12n+10)>p:first-child {
+  background-color: var(--arivu-palette-10);
+}
+
+section.icon_card_alt li:nth-child(12n+11)>p:first-child {
+  background-color: var(--arivu-palette-11);
+}
+
+section.icon_card_alt li:nth-child(12n+12)>p:first-child {
+  background-color: var(--arivu-palette-12);
+}
+
+section.icon_card_alt li:nth-child(12n+1)>ul {
+  background-color: var(--arivu-palette-1-light);
+  border: 2px solid var(--arivu-palette-1);
+}
+
+section.icon_card_alt li:nth-child(12n+2)>ul {
+  background-color: var(--arivu-palette-2-light);
+  border: 2px solid var(--arivu-palette-2);
+}
+
+section.icon_card_alt li:nth-child(12n+3)>ul {
+  background-color: var(--arivu-palette-3-light);
+  border: 2px solid var(--arivu-palette-3);
+}
+
+section.icon_card_alt li:nth-child(12n+4)>ul {
+  background-color: var(--arivu-palette-4-light);
+  border: 2px solid var(--arivu-palette-4);
+}
+
+section.icon_card_alt li:nth-child(12n+5)>ul {
+  background-color: var(--arivu-palette-5-light);
+  border: 2px solid var(--arivu-palette-5);
+}
+
+section.icon_card_alt li:nth-child(12n+6)>ul {
+  background-color: var(--arivu-palette-6-light);
+  border: 2px solid var(--arivu-palette-6);
+}
+
+section.icon_card_alt li:nth-child(12n+7)>ul {
+  background-color: var(--arivu-palette-7-light);
+  border: 2px solid var(--arivu-palette-7);
+}
+
+section.icon_card_alt li:nth-child(12n+8)>ul {
+  background-color: var(--arivu-palette-8-light);
+  border: 2px solid var(--arivu-palette-8);
+}
+
+section.icon_card_alt li:nth-child(12n+9)>ul {
+  background-color: var(--arivu-palette-9-light);
+  border: 2px solid var(--arivu-palette-9);
+}
+
+section.icon_card_alt li:nth-child(12n+10)>ul {
+  background-color: var(--arivu-palette-10-light);
+  border: 2px solid var(--arivu-palette-10);
+}
+
+section.icon_card_alt li:nth-child(12n+11)>ul {
+  background-color: var(--arivu-palette-11-light);
+  border: 2px solid var(--arivu-palette-11);
+}
+
+section.icon_card_alt li:nth-child(12n+12)>ul {
+  background-color: var(--arivu-palette-12-light);
+  border: 2px solid var(--arivu-palette-12);
+}
 
 @media (max-width: 768px) {
   section.icon_card_alt ul {
@@ -3177,6 +3322,7 @@ section.icon_box li:nth-child(12n+7)>ul {
   background-color: var(--arivu-palette-7-light);
   border: 2px solid var(--arivu-palette-7);
 }
+
 section.icon_box li:nth-child(12n+8)>p:first-child {
   background-color: var(--arivu-palette-8);
 }
@@ -3367,6 +3513,7 @@ section.icon_capsule li:nth-child(12n+6)>ul {
   background-color: var(--arivu-palette-6-light);
   border: 2px solid var(--arivu-palette-6);
 }
+
 section.icon_capsule li:nth-child(12n+7)>p:first-child {
   background-color: var(--arivu-palette-7);
 }
@@ -3562,6 +3709,7 @@ section.icon_flower li:nth-child(12n+6)>ul {
   background-color: var(--arivu-palette-6-light);
   border: 2px solid var(--arivu-palette-6);
 }
+
 section.icon_flower li:nth-child(12n+7)>p:first-child {
   background-color: var(--arivu-palette-7);
 }
@@ -3706,6 +3854,7 @@ section.card_color li:nth-child(12n+8) {
 section.card_color li:nth-child(12n+9) {
   background-color: var(--arivu-palette-9);
 }
+
 section.card_color li:nth-child(12n+10) {
   background-color: var(--arivu-palette-10);
 }
@@ -3809,6 +3958,7 @@ section.card_color_round li:nth-child(12n+8) {
 section.card_color_round li:nth-child(12n+9) {
   background-color: var(--arivu-palette-9);
 }
+
 section.card_color_round li:nth-child(12n+10) {
   background-color: var(--arivu-palette-10);
 }
@@ -3948,6 +4098,7 @@ section.hexagon li:nth-child(12n+5) {
 section.hexagon li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
+
 section.hexagon li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -4107,6 +4258,7 @@ section.caterpillar li:nth-child(12n+5) {
 section.caterpillar li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
+
 section.caterpillar li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -4263,6 +4415,7 @@ section.triangle li:nth-child(12n+5) {
 section.triangle li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
+
 section.triangle li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -4423,6 +4576,7 @@ section.arrow li:nth-child(12n+5) {
 section.arrow li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
+
 section.arrow li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -4531,6 +4685,7 @@ section.timeline>ul>li:nth-child(12n+5) {
 section.timeline>ul>li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
+
 section.timeline>ul>li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -4714,6 +4869,7 @@ section.timeline2 li:nth-child(12n+5) {
   left: calc(50% + 200px);
   background-color: var(--arivu-palette-5);
 }
+
 section.timeline2 li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
@@ -4859,6 +5015,7 @@ section.roadmap li:nth-child(12n+5) {
   top: calc(50% + 2 * var(--spacing));
   background-color: var(--arivu-palette-5);
 }
+
 section.roadmap li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
@@ -5002,6 +5159,7 @@ section.roadmap2 li:nth-child(12n+5) {
   top: calc(50% + 2 * var(--spacing));
   background-color: var(--arivu-palette-5);
 }
+
 section.roadmap2 li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
@@ -5199,6 +5357,7 @@ section.flower li:nth-child(12n+3)>ul {
 section.flower li:nth-child(12n+4)>ul {
   background-color: var(--arivu-palette-4-light);
 }
+
 section.flower li:nth-child(12n+5)>p:first-child {
   background-color: var(--arivu-palette-5);
 }
@@ -6855,6 +7014,7 @@ section.ribbon li:nth-child(12n+5) {
 section.ribbon li:nth-child(12n+6) {
   background: var(--arivu-palette-6);
 }
+
 section.ribbon li:nth-child(12n+7) {
   background: var(--arivu-palette-7);
 }
@@ -6951,6 +7111,7 @@ section.ticket li:nth-child(12n+5) {
 section.ticket li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
+
 section.ticket li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -7066,6 +7227,7 @@ section.chat li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
   border-color: var(--arivu-palette-6);
 }
+
 section.chat li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
   border-color: var(--arivu-palette-7);
@@ -7159,6 +7321,7 @@ section.tag li:nth-child(12n+5) {
 section.tag li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
+
 section.tag li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -7246,6 +7409,7 @@ section.chevron li:nth-child(12n+5) {
 section.chevron li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
+
 section.chevron li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -7332,6 +7496,7 @@ section.leaf li:nth-child(12n+5) {
 section.leaf li:nth-child(12n+6) {
   background: var(--arivu-palette-6);
 }
+
 section.leaf li:nth-child(12n+7) {
   background: var(--arivu-palette-7);
 }
@@ -7412,6 +7577,7 @@ section.bookmark li:nth-child(12n+4) {
 section.bookmark li:nth-child(12n+5) {
   background: var(--arivu-palette-5);
 }
+
 section.bookmark li:nth-child(12n+6) {
   background: var(--arivu-palette-6);
 }
@@ -7454,7 +7620,7 @@ section.pennant {
   counter-reset: pennant;
 }
 
-section.pennant > ul {
+section.pennant>ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -7464,7 +7630,7 @@ section.pennant > ul {
   margin-top: 0.5em;
 }
 
-section.pennant > ul > li {
+section.pennant>ul>li {
   counter-increment: pennant;
   position: relative;
   flex: 0 1 175px;
@@ -7482,7 +7648,7 @@ section.pennant > ul > li {
 }
 
 /* Dark header zone with auto-number */
-section.pennant > ul > li::before {
+section.pennant>ul>li::before {
   content: counter(pennant);
   position: absolute;
   top: 0;
@@ -7501,14 +7667,14 @@ section.pennant > ul > li::before {
 }
 
 /* Icon from "* :emoji:" bullet */
-section.pennant > ul > li > p:first-child {
+section.pennant>ul>li>p:first-child {
   font-size: 2em;
   margin: 0 0 6px;
   line-height: 1;
 }
 
 /* Label from "  - Label text" sub-bullet */
-section.pennant > ul > li > ul {
+section.pennant>ul>li>ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -7518,26 +7684,61 @@ section.pennant > ul > li > ul {
   text-transform: uppercase;
 }
 
-section.pennant > ul > li > ul > li {
+section.pennant>ul>li>ul>li {
   padding: 0;
 }
 
-section.pennant > ul > li:hover {
+section.pennant>ul>li:hover {
   transform: translateY(8px);
 }
 
-section.pennant > ul > li:nth-child(12n+1)  { background: var(--arivu-palette-1); }
-section.pennant > ul > li:nth-child(12n+2)  { background: var(--arivu-palette-2); }
-section.pennant > ul > li:nth-child(12n+3)  { background: var(--arivu-palette-3); }
-section.pennant > ul > li:nth-child(12n+4)  { background: var(--arivu-palette-4); }
-section.pennant > ul > li:nth-child(12n+5)  { background: var(--arivu-palette-5); }
-section.pennant > ul > li:nth-child(12n+6)  { background: var(--arivu-palette-6); }
-section.pennant > ul > li:nth-child(12n+7)  { background: var(--arivu-palette-7); }
-section.pennant > ul > li:nth-child(12n+8)  { background: var(--arivu-palette-8); }
-section.pennant > ul > li:nth-child(12n+9)  { background: var(--arivu-palette-9); }
-section.pennant > ul > li:nth-child(12n+10) { background: var(--arivu-palette-10); }
-section.pennant > ul > li:nth-child(12n+11) { background: var(--arivu-palette-11); }
-section.pennant > ul > li:nth-child(12n+12) { background: var(--arivu-palette-12); }
+section.pennant>ul>li:nth-child(12n+1) {
+  background: var(--arivu-palette-1);
+}
+
+section.pennant>ul>li:nth-child(12n+2) {
+  background: var(--arivu-palette-2);
+}
+
+section.pennant>ul>li:nth-child(12n+3) {
+  background: var(--arivu-palette-3);
+}
+
+section.pennant>ul>li:nth-child(12n+4) {
+  background: var(--arivu-palette-4);
+}
+
+section.pennant>ul>li:nth-child(12n+5) {
+  background: var(--arivu-palette-5);
+}
+
+section.pennant>ul>li:nth-child(12n+6) {
+  background: var(--arivu-palette-6);
+}
+
+section.pennant>ul>li:nth-child(12n+7) {
+  background: var(--arivu-palette-7);
+}
+
+section.pennant>ul>li:nth-child(12n+8) {
+  background: var(--arivu-palette-8);
+}
+
+section.pennant>ul>li:nth-child(12n+9) {
+  background: var(--arivu-palette-9);
+}
+
+section.pennant>ul>li:nth-child(12n+10) {
+  background: var(--arivu-palette-10);
+}
+
+section.pennant>ul>li:nth-child(12n+11) {
+  background: var(--arivu-palette-11);
+}
+
+section.pennant>ul>li:nth-child(12n+12) {
+  background: var(--arivu-palette-12);
+}
 
 
 
@@ -7631,6 +7832,7 @@ section.neon li:nth-child(12n+6) {
   --glow: var(--arivu-palette-6);
   animation-delay: 2.5s;
 }
+
 section.neon li:nth-child(12n+7) {
   --glow: var(--arivu-palette-7);
   animation-delay: 3.0s;
@@ -7723,6 +7925,7 @@ section.stairs li:nth-child(12n+6) {
   width: 48%;
   background-color: var(--arivu-palette-6);
 }
+
 section.stairs li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -7825,6 +8028,7 @@ section.fold li:nth-child(12n+5) {
 section.fold li:nth-child(12n+6) {
   background-color: var(--arivu-palette-6);
 }
+
 section.fold li:nth-child(12n+7) {
   background-color: var(--arivu-palette-7);
 }
@@ -7866,7 +8070,7 @@ section.parallelogram {
   flex-direction: column;
 }
 
-section.parallelogram > ul {
+section.parallelogram>ul {
   flex: 1;
   list-style: none;
   padding: 0;
@@ -7878,7 +8082,7 @@ section.parallelogram > ul {
   align-items: stretch;
 }
 
-section.parallelogram > ul > li {
+section.parallelogram>ul>li {
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
@@ -7887,16 +8091,16 @@ section.parallelogram > ul > li {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-section.parallelogram > ul > li::marker {
+section.parallelogram>ul>li::marker {
   display: none;
 }
 
-section.parallelogram > ul > li:hover {
+section.parallelogram>ul>li:hover {
   transform: translateY(-6px);
   box-shadow: 5px 10px 22px rgba(0, 0, 0, 0.35);
 }
 
-section.parallelogram > ul > li > p:first-child {
+section.parallelogram>ul>li>p:first-child {
   flex: 0 0 155px;
   display: flex;
   align-items: center;
@@ -7908,7 +8112,7 @@ section.parallelogram > ul > li > p:first-child {
   line-height: 1;
 }
 
-section.parallelogram > ul > li > ul {
+section.parallelogram>ul>li>ul {
   flex: 1;
   list-style: none;
   padding: 18px 22px;
@@ -7922,7 +8126,7 @@ section.parallelogram > ul > li > ul {
   text-align: center;
 }
 
-section.parallelogram > ul > li > ul > li {
+section.parallelogram>ul>li>ul>li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -7930,47 +8134,107 @@ section.parallelogram > ul > li > ul > li {
   line-height: 1.5;
 }
 
-section.parallelogram > ul > li > ul > li:first-child {
+section.parallelogram>ul>li>ul>li:first-child {
   font-size: 1.05em;
   font-weight: 700;
   margin-bottom: 4px;
 }
 
-section.parallelogram li:nth-child(12n+1) > p:first-child { color: var(--arivu-palette-1); }
-section.parallelogram li:nth-child(12n+1) > ul { background-color: var(--arivu-palette-1); }
+section.parallelogram li:nth-child(12n+1)>p:first-child {
+  color: var(--arivu-palette-1);
+}
 
-section.parallelogram li:nth-child(12n+2) > p:first-child { color: var(--arivu-palette-2); }
-section.parallelogram li:nth-child(12n+2) > ul { background-color: var(--arivu-palette-2); }
+section.parallelogram li:nth-child(12n+1)>ul {
+  background-color: var(--arivu-palette-1);
+}
 
-section.parallelogram li:nth-child(12n+3) > p:first-child { color: var(--arivu-palette-3); }
-section.parallelogram li:nth-child(12n+3) > ul { background-color: var(--arivu-palette-3); }
+section.parallelogram li:nth-child(12n+2)>p:first-child {
+  color: var(--arivu-palette-2);
+}
 
-section.parallelogram li:nth-child(12n+4) > p:first-child { color: var(--arivu-palette-4); }
-section.parallelogram li:nth-child(12n+4) > ul { background-color: var(--arivu-palette-4); }
+section.parallelogram li:nth-child(12n+2)>ul {
+  background-color: var(--arivu-palette-2);
+}
 
-section.parallelogram li:nth-child(12n+5) > p:first-child { color: var(--arivu-palette-5); }
-section.parallelogram li:nth-child(12n+5) > ul { background-color: var(--arivu-palette-5); }
+section.parallelogram li:nth-child(12n+3)>p:first-child {
+  color: var(--arivu-palette-3);
+}
 
-section.parallelogram li:nth-child(12n+6) > p:first-child { color: var(--arivu-palette-6); }
-section.parallelogram li:nth-child(12n+6) > ul { background-color: var(--arivu-palette-6); }
+section.parallelogram li:nth-child(12n+3)>ul {
+  background-color: var(--arivu-palette-3);
+}
 
-section.parallelogram li:nth-child(12n+7) > p:first-child { color: var(--arivu-palette-7); }
-section.parallelogram li:nth-child(12n+7) > ul { background-color: var(--arivu-palette-7); }
+section.parallelogram li:nth-child(12n+4)>p:first-child {
+  color: var(--arivu-palette-4);
+}
 
-section.parallelogram li:nth-child(12n+8) > p:first-child { color: var(--arivu-palette-8); }
-section.parallelogram li:nth-child(12n+8) > ul { background-color: var(--arivu-palette-8); }
+section.parallelogram li:nth-child(12n+4)>ul {
+  background-color: var(--arivu-palette-4);
+}
 
-section.parallelogram li:nth-child(12n+9) > p:first-child { color: var(--arivu-palette-9); }
-section.parallelogram li:nth-child(12n+9) > ul { background-color: var(--arivu-palette-9); }
+section.parallelogram li:nth-child(12n+5)>p:first-child {
+  color: var(--arivu-palette-5);
+}
 
-section.parallelogram li:nth-child(12n+10) > p:first-child { color: var(--arivu-palette-10); }
-section.parallelogram li:nth-child(12n+10) > ul { background-color: var(--arivu-palette-10); }
+section.parallelogram li:nth-child(12n+5)>ul {
+  background-color: var(--arivu-palette-5);
+}
 
-section.parallelogram li:nth-child(12n+11) > p:first-child { color: var(--arivu-palette-11); }
-section.parallelogram li:nth-child(12n+11) > ul { background-color: var(--arivu-palette-11); }
+section.parallelogram li:nth-child(12n+6)>p:first-child {
+  color: var(--arivu-palette-6);
+}
 
-section.parallelogram li:nth-child(12n+12) > p:first-child { color: var(--arivu-palette-12); }
-section.parallelogram li:nth-child(12n+12) > ul { background-color: var(--arivu-palette-12); }
+section.parallelogram li:nth-child(12n+6)>ul {
+  background-color: var(--arivu-palette-6);
+}
+
+section.parallelogram li:nth-child(12n+7)>p:first-child {
+  color: var(--arivu-palette-7);
+}
+
+section.parallelogram li:nth-child(12n+7)>ul {
+  background-color: var(--arivu-palette-7);
+}
+
+section.parallelogram li:nth-child(12n+8)>p:first-child {
+  color: var(--arivu-palette-8);
+}
+
+section.parallelogram li:nth-child(12n+8)>ul {
+  background-color: var(--arivu-palette-8);
+}
+
+section.parallelogram li:nth-child(12n+9)>p:first-child {
+  color: var(--arivu-palette-9);
+}
+
+section.parallelogram li:nth-child(12n+9)>ul {
+  background-color: var(--arivu-palette-9);
+}
+
+section.parallelogram li:nth-child(12n+10)>p:first-child {
+  color: var(--arivu-palette-10);
+}
+
+section.parallelogram li:nth-child(12n+10)>ul {
+  background-color: var(--arivu-palette-10);
+}
+
+section.parallelogram li:nth-child(12n+11)>p:first-child {
+  color: var(--arivu-palette-11);
+}
+
+section.parallelogram li:nth-child(12n+11)>ul {
+  background-color: var(--arivu-palette-11);
+}
+
+section.parallelogram li:nth-child(12n+12)>p:first-child {
+  color: var(--arivu-palette-12);
+}
+
+section.parallelogram li:nth-child(12n+12)>ul {
+  background-color: var(--arivu-palette-12);
+}
 
 
 /*===================== end of arivu advanced module ==================*/
@@ -8480,16 +8744,19 @@ section.vortex a {
 
 /* reduced-motion safety for projectors / accessibility */
 @media (prefers-reduced-motion: reduce) {
+
   /* Override transition tokens — covers all 36 var()-based transitions */
   :root,
   section {
     --arivu-transition-fast: none;
-    --arivu-transition-std:  none;
+    --arivu-transition-std: none;
   }
 
   /* Silence every remaining animation and transition site-wide */
-  *, *::before, *::after {
-    animation:  none !important;
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
     transition: none !important;
   }
 }
@@ -10271,11 +10538,12 @@ section.folder_tab {
   flex-direction: column;
 }
 
-section.folder_tab > ul {
+section.folder_tab>ul {
   flex: 1;
   list-style: none;
   padding: 0;
-  margin-top: 34px;  /* headroom for the tongue tongues that protrude above */
+  margin-top: 34px;
+  /* headroom for the tongue tongues that protrude above */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -10287,7 +10555,7 @@ section.folder_tab > ul {
    above the card top and land flush on the header (no padding gap).
    --ft-color / --ft-light set per-item below; custom properties on li
    avoid any specificity fight with the p:first-child / ul rules. */
-section.folder_tab > ul > li {
+section.folder_tab>ul>li {
   --ft-color: var(--arivu-palette-1);
   --ft-light: var(--arivu-palette-1-light);
   flex: 1 1 0;
@@ -10301,11 +10569,11 @@ section.folder_tab > ul > li {
   transition: transform 0.25s ease, filter 0.25s ease;
 }
 
-section.folder_tab > ul > li::marker {
+section.folder_tab>ul>li::marker {
   display: none;
 }
 
-section.folder_tab > ul > li:hover {
+section.folder_tab>ul>li:hover {
   transform: translateY(-6px);
   filter: drop-shadow(5px 10px 16px rgba(0, 0, 0, 0.35));
 }
@@ -10313,25 +10581,27 @@ section.folder_tab > ul > li:hover {
 /* Folder-tab tongue — positioned directly above the card top so it
    lands flush on the colored header with no white gap.
    border-radius rounds the top corners cleanly. */
-section.folder_tab > ul > li::before {
+section.folder_tab>ul>li::before {
   content: '';
   position: absolute;
   top: -30px;
   left: 0;
   width: 45%;
-  height: 34px;   /* 30px above + 4px overlap seals the seam to the header */
+  height: 34px;
+  /* 30px above + 4px overlap seals the seam to the header */
   background-color: var(--ft-color);
   border-radius: 8px 8px 0 0;
 }
 
 /* Icon zone — full-width colored header band */
-section.folder_tab > ul > li > p:first-child {
+section.folder_tab>ul>li>p:first-child {
   flex: 0 0 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  margin: 0;   /* override gaia/base theme p margins */
+  margin: 0;
+  /* override gaia/base theme p margins */
   font-size: 2.6em;
   line-height: 1;
   color: #fff;
@@ -10340,7 +10610,7 @@ section.folder_tab > ul > li > p:first-child {
 }
 
 /* Content zone — light palette tint, rounded bottom corners */
-section.folder_tab > ul > li > ul {
+section.folder_tab>ul>li>ul {
   flex: 1;
   list-style: none;
   padding: 18px 22px;
@@ -10355,7 +10625,7 @@ section.folder_tab > ul > li > ul {
   background-color: var(--ft-light);
 }
 
-section.folder_tab > ul > li > ul > li {
+section.folder_tab>ul>li>ul>li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -10364,7 +10634,7 @@ section.folder_tab > ul > li > ul > li {
   color: #333;
 }
 
-section.folder_tab > ul > li > ul > li:first-child {
+section.folder_tab>ul>li>ul>li:first-child {
   font-size: 1.05em;
   font-weight: 700;
   margin-bottom: 4px;
@@ -10372,18 +10642,65 @@ section.folder_tab > ul > li > ul > li:first-child {
 }
 
 /* Per-item palette — custom properties on li avoid all specificity conflicts */
-section.folder_tab > ul > li:nth-child(12n+1)  { --ft-color: var(--arivu-palette-1);  --ft-light: var(--arivu-palette-1-light);  }
-section.folder_tab > ul > li:nth-child(12n+2)  { --ft-color: var(--arivu-palette-2);  --ft-light: var(--arivu-palette-2-light);  }
-section.folder_tab > ul > li:nth-child(12n+3)  { --ft-color: var(--arivu-palette-3);  --ft-light: var(--arivu-palette-3-light);  }
-section.folder_tab > ul > li:nth-child(12n+4)  { --ft-color: var(--arivu-palette-4);  --ft-light: var(--arivu-palette-4-light);  }
-section.folder_tab > ul > li:nth-child(12n+5)  { --ft-color: var(--arivu-palette-5);  --ft-light: var(--arivu-palette-5-light);  }
-section.folder_tab > ul > li:nth-child(12n+6)  { --ft-color: var(--arivu-palette-6);  --ft-light: var(--arivu-palette-6-light);  }
-section.folder_tab > ul > li:nth-child(12n+7)  { --ft-color: var(--arivu-palette-7);  --ft-light: var(--arivu-palette-7-light);  }
-section.folder_tab > ul > li:nth-child(12n+8)  { --ft-color: var(--arivu-palette-8);  --ft-light: var(--arivu-palette-8-light);  }
-section.folder_tab > ul > li:nth-child(12n+9)  { --ft-color: var(--arivu-palette-9);  --ft-light: var(--arivu-palette-9-light);  }
-section.folder_tab > ul > li:nth-child(12n+10) { --ft-color: var(--arivu-palette-10); --ft-light: var(--arivu-palette-10-light); }
-section.folder_tab > ul > li:nth-child(12n+11) { --ft-color: var(--arivu-palette-11); --ft-light: var(--arivu-palette-11-light); }
-section.folder_tab > ul > li:nth-child(12n+12) { --ft-color: var(--arivu-palette-12); --ft-light: var(--arivu-palette-12-light); }
+section.folder_tab>ul>li:nth-child(12n+1) {
+  --ft-color: var(--arivu-palette-1);
+  --ft-light: var(--arivu-palette-1-light);
+}
+
+section.folder_tab>ul>li:nth-child(12n+2) {
+  --ft-color: var(--arivu-palette-2);
+  --ft-light: var(--arivu-palette-2-light);
+}
+
+section.folder_tab>ul>li:nth-child(12n+3) {
+  --ft-color: var(--arivu-palette-3);
+  --ft-light: var(--arivu-palette-3-light);
+}
+
+section.folder_tab>ul>li:nth-child(12n+4) {
+  --ft-color: var(--arivu-palette-4);
+  --ft-light: var(--arivu-palette-4-light);
+}
+
+section.folder_tab>ul>li:nth-child(12n+5) {
+  --ft-color: var(--arivu-palette-5);
+  --ft-light: var(--arivu-palette-5-light);
+}
+
+section.folder_tab>ul>li:nth-child(12n+6) {
+  --ft-color: var(--arivu-palette-6);
+  --ft-light: var(--arivu-palette-6-light);
+}
+
+section.folder_tab>ul>li:nth-child(12n+7) {
+  --ft-color: var(--arivu-palette-7);
+  --ft-light: var(--arivu-palette-7-light);
+}
+
+section.folder_tab>ul>li:nth-child(12n+8) {
+  --ft-color: var(--arivu-palette-8);
+  --ft-light: var(--arivu-palette-8-light);
+}
+
+section.folder_tab>ul>li:nth-child(12n+9) {
+  --ft-color: var(--arivu-palette-9);
+  --ft-light: var(--arivu-palette-9-light);
+}
+
+section.folder_tab>ul>li:nth-child(12n+10) {
+  --ft-color: var(--arivu-palette-10);
+  --ft-light: var(--arivu-palette-10-light);
+}
+
+section.folder_tab>ul>li:nth-child(12n+11) {
+  --ft-color: var(--arivu-palette-11);
+  --ft-light: var(--arivu-palette-11-light);
+}
+
+section.folder_tab>ul>li:nth-child(12n+12) {
+  --ft-color: var(--arivu-palette-12);
+  --ft-light: var(--arivu-palette-12-light);
+}
 
 
 /*--------------------------------------------------------------------
@@ -10404,11 +10721,12 @@ section.banner_card {
   counter-reset: banner-card;
 }
 
-section.banner_card > ul {
+section.banner_card>ul {
   flex: 1;
   list-style: none;
   padding: 0;
-  margin-top: 78px;   /* headroom: 50px banner + 28px badge clearance */
+  margin-top: 78px;
+  /* headroom: 50px banner + 28px badge clearance */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -10419,7 +10737,7 @@ section.banner_card > ul {
 /* Card container — overflow:visible lets banner protrude above; drop-shadow
    follows the painted shape. Custom property --bc-color set per item below
    to avoid specificity conflicts on ::before and p:first-child. */
-section.banner_card > ul > li {
+section.banner_card>ul>li {
   --bc-color: var(--arivu-palette-1);
   counter-increment: banner-card;
   flex: 1 1 0;
@@ -10434,17 +10752,17 @@ section.banner_card > ul > li {
   transition: transform 0.25s ease, filter 0.25s ease;
 }
 
-section.banner_card > ul > li::marker {
+section.banner_card>ul>li::marker {
   display: none;
 }
 
-section.banner_card > ul > li:hover {
+section.banner_card>ul>li:hover {
   transform: translateY(-5px);
   filter: drop-shadow(4px 8px 18px rgba(0, 0, 0, 0.28));
 }
 
 /* Number badge — auto-counted circle above the banner top */
-section.banner_card > ul > li::before {
+section.banner_card>ul>li::before {
   content: counter(banner-card);
   position: absolute;
   top: -65px;
@@ -10467,7 +10785,7 @@ section.banner_card > ul > li::before {
 
 /* Banner — centered, pulls 50px above the card top via negative margin.
    align-self:center + explicit width centers it horizontally. */
-section.banner_card > ul > li > p:first-child {
+section.banner_card>ul>li>p:first-child {
   align-self: center;
   margin: -50px 0 14px;
   width: 62%;
@@ -10488,7 +10806,7 @@ section.banner_card > ul > li > p:first-child {
 }
 
 /* Content zone */
-section.banner_card > ul > li > ul {
+section.banner_card>ul>li>ul {
   flex: 1;
   list-style: none;
   padding: 0 16px 20px;
@@ -10501,7 +10819,7 @@ section.banner_card > ul > li > ul {
   text-align: center;
 }
 
-section.banner_card > ul > li > ul > li {
+section.banner_card>ul>li>ul>li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -10510,7 +10828,7 @@ section.banner_card > ul > li > ul > li {
   color: #333;
 }
 
-section.banner_card > ul > li > ul > li:first-child {
+section.banner_card>ul>li>ul>li:first-child {
   font-size: 1.0em;
   font-weight: 700;
   margin-bottom: 6px;
@@ -10518,18 +10836,53 @@ section.banner_card > ul > li > ul > li:first-child {
 }
 
 /* Per-item palette — custom property on li avoids specificity conflicts */
-section.banner_card > ul > li:nth-child(12n+1)  { --bc-color: var(--arivu-palette-1);  }
-section.banner_card > ul > li:nth-child(12n+2)  { --bc-color: var(--arivu-palette-2);  }
-section.banner_card > ul > li:nth-child(12n+3)  { --bc-color: var(--arivu-palette-3);  }
-section.banner_card > ul > li:nth-child(12n+4)  { --bc-color: var(--arivu-palette-4);  }
-section.banner_card > ul > li:nth-child(12n+5)  { --bc-color: var(--arivu-palette-5);  }
-section.banner_card > ul > li:nth-child(12n+6)  { --bc-color: var(--arivu-palette-6);  }
-section.banner_card > ul > li:nth-child(12n+7)  { --bc-color: var(--arivu-palette-7);  }
-section.banner_card > ul > li:nth-child(12n+8)  { --bc-color: var(--arivu-palette-8);  }
-section.banner_card > ul > li:nth-child(12n+9)  { --bc-color: var(--arivu-palette-9);  }
-section.banner_card > ul > li:nth-child(12n+10) { --bc-color: var(--arivu-palette-10); }
-section.banner_card > ul > li:nth-child(12n+11) { --bc-color: var(--arivu-palette-11); }
-section.banner_card > ul > li:nth-child(12n+12) { --bc-color: var(--arivu-palette-12); }
+section.banner_card>ul>li:nth-child(12n+1) {
+  --bc-color: var(--arivu-palette-1);
+}
+
+section.banner_card>ul>li:nth-child(12n+2) {
+  --bc-color: var(--arivu-palette-2);
+}
+
+section.banner_card>ul>li:nth-child(12n+3) {
+  --bc-color: var(--arivu-palette-3);
+}
+
+section.banner_card>ul>li:nth-child(12n+4) {
+  --bc-color: var(--arivu-palette-4);
+}
+
+section.banner_card>ul>li:nth-child(12n+5) {
+  --bc-color: var(--arivu-palette-5);
+}
+
+section.banner_card>ul>li:nth-child(12n+6) {
+  --bc-color: var(--arivu-palette-6);
+}
+
+section.banner_card>ul>li:nth-child(12n+7) {
+  --bc-color: var(--arivu-palette-7);
+}
+
+section.banner_card>ul>li:nth-child(12n+8) {
+  --bc-color: var(--arivu-palette-8);
+}
+
+section.banner_card>ul>li:nth-child(12n+9) {
+  --bc-color: var(--arivu-palette-9);
+}
+
+section.banner_card>ul>li:nth-child(12n+10) {
+  --bc-color: var(--arivu-palette-10);
+}
+
+section.banner_card>ul>li:nth-child(12n+11) {
+  --bc-color: var(--arivu-palette-11);
+}
+
+section.banner_card>ul>li:nth-child(12n+12) {
+  --bc-color: var(--arivu-palette-12);
+}
 
 
 /*--------------------------------------------------------------------
@@ -10549,7 +10902,7 @@ section.tab_card {
   flex-direction: column;
 }
 
-section.tab_card > ul {
+section.tab_card>ul {
   flex: 1;
   list-style: none;
   padding: 0;
@@ -10563,7 +10916,7 @@ section.tab_card > ul {
 
 /* Card — colored outline border; overflow:hidden clips header and fold corner
    to border-radius. --tc-color set per item below to avoid specificity fights. */
-section.tab_card > ul > li {
+section.tab_card>ul>li {
   --tc-color: var(--arivu-palette-1);
   flex: 1 1 0;
   position: relative;
@@ -10577,17 +10930,17 @@ section.tab_card > ul > li {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-section.tab_card > ul > li::marker {
+section.tab_card>ul>li::marker {
   display: none;
 }
 
-section.tab_card > ul > li:hover {
+section.tab_card>ul>li:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
 /* Fold-corner — white dog-ear triangle at the top-right of the header band */
-section.tab_card > ul > li::after {
+section.tab_card>ul>li::after {
   content: '';
   position: absolute;
   top: 0;
@@ -10602,7 +10955,7 @@ section.tab_card > ul > li::after {
 
 /* Icon circle — absolute, overlaid on the colored header band.
    p:first-child is removed from flow so ul fills the full card height. */
-section.tab_card > ul > li > p:first-child {
+section.tab_card>ul>li>p:first-child {
   position: absolute;
   top: 10px;
   left: 12px;
@@ -10622,7 +10975,7 @@ section.tab_card > ul > li > p:first-child {
 }
 
 /* Content column — fills the full card height */
-section.tab_card > ul > li > ul {
+section.tab_card>ul>li>ul {
   flex: 1;
   list-style: none;
   padding: 0;
@@ -10632,7 +10985,7 @@ section.tab_card > ul > li > ul {
 }
 
 /* Title — colored header band; 76px left padding clears icon (12+52+12) */
-section.tab_card > ul > li > ul > li:first-child {
+section.tab_card>ul>li>ul>li:first-child {
   list-style: none;
   background-color: var(--tc-color);
   color: #ffffff;
@@ -10647,7 +11000,7 @@ section.tab_card > ul > li > ul > li:first-child {
 }
 
 /* Body text — flex:1 fills remaining card height; text starts at top with padding */
-section.tab_card > ul > li > ul > li:nth-child(n+2) {
+section.tab_card>ul>li>ul>li:nth-child(n+2) {
   list-style: none;
   flex: 1;
   padding: 16px 16px;
@@ -10659,18 +11012,53 @@ section.tab_card > ul > li > ul > li:nth-child(n+2) {
 }
 
 /* Per-item palette */
-section.tab_card > ul > li:nth-child(12n+1)  { --tc-color: var(--arivu-palette-1);  }
-section.tab_card > ul > li:nth-child(12n+2)  { --tc-color: var(--arivu-palette-2);  }
-section.tab_card > ul > li:nth-child(12n+3)  { --tc-color: var(--arivu-palette-3);  }
-section.tab_card > ul > li:nth-child(12n+4)  { --tc-color: var(--arivu-palette-4);  }
-section.tab_card > ul > li:nth-child(12n+5)  { --tc-color: var(--arivu-palette-5);  }
-section.tab_card > ul > li:nth-child(12n+6)  { --tc-color: var(--arivu-palette-6);  }
-section.tab_card > ul > li:nth-child(12n+7)  { --tc-color: var(--arivu-palette-7);  }
-section.tab_card > ul > li:nth-child(12n+8)  { --tc-color: var(--arivu-palette-8);  }
-section.tab_card > ul > li:nth-child(12n+9)  { --tc-color: var(--arivu-palette-9);  }
-section.tab_card > ul > li:nth-child(12n+10) { --tc-color: var(--arivu-palette-10); }
-section.tab_card > ul > li:nth-child(12n+11) { --tc-color: var(--arivu-palette-11); }
-section.tab_card > ul > li:nth-child(12n+12) { --tc-color: var(--arivu-palette-12); }
+section.tab_card>ul>li:nth-child(12n+1) {
+  --tc-color: var(--arivu-palette-1);
+}
+
+section.tab_card>ul>li:nth-child(12n+2) {
+  --tc-color: var(--arivu-palette-2);
+}
+
+section.tab_card>ul>li:nth-child(12n+3) {
+  --tc-color: var(--arivu-palette-3);
+}
+
+section.tab_card>ul>li:nth-child(12n+4) {
+  --tc-color: var(--arivu-palette-4);
+}
+
+section.tab_card>ul>li:nth-child(12n+5) {
+  --tc-color: var(--arivu-palette-5);
+}
+
+section.tab_card>ul>li:nth-child(12n+6) {
+  --tc-color: var(--arivu-palette-6);
+}
+
+section.tab_card>ul>li:nth-child(12n+7) {
+  --tc-color: var(--arivu-palette-7);
+}
+
+section.tab_card>ul>li:nth-child(12n+8) {
+  --tc-color: var(--arivu-palette-8);
+}
+
+section.tab_card>ul>li:nth-child(12n+9) {
+  --tc-color: var(--arivu-palette-9);
+}
+
+section.tab_card>ul>li:nth-child(12n+10) {
+  --tc-color: var(--arivu-palette-10);
+}
+
+section.tab_card>ul>li:nth-child(12n+11) {
+  --tc-color: var(--arivu-palette-11);
+}
+
+section.tab_card>ul>li:nth-child(12n+12) {
+  --tc-color: var(--arivu-palette-12);
+}
 
 
 /*--------------------------------------------------------------------
@@ -10691,7 +11079,7 @@ section.chevron_panel {
   flex-direction: column;
 }
 
-section.chevron_panel > ul {
+section.chevron_panel>ul {
   flex: 1;
   list-style: none;
   padding: 0;
@@ -10705,7 +11093,7 @@ section.chevron_panel > ul {
 
 /* Card: li is a plain flex column; only p:first-child gets the chevron
    clip-path. --cp-color set per item below via custom properties. */
-section.chevron_panel > ul > li {
+section.chevron_panel>ul>li {
   --cp-color: var(--arivu-palette-1);
   flex: 1 1 0;
   position: relative;
@@ -10714,41 +11102,40 @@ section.chevron_panel > ul > li {
   transition: transform 0.25s ease;
 }
 
-section.chevron_panel > ul > li::marker {
+section.chevron_panel>ul>li::marker {
   display: none;
 }
 
-section.chevron_panel > ul > li:hover {
+section.chevron_panel>ul>li:hover {
   transform: translateY(-5px);
 }
 
 /* Icon zone — flat left, right-pointing arrow. clip-path is on p:first-child
    only so the text zone below stays a plain rectangle.
    drop-shadow follows the clip shape for depth. */
-section.chevron_panel > ul > li > p:first-child {
+section.chevron_panel>ul>li>p:first-child {
   flex: 0 0 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 36px;
-  margin: 0;   /* override gaia p margins */
+  margin: 0;
+  /* override gaia p margins */
   font-size: 2.4em;
   line-height: 1;
   color: #ffffff;
   background-color: var(--cp-color);
-  clip-path: polygon(
-    0% 0%,
-    calc(100% - 26px) 0%,
-    100% 50%,
-    calc(100% - 26px) 100%,
-    0% 100%
-  );
+  clip-path: polygon(0% 0%,
+      calc(100% - 26px) 0%,
+      100% 50%,
+      calc(100% - 26px) 100%,
+      0% 100%);
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.28));
 }
 
 /* Content zone — transparent rectangle; text is always within the safe
    center column, clear of the chevron tips on either side */
-section.chevron_panel > ul > li > ul {
+section.chevron_panel>ul>li>ul {
   flex: 1;
   list-style: none;
   padding: 18px 32px;
@@ -10762,7 +11149,7 @@ section.chevron_panel > ul > li > ul {
   background-color: transparent;
 }
 
-section.chevron_panel > ul > li > ul > li {
+section.chevron_panel>ul>li>ul>li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -10771,7 +11158,7 @@ section.chevron_panel > ul > li > ul > li {
   color: #333;
 }
 
-section.chevron_panel > ul > li > ul > li:first-child {
+section.chevron_panel>ul>li>ul>li:first-child {
   font-size: 1.05em;
   font-weight: 700;
   margin-bottom: 4px;
@@ -10779,18 +11166,53 @@ section.chevron_panel > ul > li > ul > li:first-child {
 }
 
 /* Per-item palette — custom properties on li avoid all specificity conflicts */
-section.chevron_panel > ul > li:nth-child(12n+1)  { --cp-color: var(--arivu-palette-1); }
-section.chevron_panel > ul > li:nth-child(12n+2)  { --cp-color: var(--arivu-palette-2); }
-section.chevron_panel > ul > li:nth-child(12n+3)  { --cp-color: var(--arivu-palette-3); }
-section.chevron_panel > ul > li:nth-child(12n+4)  { --cp-color: var(--arivu-palette-4); }
-section.chevron_panel > ul > li:nth-child(12n+5)  { --cp-color: var(--arivu-palette-5); }
-section.chevron_panel > ul > li:nth-child(12n+6)  { --cp-color: var(--arivu-palette-6); }
-section.chevron_panel > ul > li:nth-child(12n+7)  { --cp-color: var(--arivu-palette-7); }
-section.chevron_panel > ul > li:nth-child(12n+8)  { --cp-color: var(--arivu-palette-8); }
-section.chevron_panel > ul > li:nth-child(12n+9)  { --cp-color: var(--arivu-palette-9); }
-section.chevron_panel > ul > li:nth-child(12n+10) { --cp-color: var(--arivu-palette-10); }
-section.chevron_panel > ul > li:nth-child(12n+11) { --cp-color: var(--arivu-palette-11); }
-section.chevron_panel > ul > li:nth-child(12n+12) { --cp-color: var(--arivu-palette-12); }
+section.chevron_panel>ul>li:nth-child(12n+1) {
+  --cp-color: var(--arivu-palette-1);
+}
+
+section.chevron_panel>ul>li:nth-child(12n+2) {
+  --cp-color: var(--arivu-palette-2);
+}
+
+section.chevron_panel>ul>li:nth-child(12n+3) {
+  --cp-color: var(--arivu-palette-3);
+}
+
+section.chevron_panel>ul>li:nth-child(12n+4) {
+  --cp-color: var(--arivu-palette-4);
+}
+
+section.chevron_panel>ul>li:nth-child(12n+5) {
+  --cp-color: var(--arivu-palette-5);
+}
+
+section.chevron_panel>ul>li:nth-child(12n+6) {
+  --cp-color: var(--arivu-palette-6);
+}
+
+section.chevron_panel>ul>li:nth-child(12n+7) {
+  --cp-color: var(--arivu-palette-7);
+}
+
+section.chevron_panel>ul>li:nth-child(12n+8) {
+  --cp-color: var(--arivu-palette-8);
+}
+
+section.chevron_panel>ul>li:nth-child(12n+9) {
+  --cp-color: var(--arivu-palette-9);
+}
+
+section.chevron_panel>ul>li:nth-child(12n+10) {
+  --cp-color: var(--arivu-palette-10);
+}
+
+section.chevron_panel>ul>li:nth-child(12n+11) {
+  --cp-color: var(--arivu-palette-11);
+}
+
+section.chevron_panel>ul>li:nth-child(12n+12) {
+  --cp-color: var(--arivu-palette-12);
+}
 
 
 /*--------------------------------------------------------------------
@@ -10812,7 +11234,7 @@ section.fold_banner {
   counter-reset: fold-banner;
 }
 
-section.fold_banner > ul {
+section.fold_banner>ul {
   flex: 1;
   list-style: none;
   padding: 0;
@@ -10824,7 +11246,7 @@ section.fold_banner > ul {
 }
 
 /* Row — horizontal strip; --fb-color cascades to ::before and p:first-child */
-section.fold_banner > ul > li {
+section.fold_banner>ul>li {
   --fb-color: var(--arivu-palette-1);
   counter-increment: fold-banner;
   display: flex;
@@ -10838,9 +11260,11 @@ section.fold_banner > ul > li {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-section.fold_banner > ul > li::marker { display: none; }
+section.fold_banner>ul>li::marker {
+  display: none;
+}
 
-section.fold_banner > ul > li:hover {
+section.fold_banner>ul>li:hover {
   transform: translateX(4px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
@@ -10849,7 +11273,7 @@ section.fold_banner > ul > li:hover {
    "folded banner" look; drop-shadow bleeds into the content zone for depth.
    No explicit order: ::before is DOM-first (index 0), ul is index 2, so
    natural order places ::before first and ul second without any override. */
-section.fold_banner > ul > li::before {
+section.fold_banner>ul>li::before {
   content: counter(fold-banner, decimal-leading-zero);
   flex: 0 0 128px;
   display: flex;
@@ -10866,7 +11290,7 @@ section.fold_banner > ul > li::before {
 }
 
 /* Content zone — sits between number and icon in flex order */
-section.fold_banner > ul > li > ul {
+section.fold_banner>ul>li>ul {
   flex: 1;
   list-style: none;
   padding: 14px 14px 14px 22px;
@@ -10877,7 +11301,7 @@ section.fold_banner > ul > li > ul {
   gap: 4px;
 }
 
-section.fold_banner > ul > li > ul > li {
+section.fold_banner>ul>li>ul>li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -10886,7 +11310,7 @@ section.fold_banner > ul > li > ul > li {
   color: #444;
 }
 
-section.fold_banner > ul > li > ul > li:first-child {
+section.fold_banner>ul>li>ul>li:first-child {
   font-size: 1.0em;
   font-weight: 700;
   color: #111;
@@ -10897,7 +11321,7 @@ section.fold_banner > ul > li > ul > li:first-child {
    so order 0 keeps ul before this at order 3). Width matches the number zone.
    clip-path mirrors the number zone's diagonal: left edge goes from 26px at
    top to 0px at bottom, creating a matching "folded" edge on the right side. */
-section.fold_banner > ul > li > p:first-child {
+section.fold_banner>ul>li>p:first-child {
   order: 3;
   flex: 0 0 128px;
   display: flex;
@@ -10913,18 +11337,53 @@ section.fold_banner > ul > li > p:first-child {
 }
 
 /* Per-item palette — CSS custom property on li avoids specificity conflicts */
-section.fold_banner > ul > li:nth-child(12n+1)  { --fb-color: var(--arivu-palette-1);  }
-section.fold_banner > ul > li:nth-child(12n+2)  { --fb-color: var(--arivu-palette-2);  }
-section.fold_banner > ul > li:nth-child(12n+3)  { --fb-color: var(--arivu-palette-3);  }
-section.fold_banner > ul > li:nth-child(12n+4)  { --fb-color: var(--arivu-palette-4);  }
-section.fold_banner > ul > li:nth-child(12n+5)  { --fb-color: var(--arivu-palette-5);  }
-section.fold_banner > ul > li:nth-child(12n+6)  { --fb-color: var(--arivu-palette-6);  }
-section.fold_banner > ul > li:nth-child(12n+7)  { --fb-color: var(--arivu-palette-7);  }
-section.fold_banner > ul > li:nth-child(12n+8)  { --fb-color: var(--arivu-palette-8);  }
-section.fold_banner > ul > li:nth-child(12n+9)  { --fb-color: var(--arivu-palette-9);  }
-section.fold_banner > ul > li:nth-child(12n+10) { --fb-color: var(--arivu-palette-10); }
-section.fold_banner > ul > li:nth-child(12n+11) { --fb-color: var(--arivu-palette-11); }
-section.fold_banner > ul > li:nth-child(12n+12) { --fb-color: var(--arivu-palette-12); }
+section.fold_banner>ul>li:nth-child(12n+1) {
+  --fb-color: var(--arivu-palette-1);
+}
+
+section.fold_banner>ul>li:nth-child(12n+2) {
+  --fb-color: var(--arivu-palette-2);
+}
+
+section.fold_banner>ul>li:nth-child(12n+3) {
+  --fb-color: var(--arivu-palette-3);
+}
+
+section.fold_banner>ul>li:nth-child(12n+4) {
+  --fb-color: var(--arivu-palette-4);
+}
+
+section.fold_banner>ul>li:nth-child(12n+5) {
+  --fb-color: var(--arivu-palette-5);
+}
+
+section.fold_banner>ul>li:nth-child(12n+6) {
+  --fb-color: var(--arivu-palette-6);
+}
+
+section.fold_banner>ul>li:nth-child(12n+7) {
+  --fb-color: var(--arivu-palette-7);
+}
+
+section.fold_banner>ul>li:nth-child(12n+8) {
+  --fb-color: var(--arivu-palette-8);
+}
+
+section.fold_banner>ul>li:nth-child(12n+9) {
+  --fb-color: var(--arivu-palette-9);
+}
+
+section.fold_banner>ul>li:nth-child(12n+10) {
+  --fb-color: var(--arivu-palette-10);
+}
+
+section.fold_banner>ul>li:nth-child(12n+11) {
+  --fb-color: var(--arivu-palette-11);
+}
+
+section.fold_banner>ul>li:nth-child(12n+12) {
+  --fb-color: var(--arivu-palette-12);
+}
 
 
 /*--------------------------------------------------------------------
@@ -10945,7 +11404,7 @@ section.dash_button {
   flex-direction: column;
 }
 
-section.dash_button > ul {
+section.dash_button>ul {
   flex: 1;
   list-style: none;
   padding: 0;
@@ -10958,7 +11417,7 @@ section.dash_button > ul {
 }
 
 /* Pill card — colored capsule; overflow:hidden clips icon circle to pill boundary */
-section.dash_button > ul > li {
+section.dash_button>ul>li {
   --db-color: var(--arivu-palette-1);
   flex: 1 1 0;
   position: relative;
@@ -10974,22 +11433,22 @@ section.dash_button > ul > li {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-section.dash_button > ul > li::marker {
+section.dash_button>ul>li::marker {
   display: none;
 }
 
-section.dash_button > ul > li:hover {
+section.dash_button>ul>li:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
 }
 
 /* Even cards: icon moves to bottom for alternating visual rhythm */
-section.dash_button > ul > li:nth-child(even) {
+section.dash_button>ul>li:nth-child(even) {
   flex-direction: column-reverse;
 }
 
 /* Icon zone — white circle with palette-colored emoji */
-section.dash_button > ul > li > p:first-child {
+section.dash_button>ul>li>p:first-child {
   margin: 0;
   flex-shrink: 0;
   width: 160px;
@@ -11006,7 +11465,7 @@ section.dash_button > ul > li > p:first-child {
 }
 
 /* Body text zone */
-section.dash_button > ul > li > ul {
+section.dash_button>ul>li>ul {
   flex: 1;
   list-style: none;
   padding: 0 8px;
@@ -11019,7 +11478,7 @@ section.dash_button > ul > li > ul {
   text-align: center;
 }
 
-section.dash_button > ul > li > ul > li {
+section.dash_button>ul>li>ul>li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -11028,7 +11487,7 @@ section.dash_button > ul > li > ul > li {
   color: rgba(255, 255, 255, 0.90);
 }
 
-section.dash_button > ul > li > ul > li:first-child {
+section.dash_button>ul>li>ul>li:first-child {
   font-size: 0.90em;
   font-weight: 700;
   color: #ffffff;
@@ -11036,18 +11495,53 @@ section.dash_button > ul > li > ul > li:first-child {
 }
 
 /* Per-item palette colors */
-section.dash_button > ul > li:nth-child(12n+1)  { --db-color: var(--arivu-palette-1);  }
-section.dash_button > ul > li:nth-child(12n+2)  { --db-color: var(--arivu-palette-2);  }
-section.dash_button > ul > li:nth-child(12n+3)  { --db-color: var(--arivu-palette-3);  }
-section.dash_button > ul > li:nth-child(12n+4)  { --db-color: var(--arivu-palette-4);  }
-section.dash_button > ul > li:nth-child(12n+5)  { --db-color: var(--arivu-palette-5);  }
-section.dash_button > ul > li:nth-child(12n+6)  { --db-color: var(--arivu-palette-6);  }
-section.dash_button > ul > li:nth-child(12n+7)  { --db-color: var(--arivu-palette-7);  }
-section.dash_button > ul > li:nth-child(12n+8)  { --db-color: var(--arivu-palette-8);  }
-section.dash_button > ul > li:nth-child(12n+9)  { --db-color: var(--arivu-palette-9);  }
-section.dash_button > ul > li:nth-child(12n+10) { --db-color: var(--arivu-palette-10); }
-section.dash_button > ul > li:nth-child(12n+11) { --db-color: var(--arivu-palette-11); }
-section.dash_button > ul > li:nth-child(12n+12) { --db-color: var(--arivu-palette-12); }
+section.dash_button>ul>li:nth-child(12n+1) {
+  --db-color: var(--arivu-palette-1);
+}
+
+section.dash_button>ul>li:nth-child(12n+2) {
+  --db-color: var(--arivu-palette-2);
+}
+
+section.dash_button>ul>li:nth-child(12n+3) {
+  --db-color: var(--arivu-palette-3);
+}
+
+section.dash_button>ul>li:nth-child(12n+4) {
+  --db-color: var(--arivu-palette-4);
+}
+
+section.dash_button>ul>li:nth-child(12n+5) {
+  --db-color: var(--arivu-palette-5);
+}
+
+section.dash_button>ul>li:nth-child(12n+6) {
+  --db-color: var(--arivu-palette-6);
+}
+
+section.dash_button>ul>li:nth-child(12n+7) {
+  --db-color: var(--arivu-palette-7);
+}
+
+section.dash_button>ul>li:nth-child(12n+8) {
+  --db-color: var(--arivu-palette-8);
+}
+
+section.dash_button>ul>li:nth-child(12n+9) {
+  --db-color: var(--arivu-palette-9);
+}
+
+section.dash_button>ul>li:nth-child(12n+10) {
+  --db-color: var(--arivu-palette-10);
+}
+
+section.dash_button>ul>li:nth-child(12n+11) {
+  --db-color: var(--arivu-palette-11);
+}
+
+section.dash_button>ul>li:nth-child(12n+12) {
+  --db-color: var(--arivu-palette-12);
+}
 
 
 /*--------------------------------------------------------------------
@@ -11069,7 +11563,7 @@ section.chevron_block {
   flex-direction: column;
 }
 
-section.chevron_block > ul {
+section.chevron_block>ul {
   flex: 1;
   list-style: none;
   padding: 0;
@@ -11081,7 +11575,7 @@ section.chevron_block > ul {
 }
 
 /* Row: icon strip left, text panel right by default */
-section.chevron_block > ul > li {
+section.chevron_block>ul>li {
   --chb-color: var(--arivu-palette-1);
   --chb-light: var(--arivu-palette-1-light);
   display: flex;
@@ -11091,30 +11585,31 @@ section.chevron_block > ul > li {
   list-style: none;
 }
 
-section.chevron_block > ul > li::marker {
+section.chevron_block>ul>li::marker {
   display: none;
 }
 
-section.chevron_block > ul > li:hover {
+section.chevron_block>ul>li:hover {
   filter: brightness(1.04);
 }
 
 /* Even rows: icon strip right, text panel left */
-section.chevron_block > ul > li:nth-child(even) {
+section.chevron_block>ul>li:nth-child(even) {
   flex-direction: row-reverse;
 }
 
 /* Icon strip — solid-color band, right-pointing chevron arrow (odd rows).
    Overlaps text panel by the chevron depth (34px) so the tip sits inside
    the light-colored zone. drop-shadow follows the clipped shape. */
-section.chevron_block > ul > li > p:first-child {
+section.chevron_block>ul>li>p:first-child {
   margin: 0;
   flex-shrink: 0;
   width: 116px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 8px 0 16px;   /* shift icon left of the arrow tip */
+  padding: 0 8px 0 16px;
+  /* shift icon left of the arrow tip */
   font-size: 2.2em;
   line-height: 1;
   color: #ffffff;
@@ -11123,11 +11618,12 @@ section.chevron_block > ul > li > p:first-child {
   filter: drop-shadow(3px 0 6px rgba(0, 0, 0, 0.22));
   position: relative;
   z-index: 2;
-  margin-right: -34px;   /* overlap text panel by arrow depth */
+  margin-right: -34px;
+  /* overlap text panel by arrow depth */
 }
 
 /* Even rows: left-pointing chevron arrow; strip on right */
-section.chevron_block > ul > li:nth-child(even) > p:first-child {
+section.chevron_block>ul>li:nth-child(even)>p:first-child {
   clip-path: polygon(34px 0%, 100% 0%, 100% 100%, 34px 100%, 0% 50%);
   padding: 0 16px 0 8px;
   filter: drop-shadow(-3px 0 6px rgba(0, 0, 0, 0.22));
@@ -11137,7 +11633,7 @@ section.chevron_block > ul > li:nth-child(even) > p:first-child {
 
 /* Text panel — light color, rounded corners on the far (outer) end.
    Left padding clears the overlapping chevron tip (odd rows). */
-section.chevron_block > ul > li > ul {
+section.chevron_block>ul>li>ul {
   flex: 1;
   list-style: none;
   margin: 0;
@@ -11153,12 +11649,12 @@ section.chevron_block > ul > li > ul {
 }
 
 /* Even rows: rounded left corners, extra right padding for chevron clearance */
-section.chevron_block > ul > li:nth-child(even) > ul {
+section.chevron_block>ul>li:nth-child(even)>ul {
   border-radius: var(--arivu-radius) 0 0 var(--arivu-radius);
   padding: 12px 58px 12px 22px;
 }
 
-section.chevron_block > ul > li > ul > li {
+section.chevron_block>ul>li>ul>li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -11167,7 +11663,7 @@ section.chevron_block > ul > li > ul > li {
   color: #333;
 }
 
-section.chevron_block > ul > li > ul > li:first-child {
+section.chevron_block>ul>li>ul>li:first-child {
   font-size: 0.92em;
   font-weight: 700;
   color: #111;
@@ -11175,18 +11671,65 @@ section.chevron_block > ul > li > ul > li:first-child {
 }
 
 /* Per-item palette — custom properties avoid specificity conflicts */
-section.chevron_block > ul > li:nth-child(12n+1)  { --chb-color: var(--arivu-palette-1);  --chb-light: var(--arivu-palette-1-light);  }
-section.chevron_block > ul > li:nth-child(12n+2)  { --chb-color: var(--arivu-palette-2);  --chb-light: var(--arivu-palette-2-light);  }
-section.chevron_block > ul > li:nth-child(12n+3)  { --chb-color: var(--arivu-palette-3);  --chb-light: var(--arivu-palette-3-light);  }
-section.chevron_block > ul > li:nth-child(12n+4)  { --chb-color: var(--arivu-palette-4);  --chb-light: var(--arivu-palette-4-light);  }
-section.chevron_block > ul > li:nth-child(12n+5)  { --chb-color: var(--arivu-palette-5);  --chb-light: var(--arivu-palette-5-light);  }
-section.chevron_block > ul > li:nth-child(12n+6)  { --chb-color: var(--arivu-palette-6);  --chb-light: var(--arivu-palette-6-light);  }
-section.chevron_block > ul > li:nth-child(12n+7)  { --chb-color: var(--arivu-palette-7);  --chb-light: var(--arivu-palette-7-light);  }
-section.chevron_block > ul > li:nth-child(12n+8)  { --chb-color: var(--arivu-palette-8);  --chb-light: var(--arivu-palette-8-light);  }
-section.chevron_block > ul > li:nth-child(12n+9)  { --chb-color: var(--arivu-palette-9);  --chb-light: var(--arivu-palette-9-light);  }
-section.chevron_block > ul > li:nth-child(12n+10) { --chb-color: var(--arivu-palette-10); --chb-light: var(--arivu-palette-10-light); }
-section.chevron_block > ul > li:nth-child(12n+11) { --chb-color: var(--arivu-palette-11); --chb-light: var(--arivu-palette-11-light); }
-section.chevron_block > ul > li:nth-child(12n+12) { --chb-color: var(--arivu-palette-12); --chb-light: var(--arivu-palette-12-light); }
+section.chevron_block>ul>li:nth-child(12n+1) {
+  --chb-color: var(--arivu-palette-1);
+  --chb-light: var(--arivu-palette-1-light);
+}
+
+section.chevron_block>ul>li:nth-child(12n+2) {
+  --chb-color: var(--arivu-palette-2);
+  --chb-light: var(--arivu-palette-2-light);
+}
+
+section.chevron_block>ul>li:nth-child(12n+3) {
+  --chb-color: var(--arivu-palette-3);
+  --chb-light: var(--arivu-palette-3-light);
+}
+
+section.chevron_block>ul>li:nth-child(12n+4) {
+  --chb-color: var(--arivu-palette-4);
+  --chb-light: var(--arivu-palette-4-light);
+}
+
+section.chevron_block>ul>li:nth-child(12n+5) {
+  --chb-color: var(--arivu-palette-5);
+  --chb-light: var(--arivu-palette-5-light);
+}
+
+section.chevron_block>ul>li:nth-child(12n+6) {
+  --chb-color: var(--arivu-palette-6);
+  --chb-light: var(--arivu-palette-6-light);
+}
+
+section.chevron_block>ul>li:nth-child(12n+7) {
+  --chb-color: var(--arivu-palette-7);
+  --chb-light: var(--arivu-palette-7-light);
+}
+
+section.chevron_block>ul>li:nth-child(12n+8) {
+  --chb-color: var(--arivu-palette-8);
+  --chb-light: var(--arivu-palette-8-light);
+}
+
+section.chevron_block>ul>li:nth-child(12n+9) {
+  --chb-color: var(--arivu-palette-9);
+  --chb-light: var(--arivu-palette-9-light);
+}
+
+section.chevron_block>ul>li:nth-child(12n+10) {
+  --chb-color: var(--arivu-palette-10);
+  --chb-light: var(--arivu-palette-10-light);
+}
+
+section.chevron_block>ul>li:nth-child(12n+11) {
+  --chb-color: var(--arivu-palette-11);
+  --chb-light: var(--arivu-palette-11-light);
+}
+
+section.chevron_block>ul>li:nth-child(12n+12) {
+  --chb-color: var(--arivu-palette-12);
+  --chb-light: var(--arivu-palette-12-light);
+}
 
 
 /*--------------------------------------------------------------------
@@ -11208,7 +11751,7 @@ section.envelop {
   counter-reset: env-count;
 }
 
-section.envelop > ul {
+section.envelop>ul {
   flex: 1;
   list-style: none;
   padding: 0;
@@ -11221,7 +11764,7 @@ section.envelop > ul {
 }
 
 /* Portrait card — white base, rounded corners, shadow */
-section.envelop > ul > li {
+section.envelop>ul>li {
   --env-color: var(--arivu-palette-1);
   counter-increment: env-count;
   flex: 1 1 0;
@@ -11235,15 +11778,17 @@ section.envelop > ul > li {
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
-section.envelop > ul > li::marker { display: none; }
+section.envelop>ul>li::marker {
+  display: none;
+}
 
-section.envelop > ul > li:hover {
+section.envelop>ul>li:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.20);
 }
 
 /* Dome — full card width, flat top, elliptical bottom; icon centered */
-section.envelop > ul > li > p:first-child {
+section.envelop>ul>li>p:first-child {
   flex: 0 0 54%;
   width: 100%;
   margin: 0;
@@ -11260,7 +11805,7 @@ section.envelop > ul > li > p:first-child {
 }
 
 /* Text body — centered layout; padding-top clears the step badge */
-section.envelop > ul > li > ul {
+section.envelop>ul>li>ul {
   flex: 1;
   list-style: none;
   padding: 26px 12px 16px;
@@ -11275,7 +11820,7 @@ section.envelop > ul > li > ul {
 }
 
 /* Step badge — auto-numbered circle sitting at the dome / text junction */
-section.envelop > ul > li > ul::before {
+section.envelop>ul>li>ul::before {
   content: counter(env-count);
   position: absolute;
   top: -18px;
@@ -11294,7 +11839,7 @@ section.envelop > ul > li > ul::before {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.30), inset 0 0 0 3px rgba(0, 0, 0, 0.14);
 }
 
-section.envelop > ul > li > ul > li {
+section.envelop>ul>li>ul>li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -11303,7 +11848,7 @@ section.envelop > ul > li > ul > li {
   color: #444;
 }
 
-section.envelop > ul > li > ul > li:first-child {
+section.envelop>ul>li>ul>li:first-child {
   font-size: 0.92em;
   font-weight: 700;
   color: #111;
@@ -11311,18 +11856,53 @@ section.envelop > ul > li > ul > li:first-child {
 }
 
 /* Per-item palette colors */
-section.envelop > ul > li:nth-child(12n+1)  { --env-color: var(--arivu-palette-1);  }
-section.envelop > ul > li:nth-child(12n+2)  { --env-color: var(--arivu-palette-2);  }
-section.envelop > ul > li:nth-child(12n+3)  { --env-color: var(--arivu-palette-3);  }
-section.envelop > ul > li:nth-child(12n+4)  { --env-color: var(--arivu-palette-4);  }
-section.envelop > ul > li:nth-child(12n+5)  { --env-color: var(--arivu-palette-5);  }
-section.envelop > ul > li:nth-child(12n+6)  { --env-color: var(--arivu-palette-6);  }
-section.envelop > ul > li:nth-child(12n+7)  { --env-color: var(--arivu-palette-7);  }
-section.envelop > ul > li:nth-child(12n+8)  { --env-color: var(--arivu-palette-8);  }
-section.envelop > ul > li:nth-child(12n+9)  { --env-color: var(--arivu-palette-9);  }
-section.envelop > ul > li:nth-child(12n+10) { --env-color: var(--arivu-palette-10); }
-section.envelop > ul > li:nth-child(12n+11) { --env-color: var(--arivu-palette-11); }
-section.envelop > ul > li:nth-child(12n+12) { --env-color: var(--arivu-palette-12); }
+section.envelop>ul>li:nth-child(12n+1) {
+  --env-color: var(--arivu-palette-1);
+}
+
+section.envelop>ul>li:nth-child(12n+2) {
+  --env-color: var(--arivu-palette-2);
+}
+
+section.envelop>ul>li:nth-child(12n+3) {
+  --env-color: var(--arivu-palette-3);
+}
+
+section.envelop>ul>li:nth-child(12n+4) {
+  --env-color: var(--arivu-palette-4);
+}
+
+section.envelop>ul>li:nth-child(12n+5) {
+  --env-color: var(--arivu-palette-5);
+}
+
+section.envelop>ul>li:nth-child(12n+6) {
+  --env-color: var(--arivu-palette-6);
+}
+
+section.envelop>ul>li:nth-child(12n+7) {
+  --env-color: var(--arivu-palette-7);
+}
+
+section.envelop>ul>li:nth-child(12n+8) {
+  --env-color: var(--arivu-palette-8);
+}
+
+section.envelop>ul>li:nth-child(12n+9) {
+  --env-color: var(--arivu-palette-9);
+}
+
+section.envelop>ul>li:nth-child(12n+10) {
+  --env-color: var(--arivu-palette-10);
+}
+
+section.envelop>ul>li:nth-child(12n+11) {
+  --env-color: var(--arivu-palette-11);
+}
+
+section.envelop>ul>li:nth-child(12n+12) {
+  --env-color: var(--arivu-palette-12);
+}
 
 
 /*--------------------------------------------------------------------
@@ -11341,7 +11921,7 @@ section.cap_card {
   flex-direction: column;
 }
 
-section.cap_card > ul {
+section.cap_card>ul {
   flex: 1;
   list-style: none;
   padding: 0;
@@ -11354,7 +11934,7 @@ section.cap_card > ul {
 }
 
 /* li = transparent flex column; zones connect with no gap, sharing corners */
-section.cap_card > ul > li {
+section.cap_card>ul>li {
   --cap-color: var(--arivu-palette-1);
   flex: 1 1 0;
   display: flex;
@@ -11366,16 +11946,18 @@ section.cap_card > ul > li {
   transition: transform 0.25s ease, filter 0.25s ease;
 }
 
-section.cap_card > ul > li::marker { display: none; }
+section.cap_card>ul>li::marker {
+  display: none;
+}
 
-section.cap_card > ul > li:hover {
+section.cap_card>ul>li:hover {
   transform: translateY(-5px);
   filter: drop-shadow(4px 8px 20px rgba(0, 0, 0, 0.28));
 }
 
 /* Icon zone — thick coloured border top/left/right; no bottom border so it
    flows directly into the content zone below */
-section.cap_card > ul > li > p:first-child {
+section.cap_card>ul>li>p:first-child {
   margin: 0;
   padding: 22px 12px;
   display: flex;
@@ -11392,7 +11974,7 @@ section.cap_card > ul > li > p:first-child {
 
 /* Content zone — same thickness grey border; no top border so zones share
    a clean join; bottom corners rounded to complete the card shape */
-section.cap_card > ul > li > ul {
+section.cap_card>ul>li>ul {
   flex: 1;
   list-style: none;
   padding: 14px 16px 18px;
@@ -11408,7 +11990,7 @@ section.cap_card > ul > li > ul {
   border-radius: 0 0 var(--arivu-radius) var(--arivu-radius);
 }
 
-section.cap_card > ul > li > ul > li {
+section.cap_card>ul>li>ul>li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -11418,7 +12000,7 @@ section.cap_card > ul > li > ul > li {
 }
 
 /* Bold title row with a thin neutral separator */
-section.cap_card > ul > li > ul > li:first-child {
+section.cap_card>ul>li>ul>li:first-child {
   font-size: 1.0em;
   font-weight: 700;
   color: #111;
@@ -11429,18 +12011,53 @@ section.cap_card > ul > li > ul > li:first-child {
 }
 
 /* Per-item palette */
-section.cap_card > ul > li:nth-child(12n+1)  { --cap-color: var(--arivu-palette-1);  }
-section.cap_card > ul > li:nth-child(12n+2)  { --cap-color: var(--arivu-palette-2);  }
-section.cap_card > ul > li:nth-child(12n+3)  { --cap-color: var(--arivu-palette-3);  }
-section.cap_card > ul > li:nth-child(12n+4)  { --cap-color: var(--arivu-palette-4);  }
-section.cap_card > ul > li:nth-child(12n+5)  { --cap-color: var(--arivu-palette-5);  }
-section.cap_card > ul > li:nth-child(12n+6)  { --cap-color: var(--arivu-palette-6);  }
-section.cap_card > ul > li:nth-child(12n+7)  { --cap-color: var(--arivu-palette-7);  }
-section.cap_card > ul > li:nth-child(12n+8)  { --cap-color: var(--arivu-palette-8);  }
-section.cap_card > ul > li:nth-child(12n+9)  { --cap-color: var(--arivu-palette-9);  }
-section.cap_card > ul > li:nth-child(12n+10) { --cap-color: var(--arivu-palette-10); }
-section.cap_card > ul > li:nth-child(12n+11) { --cap-color: var(--arivu-palette-11); }
-section.cap_card > ul > li:nth-child(12n+12) { --cap-color: var(--arivu-palette-12); }
+section.cap_card>ul>li:nth-child(12n+1) {
+  --cap-color: var(--arivu-palette-1);
+}
+
+section.cap_card>ul>li:nth-child(12n+2) {
+  --cap-color: var(--arivu-palette-2);
+}
+
+section.cap_card>ul>li:nth-child(12n+3) {
+  --cap-color: var(--arivu-palette-3);
+}
+
+section.cap_card>ul>li:nth-child(12n+4) {
+  --cap-color: var(--arivu-palette-4);
+}
+
+section.cap_card>ul>li:nth-child(12n+5) {
+  --cap-color: var(--arivu-palette-5);
+}
+
+section.cap_card>ul>li:nth-child(12n+6) {
+  --cap-color: var(--arivu-palette-6);
+}
+
+section.cap_card>ul>li:nth-child(12n+7) {
+  --cap-color: var(--arivu-palette-7);
+}
+
+section.cap_card>ul>li:nth-child(12n+8) {
+  --cap-color: var(--arivu-palette-8);
+}
+
+section.cap_card>ul>li:nth-child(12n+9) {
+  --cap-color: var(--arivu-palette-9);
+}
+
+section.cap_card>ul>li:nth-child(12n+10) {
+  --cap-color: var(--arivu-palette-10);
+}
+
+section.cap_card>ul>li:nth-child(12n+11) {
+  --cap-color: var(--arivu-palette-11);
+}
+
+section.cap_card>ul>li:nth-child(12n+12) {
+  --cap-color: var(--arivu-palette-12);
+}
 
 
 /*--------------------------------------------------------------------
@@ -11462,7 +12079,7 @@ section.arrow_tab {
   counter-reset: arrow-tab;
 }
 
-section.arrow_tab > ul {
+section.arrow_tab>ul {
   flex: 1;
   list-style: none;
   padding: 0;
@@ -11475,7 +12092,7 @@ section.arrow_tab > ul {
 }
 
 /* Portrait card — tinted base, rounded corners, number counter */
-section.arrow_tab > ul > li {
+section.arrow_tab>ul>li {
   --at-color: var(--arivu-palette-1);
   --at-light: var(--arivu-palette-1-light);
   counter-increment: arrow-tab;
@@ -11491,15 +12108,17 @@ section.arrow_tab > ul > li {
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
-section.arrow_tab > ul > li::marker { display: none; }
+section.arrow_tab>ul>li::marker {
+  display: none;
+}
 
-section.arrow_tab > ul > li:hover {
+section.arrow_tab>ul>li:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
 }
 
 /* Auto-counter badge — upper-left of the coloured zone */
-section.arrow_tab > ul > li::before {
+section.arrow_tab>ul>li::before {
   content: counter(arrow-tab, decimal-leading-zero);
   position: absolute;
   top: 12px;
@@ -11514,7 +12133,7 @@ section.arrow_tab > ul > li::before {
 
 /* Pentagon zone — clip-path creates the downward-pointing arrow.
    Area clipped away on the sides shows --at-light through the li bg. */
-section.arrow_tab > ul > li > p:first-child {
+section.arrow_tab>ul>li>p:first-child {
   flex: 0 0 60%;
   margin: 0;
   padding: 0;
@@ -11529,7 +12148,7 @@ section.arrow_tab > ul > li > p:first-child {
 }
 
 /* Text zone — transparent so --at-light on li shows through seamlessly */
-section.arrow_tab > ul > li > ul {
+section.arrow_tab>ul>li>ul {
   flex: 1;
   list-style: none;
   padding: 16px 16px 14px;
@@ -11542,7 +12161,7 @@ section.arrow_tab > ul > li > ul {
   gap: 4px;
 }
 
-section.arrow_tab > ul > li > ul > li {
+section.arrow_tab>ul>li>ul>li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -11551,7 +12170,7 @@ section.arrow_tab > ul > li > ul > li {
   color: #333;
 }
 
-section.arrow_tab > ul > li > ul > li:first-child {
+section.arrow_tab>ul>li>ul>li:first-child {
   font-size: 0.92em;
   font-weight: 700;
   color: #111;
@@ -11559,18 +12178,65 @@ section.arrow_tab > ul > li > ul > li:first-child {
 }
 
 /* Per-item palette — both --at-color and --at-light set on li */
-section.arrow_tab > ul > li:nth-child(12n+1)  { --at-color: var(--arivu-palette-1);  --at-light: var(--arivu-palette-1-light);  }
-section.arrow_tab > ul > li:nth-child(12n+2)  { --at-color: var(--arivu-palette-2);  --at-light: var(--arivu-palette-2-light);  }
-section.arrow_tab > ul > li:nth-child(12n+3)  { --at-color: var(--arivu-palette-3);  --at-light: var(--arivu-palette-3-light);  }
-section.arrow_tab > ul > li:nth-child(12n+4)  { --at-color: var(--arivu-palette-4);  --at-light: var(--arivu-palette-4-light);  }
-section.arrow_tab > ul > li:nth-child(12n+5)  { --at-color: var(--arivu-palette-5);  --at-light: var(--arivu-palette-5-light);  }
-section.arrow_tab > ul > li:nth-child(12n+6)  { --at-color: var(--arivu-palette-6);  --at-light: var(--arivu-palette-6-light);  }
-section.arrow_tab > ul > li:nth-child(12n+7)  { --at-color: var(--arivu-palette-7);  --at-light: var(--arivu-palette-7-light);  }
-section.arrow_tab > ul > li:nth-child(12n+8)  { --at-color: var(--arivu-palette-8);  --at-light: var(--arivu-palette-8-light);  }
-section.arrow_tab > ul > li:nth-child(12n+9)  { --at-color: var(--arivu-palette-9);  --at-light: var(--arivu-palette-9-light);  }
-section.arrow_tab > ul > li:nth-child(12n+10) { --at-color: var(--arivu-palette-10); --at-light: var(--arivu-palette-10-light); }
-section.arrow_tab > ul > li:nth-child(12n+11) { --at-color: var(--arivu-palette-11); --at-light: var(--arivu-palette-11-light); }
-section.arrow_tab > ul > li:nth-child(12n+12) { --at-color: var(--arivu-palette-12); --at-light: var(--arivu-palette-12-light); }
+section.arrow_tab>ul>li:nth-child(12n+1) {
+  --at-color: var(--arivu-palette-1);
+  --at-light: var(--arivu-palette-1-light);
+}
+
+section.arrow_tab>ul>li:nth-child(12n+2) {
+  --at-color: var(--arivu-palette-2);
+  --at-light: var(--arivu-palette-2-light);
+}
+
+section.arrow_tab>ul>li:nth-child(12n+3) {
+  --at-color: var(--arivu-palette-3);
+  --at-light: var(--arivu-palette-3-light);
+}
+
+section.arrow_tab>ul>li:nth-child(12n+4) {
+  --at-color: var(--arivu-palette-4);
+  --at-light: var(--arivu-palette-4-light);
+}
+
+section.arrow_tab>ul>li:nth-child(12n+5) {
+  --at-color: var(--arivu-palette-5);
+  --at-light: var(--arivu-palette-5-light);
+}
+
+section.arrow_tab>ul>li:nth-child(12n+6) {
+  --at-color: var(--arivu-palette-6);
+  --at-light: var(--arivu-palette-6-light);
+}
+
+section.arrow_tab>ul>li:nth-child(12n+7) {
+  --at-color: var(--arivu-palette-7);
+  --at-light: var(--arivu-palette-7-light);
+}
+
+section.arrow_tab>ul>li:nth-child(12n+8) {
+  --at-color: var(--arivu-palette-8);
+  --at-light: var(--arivu-palette-8-light);
+}
+
+section.arrow_tab>ul>li:nth-child(12n+9) {
+  --at-color: var(--arivu-palette-9);
+  --at-light: var(--arivu-palette-9-light);
+}
+
+section.arrow_tab>ul>li:nth-child(12n+10) {
+  --at-color: var(--arivu-palette-10);
+  --at-light: var(--arivu-palette-10-light);
+}
+
+section.arrow_tab>ul>li:nth-child(12n+11) {
+  --at-color: var(--arivu-palette-11);
+  --at-light: var(--arivu-palette-11-light);
+}
+
+section.arrow_tab>ul>li:nth-child(12n+12) {
+  --at-color: var(--arivu-palette-12);
+  --at-light: var(--arivu-palette-12-light);
+}
 
 
 /*--------------------------------------------------------------------
@@ -11592,13 +12258,13 @@ section.arrow_tab > ul > li:nth-child(12n+12) { --at-color: var(--arivu-palette-
 ---------------------------------------------------------------------*/
 
 /* ---- parallelogram + folder_tab: li goes transparent (remove opaque bg) ---- */
-section.frost:is(.parallelogram, .folder_tab) > ul > li {
+section.frost:is(.parallelogram, .folder_tab)>ul>li {
   background-color: transparent;
   background-image: none;
 }
 
 /* ---- parallelogram + folder_tab: ul body → dark frosted glass ---- */
-section.frost:is(.parallelogram, .folder_tab) > ul > li > ul {
+section.frost:is(.parallelogram, .folder_tab)>ul>li>ul {
   background: linear-gradient(150deg,
       rgba(22, 32, 52, 0.50) 0%,
       rgba(22, 32, 52, 0.34) 100%);
@@ -11611,13 +12277,13 @@ section.frost:is(.parallelogram, .folder_tab) > ul > li > ul {
   color: #ffffff;
 }
 
-section.frost:is(.parallelogram, .folder_tab) > ul > li > ul li {
+section.frost:is(.parallelogram, .folder_tab)>ul>li>ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 /* ---- parallelogram + folder_tab: p:first-child → glass header ---- */
-section.frost:is(.parallelogram, .folder_tab) > ul > li > p:first-child {
+section.frost:is(.parallelogram, .folder_tab)>ul>li>p:first-child {
   color: #ffffff;
   -webkit-backdrop-filter: blur(12px) saturate(160%);
   backdrop-filter: blur(12px) saturate(160%);
@@ -11626,31 +12292,54 @@ section.frost:is(.parallelogram, .folder_tab) > ul > li > p:first-child {
 }
 
 /* hue-tinted glass per card position (mirrors S10 header colors) */
-section.frost:is(.parallelogram, .folder_tab) > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.55); }
-section.frost:is(.parallelogram, .folder_tab) > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.55); }
-section.frost:is(.parallelogram, .folder_tab) > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.55); }
-section.frost:is(.parallelogram, .folder_tab) > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.55); }
-section.frost:is(.parallelogram, .folder_tab) > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.55); }
-section.frost:is(.parallelogram, .folder_tab) > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.55); }
-section.frost:is(.parallelogram, .folder_tab) > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.55); }
-section.frost:is(.parallelogram, .folder_tab) > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.55); }
+section.frost:is(.parallelogram, .folder_tab)>ul>li:nth-child(1)>p:first-child {
+  background: rgba(60, 90, 130, 0.55);
+}
+
+section.frost:is(.parallelogram, .folder_tab)>ul>li:nth-child(2)>p:first-child {
+  background: rgba(142, 68, 173, 0.55);
+}
+
+section.frost:is(.parallelogram, .folder_tab)>ul>li:nth-child(3)>p:first-child {
+  background: rgba(22, 160, 133, 0.55);
+}
+
+section.frost:is(.parallelogram, .folder_tab)>ul>li:nth-child(4)>p:first-child {
+  background: rgba(211, 84, 0, 0.55);
+}
+
+section.frost:is(.parallelogram, .folder_tab)>ul>li:nth-child(5)>p:first-child {
+  background: rgba(41, 128, 185, 0.55);
+}
+
+section.frost:is(.parallelogram, .folder_tab)>ul>li:nth-child(6)>p:first-child {
+  background: rgba(192, 57, 43, 0.55);
+}
+
+section.frost:is(.parallelogram, .folder_tab)>ul>li:nth-child(7)>p:first-child {
+  background: rgba(39, 174, 96, 0.55);
+}
+
+section.frost:is(.parallelogram, .folder_tab)>ul>li:nth-child(8)>p:first-child {
+  background: rgba(243, 156, 18, 0.55);
+}
 
 /* ---- folder_tab: tongue tab also gets frosted treatment ---- */
-section.frost.folder_tab > ul > li::before {
+section.frost.folder_tab>ul>li::before {
   -webkit-backdrop-filter: blur(10px) saturate(160%);
   backdrop-filter: blur(10px) saturate(160%);
   opacity: 0.75;
 }
 
 /* dark-bg text override: don't re-darken frosted bodies on aurora/vortex */
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost:is(.parallelogram, .folder_tab) > ul > li > ul,
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost:is(.parallelogram, .folder_tab) > ul > li > ul li {
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost:is(.parallelogram, .folder_tab)>ul>li>ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost:is(.parallelogram, .folder_tab)>ul>li>ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 /* ---- pennant: frost the whole card (li is the card body, not ul) ---- */
-section.frost.pennant > ul > li:nth-child(n) {
+section.frost.pennant>ul>li:nth-child(n) {
   background: linear-gradient(160deg,
       rgba(255, 255, 255, 0.18) 0%,
       rgba(255, 255, 255, 0.06) 100%);
@@ -11661,13 +12350,13 @@ section.frost.pennant > ul > li:nth-child(n) {
 }
 
 /* pennant number badge → dark glass tint */
-section.frost.pennant > ul > li::before {
+section.frost.pennant>ul>li::before {
   background: rgba(0, 0, 0, 0.30);
 }
 
 /* ---- banner_card: card (li) becomes the frosted pane so the banner
    and body stay visually connected — transparent li would break them apart. ---- */
-section.frost.banner_card > ul > li {
+section.frost.banner_card>ul>li {
   background: linear-gradient(160deg,
       rgba(22, 32, 52, 0.48) 0%,
       rgba(22, 32, 52, 0.32) 100%);
@@ -11679,18 +12368,18 @@ section.frost.banner_card > ul > li {
 }
 
 /* ---- banner_card: ul body inherits the card pane — no separate bg ---- */
-section.frost.banner_card > ul > li > ul {
+section.frost.banner_card>ul>li>ul {
   background: transparent;
   color: #ffffff;
 }
 
-section.frost.banner_card > ul > li > ul li {
+section.frost.banner_card>ul>li>ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 /* ---- banner_card: p:first-child → hue-tinted glass banner ---- */
-section.frost.banner_card > ul > li > p:first-child {
+section.frost.banner_card>ul>li>p:first-child {
   color: #ffffff;
   -webkit-backdrop-filter: blur(12px) saturate(160%);
   backdrop-filter: blur(12px) saturate(160%);
@@ -11698,24 +12387,47 @@ section.frost.banner_card > ul > li > p:first-child {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
 
-section.frost.banner_card > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.55); }
-section.frost.banner_card > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.55); }
-section.frost.banner_card > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.55); }
-section.frost.banner_card > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.55); }
-section.frost.banner_card > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.55); }
-section.frost.banner_card > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.55); }
-section.frost.banner_card > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.55); }
-section.frost.banner_card > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.55); }
+section.frost.banner_card>ul>li:nth-child(1)>p:first-child {
+  background: rgba(60, 90, 130, 0.55);
+}
+
+section.frost.banner_card>ul>li:nth-child(2)>p:first-child {
+  background: rgba(142, 68, 173, 0.55);
+}
+
+section.frost.banner_card>ul>li:nth-child(3)>p:first-child {
+  background: rgba(22, 160, 133, 0.55);
+}
+
+section.frost.banner_card>ul>li:nth-child(4)>p:first-child {
+  background: rgba(211, 84, 0, 0.55);
+}
+
+section.frost.banner_card>ul>li:nth-child(5)>p:first-child {
+  background: rgba(41, 128, 185, 0.55);
+}
+
+section.frost.banner_card>ul>li:nth-child(6)>p:first-child {
+  background: rgba(192, 57, 43, 0.55);
+}
+
+section.frost.banner_card>ul>li:nth-child(7)>p:first-child {
+  background: rgba(39, 174, 96, 0.55);
+}
+
+section.frost.banner_card>ul>li:nth-child(8)>p:first-child {
+  background: rgba(243, 156, 18, 0.55);
+}
 
 /* dark-bg text override */
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.banner_card > ul > li > ul,
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.banner_card > ul > li > ul li {
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.banner_card>ul>li>ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.banner_card>ul>li>ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 /* ---- tab_card: card becomes a frosted glass pane; border goes glass-white ---- */
-section.frost.tab_card > ul > li {
+section.frost.tab_card>ul>li {
   background: rgba(255, 255, 255, 0.07);
   -webkit-backdrop-filter: blur(14px) saturate(150%);
   backdrop-filter: blur(14px) saturate(150%);
@@ -11725,12 +12437,12 @@ section.frost.tab_card > ul > li {
 }
 
 /* fold: semi-transparent on dark backgrounds */
-section.frost.tab_card > ul > li::after {
+section.frost.tab_card>ul>li::after {
   border-color: transparent rgba(255, 255, 255, 0.45) transparent transparent;
 }
 
 /* icon circle: subtle glass tint */
-section.frost.tab_card > ul > li > p:first-child {
+section.frost.tab_card>ul>li>p:first-child {
   background: rgba(255, 255, 255, 0.20);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
@@ -11738,29 +12450,52 @@ section.frost.tab_card > ul > li > p:first-child {
 }
 
 /* header band: hue-tinted glass per card position */
-section.frost.tab_card > ul > li > ul > li:first-child {
+section.frost.tab_card>ul>li>ul>li:first-child {
   color: #ffffff;
   -webkit-backdrop-filter: blur(10px) saturate(160%);
   backdrop-filter: blur(10px) saturate(160%);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.40);
 }
 
-section.frost.tab_card > ul > li:nth-child(1) > ul > li:first-child { background: rgba( 60,  90, 130, 0.70); }
-section.frost.tab_card > ul > li:nth-child(2) > ul > li:first-child { background: rgba(142,  68, 173, 0.70); }
-section.frost.tab_card > ul > li:nth-child(3) > ul > li:first-child { background: rgba( 22, 160, 133, 0.70); }
-section.frost.tab_card > ul > li:nth-child(4) > ul > li:first-child { background: rgba(211,  84,   0, 0.70); }
-section.frost.tab_card > ul > li:nth-child(5) > ul > li:first-child { background: rgba( 41, 128, 185, 0.70); }
-section.frost.tab_card > ul > li:nth-child(6) > ul > li:first-child { background: rgba(192,  57,  43, 0.70); }
-section.frost.tab_card > ul > li:nth-child(7) > ul > li:first-child { background: rgba( 39, 174,  96, 0.70); }
-section.frost.tab_card > ul > li:nth-child(8) > ul > li:first-child { background: rgba(243, 156,  18, 0.70); }
+section.frost.tab_card>ul>li:nth-child(1)>ul>li:first-child {
+  background: rgba(60, 90, 130, 0.70);
+}
+
+section.frost.tab_card>ul>li:nth-child(2)>ul>li:first-child {
+  background: rgba(142, 68, 173, 0.70);
+}
+
+section.frost.tab_card>ul>li:nth-child(3)>ul>li:first-child {
+  background: rgba(22, 160, 133, 0.70);
+}
+
+section.frost.tab_card>ul>li:nth-child(4)>ul>li:first-child {
+  background: rgba(211, 84, 0, 0.70);
+}
+
+section.frost.tab_card>ul>li:nth-child(5)>ul>li:first-child {
+  background: rgba(41, 128, 185, 0.70);
+}
+
+section.frost.tab_card>ul>li:nth-child(6)>ul>li:first-child {
+  background: rgba(192, 57, 43, 0.70);
+}
+
+section.frost.tab_card>ul>li:nth-child(7)>ul>li:first-child {
+  background: rgba(39, 174, 96, 0.70);
+}
+
+section.frost.tab_card>ul>li:nth-child(8)>ul>li:first-child {
+  background: rgba(243, 156, 18, 0.70);
+}
 
 /* body text: white on dark background */
-section.frost.tab_card > ul > li > ul > li:nth-child(n+2) {
+section.frost.tab_card>ul>li>ul>li:nth-child(n+2) {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.tab_card > ul > li > ul > li:nth-child(n+2) {
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.tab_card>ul>li>ul>li:nth-child(n+2) {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
@@ -11768,37 +12503,60 @@ section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.tab_card > ul > li
 
 /* ---- chevron_panel: ul text zone stays transparent on dark backgrounds;
    just ensure text is legible in white ---- */
-section.frost.chevron_panel > ul > li > ul li {
+section.frost.chevron_panel>ul>li>ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 /* ---- chevron_panel: p:first-child → hue-tinted glass chevron ---- */
-section.frost.chevron_panel > ul > li > p:first-child {
+section.frost.chevron_panel>ul>li>p:first-child {
   color: #ffffff;
   -webkit-backdrop-filter: blur(12px) saturate(160%);
   backdrop-filter: blur(12px) saturate(160%);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
 
-section.frost.chevron_panel > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.65); }
-section.frost.chevron_panel > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.65); }
-section.frost.chevron_panel > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.65); }
-section.frost.chevron_panel > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.65); }
-section.frost.chevron_panel > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.65); }
-section.frost.chevron_panel > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.65); }
-section.frost.chevron_panel > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.65); }
-section.frost.chevron_panel > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.65); }
+section.frost.chevron_panel>ul>li:nth-child(1)>p:first-child {
+  background: rgba(60, 90, 130, 0.65);
+}
+
+section.frost.chevron_panel>ul>li:nth-child(2)>p:first-child {
+  background: rgba(142, 68, 173, 0.65);
+}
+
+section.frost.chevron_panel>ul>li:nth-child(3)>p:first-child {
+  background: rgba(22, 160, 133, 0.65);
+}
+
+section.frost.chevron_panel>ul>li:nth-child(4)>p:first-child {
+  background: rgba(211, 84, 0, 0.65);
+}
+
+section.frost.chevron_panel>ul>li:nth-child(5)>p:first-child {
+  background: rgba(41, 128, 185, 0.65);
+}
+
+section.frost.chevron_panel>ul>li:nth-child(6)>p:first-child {
+  background: rgba(192, 57, 43, 0.65);
+}
+
+section.frost.chevron_panel>ul>li:nth-child(7)>p:first-child {
+  background: rgba(39, 174, 96, 0.65);
+}
+
+section.frost.chevron_panel>ul>li:nth-child(8)>p:first-child {
+  background: rgba(243, 156, 18, 0.65);
+}
 
 /* dark-bg text override */
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_panel > ul > li > ul li {
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_panel>ul>li>ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 
 /* ---- fold_banner: row → frosted glass panel ---- */
-section.frost.fold_banner > ul > li {
+section.frost.fold_banner>ul>li {
   background: linear-gradient(90deg,
       rgba(22, 32, 52, 0.30) 0%,
       rgba(22, 32, 52, 0.20) 100%);
@@ -11810,50 +12568,73 @@ section.frost.fold_banner > ul > li {
 }
 
 /* ---- fold_banner: number + icon zones → hue-tinted glass ---- */
-section.frost.fold_banner > ul > li::before {
+section.frost.fold_banner>ul>li::before {
   -webkit-backdrop-filter: blur(10px) saturate(160%);
   backdrop-filter: blur(10px) saturate(160%);
 }
 
-section.frost.fold_banner > ul > li > p:first-child {
+section.frost.fold_banner>ul>li>p:first-child {
   color: #ffffff;
   -webkit-backdrop-filter: blur(10px) saturate(160%);
   backdrop-filter: blur(10px) saturate(160%);
 }
 
 /* per-position hue tints for number and icon zones */
-section.frost.fold_banner > ul > li:nth-child(1)::before,
-section.frost.fold_banner > ul > li:nth-child(1) > p:first-child { background-color: rgba( 60,  90, 130, 0.65); }
-section.frost.fold_banner > ul > li:nth-child(2)::before,
-section.frost.fold_banner > ul > li:nth-child(2) > p:first-child { background-color: rgba(142,  68, 173, 0.65); }
-section.frost.fold_banner > ul > li:nth-child(3)::before,
-section.frost.fold_banner > ul > li:nth-child(3) > p:first-child { background-color: rgba( 22, 160, 133, 0.65); }
-section.frost.fold_banner > ul > li:nth-child(4)::before,
-section.frost.fold_banner > ul > li:nth-child(4) > p:first-child { background-color: rgba(211,  84,   0, 0.65); }
-section.frost.fold_banner > ul > li:nth-child(5)::before,
-section.frost.fold_banner > ul > li:nth-child(5) > p:first-child { background-color: rgba( 41, 128, 185, 0.65); }
-section.frost.fold_banner > ul > li:nth-child(6)::before,
-section.frost.fold_banner > ul > li:nth-child(6) > p:first-child { background-color: rgba(192,  57,  43, 0.65); }
-section.frost.fold_banner > ul > li:nth-child(7)::before,
-section.frost.fold_banner > ul > li:nth-child(7) > p:first-child { background-color: rgba( 39, 174,  96, 0.65); }
-section.frost.fold_banner > ul > li:nth-child(8)::before,
-section.frost.fold_banner > ul > li:nth-child(8) > p:first-child { background-color: rgba(243, 156,  18, 0.65); }
+section.frost.fold_banner>ul>li:nth-child(1)::before,
+section.frost.fold_banner>ul>li:nth-child(1)>p:first-child {
+  background-color: rgba(60, 90, 130, 0.65);
+}
+
+section.frost.fold_banner>ul>li:nth-child(2)::before,
+section.frost.fold_banner>ul>li:nth-child(2)>p:first-child {
+  background-color: rgba(142, 68, 173, 0.65);
+}
+
+section.frost.fold_banner>ul>li:nth-child(3)::before,
+section.frost.fold_banner>ul>li:nth-child(3)>p:first-child {
+  background-color: rgba(22, 160, 133, 0.65);
+}
+
+section.frost.fold_banner>ul>li:nth-child(4)::before,
+section.frost.fold_banner>ul>li:nth-child(4)>p:first-child {
+  background-color: rgba(211, 84, 0, 0.65);
+}
+
+section.frost.fold_banner>ul>li:nth-child(5)::before,
+section.frost.fold_banner>ul>li:nth-child(5)>p:first-child {
+  background-color: rgba(41, 128, 185, 0.65);
+}
+
+section.frost.fold_banner>ul>li:nth-child(6)::before,
+section.frost.fold_banner>ul>li:nth-child(6)>p:first-child {
+  background-color: rgba(192, 57, 43, 0.65);
+}
+
+section.frost.fold_banner>ul>li:nth-child(7)::before,
+section.frost.fold_banner>ul>li:nth-child(7)>p:first-child {
+  background-color: rgba(39, 174, 96, 0.65);
+}
+
+section.frost.fold_banner>ul>li:nth-child(8)::before,
+section.frost.fold_banner>ul>li:nth-child(8)>p:first-child {
+  background-color: rgba(243, 156, 18, 0.65);
+}
 
 /* ---- fold_banner: content text → white ---- */
-section.frost.fold_banner > ul > li > ul > li {
+section.frost.fold_banner>ul>li>ul>li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 /* dark-bg text override */
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.fold_banner > ul > li > ul > li {
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.fold_banner>ul>li>ul>li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 
 /* ---- dash_button: pill → frosted glass pane ---- */
-section.frost.dash_button > ul > li:nth-child(n) {
+section.frost.dash_button>ul>li:nth-child(n) {
   background: linear-gradient(160deg,
       rgba(255, 255, 255, 0.18) 0%,
       rgba(255, 255, 255, 0.06) 100%);
@@ -11864,7 +12645,7 @@ section.frost.dash_button > ul > li:nth-child(n) {
 }
 
 /* icon circle → hue-tinted glass per card position */
-section.frost.dash_button > ul > li > p:first-child {
+section.frost.dash_button>ul>li>p:first-child {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.20);
   -webkit-backdrop-filter: blur(12px) saturate(160%);
@@ -11873,42 +12654,65 @@ section.frost.dash_button > ul > li > p:first-child {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.50);
 }
 
-section.frost.dash_button > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.65); }
-section.frost.dash_button > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.65); }
-section.frost.dash_button > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.65); }
-section.frost.dash_button > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.65); }
-section.frost.dash_button > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.65); }
-section.frost.dash_button > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.65); }
-section.frost.dash_button > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.65); }
-section.frost.dash_button > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.65); }
+section.frost.dash_button>ul>li:nth-child(1)>p:first-child {
+  background: rgba(60, 90, 130, 0.65);
+}
+
+section.frost.dash_button>ul>li:nth-child(2)>p:first-child {
+  background: rgba(142, 68, 173, 0.65);
+}
+
+section.frost.dash_button>ul>li:nth-child(3)>p:first-child {
+  background: rgba(22, 160, 133, 0.65);
+}
+
+section.frost.dash_button>ul>li:nth-child(4)>p:first-child {
+  background: rgba(211, 84, 0, 0.65);
+}
+
+section.frost.dash_button>ul>li:nth-child(5)>p:first-child {
+  background: rgba(41, 128, 185, 0.65);
+}
+
+section.frost.dash_button>ul>li:nth-child(6)>p:first-child {
+  background: rgba(192, 57, 43, 0.65);
+}
+
+section.frost.dash_button>ul>li:nth-child(7)>p:first-child {
+  background: rgba(39, 174, 96, 0.65);
+}
+
+section.frost.dash_button>ul>li:nth-child(8)>p:first-child {
+  background: rgba(243, 156, 18, 0.65);
+}
 
 /* body text → white */
-section.frost.dash_button > ul > li > ul > li {
+section.frost.dash_button>ul>li>ul>li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 /* dark-bg text override */
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.dash_button > ul > li > ul > li {
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.dash_button>ul>li>ul>li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 
 /* ---- chevron_block: text panel → dark frosted glass ---- */
-section.frost.chevron_block > ul > li > ul {
+section.frost.chevron_block>ul>li>ul {
   background: linear-gradient(150deg, rgba(22, 32, 52, 0.52) 0%, rgba(22, 32, 52, 0.36) 100%);
   -webkit-backdrop-filter: blur(14px) saturate(150%);
   backdrop-filter: blur(14px) saturate(150%);
 }
 
-section.frost.chevron_block > ul > li > ul > li {
+section.frost.chevron_block>ul>li>ul>li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 /* icon circle → hue-tinted glass per card position */
-section.frost.chevron_block > ul > li > p:first-child {
+section.frost.chevron_block>ul>li>p:first-child {
   color: #ffffff;
   -webkit-backdrop-filter: blur(12px) saturate(160%);
   backdrop-filter: blur(12px) saturate(160%);
@@ -11916,25 +12720,48 @@ section.frost.chevron_block > ul > li > p:first-child {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
 
-section.frost.chevron_block > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.65); }
-section.frost.chevron_block > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.65); }
-section.frost.chevron_block > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.65); }
-section.frost.chevron_block > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.65); }
-section.frost.chevron_block > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.65); }
-section.frost.chevron_block > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.65); }
-section.frost.chevron_block > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.65); }
-section.frost.chevron_block > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.65); }
+section.frost.chevron_block>ul>li:nth-child(1)>p:first-child {
+  background: rgba(60, 90, 130, 0.65);
+}
+
+section.frost.chevron_block>ul>li:nth-child(2)>p:first-child {
+  background: rgba(142, 68, 173, 0.65);
+}
+
+section.frost.chevron_block>ul>li:nth-child(3)>p:first-child {
+  background: rgba(22, 160, 133, 0.65);
+}
+
+section.frost.chevron_block>ul>li:nth-child(4)>p:first-child {
+  background: rgba(211, 84, 0, 0.65);
+}
+
+section.frost.chevron_block>ul>li:nth-child(5)>p:first-child {
+  background: rgba(41, 128, 185, 0.65);
+}
+
+section.frost.chevron_block>ul>li:nth-child(6)>p:first-child {
+  background: rgba(192, 57, 43, 0.65);
+}
+
+section.frost.chevron_block>ul>li:nth-child(7)>p:first-child {
+  background: rgba(39, 174, 96, 0.65);
+}
+
+section.frost.chevron_block>ul>li:nth-child(8)>p:first-child {
+  background: rgba(243, 156, 18, 0.65);
+}
 
 /* dark-bg text override */
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_block > ul > li > ul,
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_block > ul > li > ul li {
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_block>ul>li>ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.chevron_block>ul>li>ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 
 /* ---- envelop: card → frosted glass base ---- */
-section.frost.envelop > ul > li {
+section.frost.envelop>ul>li {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
   -webkit-backdrop-filter: blur(14px) saturate(150%);
   backdrop-filter: blur(14px) saturate(150%);
@@ -11943,7 +12770,7 @@ section.frost.envelop > ul > li {
 }
 
 /* dome → hue-tinted glass per card position */
-section.frost.envelop > ul > li > p:first-child {
+section.frost.envelop>ul>li>p:first-child {
   color: #ffffff;
   -webkit-backdrop-filter: blur(12px) saturate(160%);
   backdrop-filter: blur(12px) saturate(160%);
@@ -11951,17 +12778,40 @@ section.frost.envelop > ul > li > p:first-child {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
 
-section.frost.envelop > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.65); }
-section.frost.envelop > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.65); }
-section.frost.envelop > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.65); }
-section.frost.envelop > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.65); }
-section.frost.envelop > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.65); }
-section.frost.envelop > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.65); }
-section.frost.envelop > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.65); }
-section.frost.envelop > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.65); }
+section.frost.envelop>ul>li:nth-child(1)>p:first-child {
+  background: rgba(60, 90, 130, 0.65);
+}
+
+section.frost.envelop>ul>li:nth-child(2)>p:first-child {
+  background: rgba(142, 68, 173, 0.65);
+}
+
+section.frost.envelop>ul>li:nth-child(3)>p:first-child {
+  background: rgba(22, 160, 133, 0.65);
+}
+
+section.frost.envelop>ul>li:nth-child(4)>p:first-child {
+  background: rgba(211, 84, 0, 0.65);
+}
+
+section.frost.envelop>ul>li:nth-child(5)>p:first-child {
+  background: rgba(41, 128, 185, 0.65);
+}
+
+section.frost.envelop>ul>li:nth-child(6)>p:first-child {
+  background: rgba(192, 57, 43, 0.65);
+}
+
+section.frost.envelop>ul>li:nth-child(7)>p:first-child {
+  background: rgba(39, 174, 96, 0.65);
+}
+
+section.frost.envelop>ul>li:nth-child(8)>p:first-child {
+  background: rgba(243, 156, 18, 0.65);
+}
 
 /* badge → dark frosted glass circle */
-section.frost.envelop > ul > li > ul::before {
+section.frost.envelop>ul>li>ul::before {
   background: rgba(0, 0, 0, 0.32);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
@@ -11969,52 +12819,93 @@ section.frost.envelop > ul > li > ul::before {
 }
 
 /* text → white */
-section.frost.envelop > ul > li > ul > li {
+section.frost.envelop>ul>li>ul>li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.envelop > ul > li > ul > li {
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.envelop>ul>li>ul>li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 
 /* ---- cap_card: li → transparent (zones carry own glass bg) ---- */
-section.frost.cap_card > ul > li { background: transparent; }
+section.frost.cap_card>ul>li {
+  background: transparent;
+}
 
 /* ---- cap_card: icon zone → hue-tinted glass; border keeps palette hue ---- */
-section.frost.cap_card > ul > li > p:first-child {
+section.frost.cap_card>ul>li>p:first-child {
   backdrop-filter: blur(12px) saturate(160%);
 }
-section.frost.cap_card > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.55); border-color: rgba( 60,  90, 130, 0.80); }
-section.frost.cap_card > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.55); border-color: rgba(142,  68, 173, 0.80); }
-section.frost.cap_card > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.55); border-color: rgba( 22, 160, 133, 0.80); }
-section.frost.cap_card > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.55); border-color: rgba(211,  84,   0, 0.80); }
-section.frost.cap_card > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.55); border-color: rgba( 41, 128, 185, 0.80); }
-section.frost.cap_card > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.55); border-color: rgba(192,  57,  43, 0.80); }
-section.frost.cap_card > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.55); border-color: rgba( 39, 174,  96, 0.80); }
-section.frost.cap_card > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.55); border-color: rgba(243, 156,  18, 0.80); }
+
+section.frost.cap_card>ul>li:nth-child(1)>p:first-child {
+  background: rgba(60, 90, 130, 0.55);
+  border-color: rgba(60, 90, 130, 0.80);
+}
+
+section.frost.cap_card>ul>li:nth-child(2)>p:first-child {
+  background: rgba(142, 68, 173, 0.55);
+  border-color: rgba(142, 68, 173, 0.80);
+}
+
+section.frost.cap_card>ul>li:nth-child(3)>p:first-child {
+  background: rgba(22, 160, 133, 0.55);
+  border-color: rgba(22, 160, 133, 0.80);
+}
+
+section.frost.cap_card>ul>li:nth-child(4)>p:first-child {
+  background: rgba(211, 84, 0, 0.55);
+  border-color: rgba(211, 84, 0, 0.80);
+}
+
+section.frost.cap_card>ul>li:nth-child(5)>p:first-child {
+  background: rgba(41, 128, 185, 0.55);
+  border-color: rgba(41, 128, 185, 0.80);
+}
+
+section.frost.cap_card>ul>li:nth-child(6)>p:first-child {
+  background: rgba(192, 57, 43, 0.55);
+  border-color: rgba(192, 57, 43, 0.80);
+}
+
+section.frost.cap_card>ul>li:nth-child(7)>p:first-child {
+  background: rgba(39, 174, 96, 0.55);
+  border-color: rgba(39, 174, 96, 0.80);
+}
+
+section.frost.cap_card>ul>li:nth-child(8)>p:first-child {
+  background: rgba(243, 156, 18, 0.55);
+  border-color: rgba(243, 156, 18, 0.80);
+}
 
 /* ---- cap_card: content zone → dark frosted glass, white-tinted border ---- */
-section.frost.cap_card > ul > li > ul {
+section.frost.cap_card>ul>li>ul {
   background: linear-gradient(150deg, rgba(22, 32, 52, 0.50) 0%, rgba(22, 32, 52, 0.34) 100%);
   backdrop-filter: blur(14px) saturate(150%);
   border-color: rgba(255, 255, 255, 0.35);
   color: #ffffff;
 }
-section.frost.cap_card > ul > li > ul > li       { color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.4); }
-section.frost.cap_card > ul > li > ul > li:first-child { border-bottom-color: rgba(255,255,255,0.25); }
 
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.cap_card > ul > li > ul,
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.cap_card > ul > li > ul li {
+section.frost.cap_card>ul>li>ul>li {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+section.frost.cap_card>ul>li>ul>li:first-child {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.cap_card>ul>li>ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.cap_card>ul>li>ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 
 /* ---- arrow_tab: li → frosted glass base (replaces --at-light bg) ---- */
-section.frost.arrow_tab > ul > li {
+section.frost.arrow_tab>ul>li {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
   -webkit-backdrop-filter: blur(14px) saturate(150%);
   backdrop-filter: blur(14px) saturate(150%);
@@ -12023,42 +12914,65 @@ section.frost.arrow_tab > ul > li {
 }
 
 /* pentagon zone → hue-tinted glass per card position */
-section.frost.arrow_tab > ul > li > p:first-child {
+section.frost.arrow_tab>ul>li>p:first-child {
   color: #ffffff;
   -webkit-backdrop-filter: blur(12px) saturate(160%);
   backdrop-filter: blur(12px) saturate(160%);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
 
-section.frost.arrow_tab > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.65); }
-section.frost.arrow_tab > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.65); }
-section.frost.arrow_tab > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.65); }
-section.frost.arrow_tab > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.65); }
-section.frost.arrow_tab > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.65); }
-section.frost.arrow_tab > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.65); }
-section.frost.arrow_tab > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.65); }
-section.frost.arrow_tab > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.65); }
+section.frost.arrow_tab>ul>li:nth-child(1)>p:first-child {
+  background: rgba(60, 90, 130, 0.65);
+}
+
+section.frost.arrow_tab>ul>li:nth-child(2)>p:first-child {
+  background: rgba(142, 68, 173, 0.65);
+}
+
+section.frost.arrow_tab>ul>li:nth-child(3)>p:first-child {
+  background: rgba(22, 160, 133, 0.65);
+}
+
+section.frost.arrow_tab>ul>li:nth-child(4)>p:first-child {
+  background: rgba(211, 84, 0, 0.65);
+}
+
+section.frost.arrow_tab>ul>li:nth-child(5)>p:first-child {
+  background: rgba(41, 128, 185, 0.65);
+}
+
+section.frost.arrow_tab>ul>li:nth-child(6)>p:first-child {
+  background: rgba(192, 57, 43, 0.65);
+}
+
+section.frost.arrow_tab>ul>li:nth-child(7)>p:first-child {
+  background: rgba(39, 174, 96, 0.65);
+}
+
+section.frost.arrow_tab>ul>li:nth-child(8)>p:first-child {
+  background: rgba(243, 156, 18, 0.65);
+}
 
 /* text → white on frosted background */
-section.frost.arrow_tab > ul > li > ul > li {
+section.frost.arrow_tab>ul>li>ul>li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.arrow_tab > ul > li > ul > li {
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.arrow_tab>ul>li>ul>li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
 
 /* ---- icon_card_alt frost: card wrapper transparent so backdrop-filter sees the slide bg ---- */
-section.frost.icon_card_alt > ul > li {
+section.frost.icon_card_alt>ul>li {
   background-color: transparent;
   background-image: none;
 }
 
 /* ---- icon_card_alt frost: same glass treatment as icon_card ---- */
-section.frost.icon_card_alt > ul > li > ul:nth-child(n) {
+section.frost.icon_card_alt>ul>li>ul:nth-child(n) {
   background-color: rgba(255, 255, 255, 0.09);
   background-image: linear-gradient(150deg,
       rgba(255, 255, 255, 0.16) 0%,
@@ -12073,23 +12987,23 @@ section.frost.icon_card_alt > ul > li > ul:nth-child(n) {
     inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
-section.frost.icon_card_alt > ul > li > ul:nth-child(n) strong {
+section.frost.icon_card_alt>ul>li>ul:nth-child(n) strong {
   color: #ffffff;
 }
 
-section.frost.icon_card_alt > ul > li > ul li {
+section.frost.icon_card_alt>ul>li>ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
-section.frost.icon_card_alt > ul > li > p:first-child {
+section.frost.icon_card_alt>ul>li>p:first-child {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.35),
     0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.icon_card_alt > ul > li > ul,
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.icon_card_alt > ul > li > ul li {
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.icon_card_alt>ul>li>ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.icon_card_alt>ul>li>ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
