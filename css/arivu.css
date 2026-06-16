@@ -12238,11 +12238,127 @@ section.arrow_tab>ul>li:nth-child(12n+12) {
   --at-light: var(--arivu-palette-12-light);
 }
 
+/*--------------------------------------------------------------------
+  arrow_v — Vertical alternating pentagon arrows (timeline style)
+             Odd bullets:  pentagon points DOWN, description text above
+             Even bullets: pentagon points UP,   description text below
+             Best with 3–6 items.
+             Usage:   <!-- _class: arrow_v -->
+             Markdown:
+               * :icon:
+                 - **Bold Title**
+                 - Description text here…
+---------------------------------------------------------------------*/
+
+section.arrow_v {
+  display: flex;
+  flex-direction: column;
+}
+
+section.arrow_v > ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: stretch;
+}
+
+section.arrow_v > ul > li {
+  --av-color: var(--arivu-palette-1);
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: transform 0.25s ease;
+}
+
+section.arrow_v > ul > li::marker {
+  display: none;
+}
+
+section.arrow_v > ul > li:hover {
+  transform: translateY(-4px);
+}
+
+/* ODD: column-reverse → description (ul) above, pentagon (p) at bottom */
+section.arrow_v > ul > li:nth-child(odd) {
+  flex-direction: column-reverse;
+}
+
+/* Pentagon icon zone */
+section.arrow_v > ul > li > p:first-child {
+  background-color: var(--av-color);
+  color: #ffffff;
+  margin: 0;
+  padding: 16px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.6rem;
+  text-align: center;
+  gap: 8px;
+  filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.22));
+}
+
+/* Down-pointing pentagon (odd): rectangle top, triangle tip bottom */
+section.arrow_v > ul > li:nth-child(odd) > p:first-child {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 72%, 50% 100%, 0% 72%);
+  padding: 16px 16px 38px;
+}
+
+/* Up-pointing pentagon (even): triangle tip top, rectangle body below */
+section.arrow_v > ul > li:nth-child(even) > p:first-child {
+  clip-path: polygon(50% 0%, 100% 28%, 100% 100%, 0% 100%, 0% 28%);
+  padding: 38px 16px 16px;
+}
+
+/* Description text zone */
+section.arrow_v > ul > li > ul {
+  flex: 1;
+  list-style: none;
+  padding: 10px 8px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.82em;
+  line-height: 1.5;
+  color: #333333;
+  gap: 2px;
+}
+
+section.arrow_v > ul > li > ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+/* 12-colour cycle — CSS custom property set on li */
+section.arrow_v > ul > li:nth-child(12n+1)  { --av-color: var(--arivu-palette-1);  }
+section.arrow_v > ul > li:nth-child(12n+2)  { --av-color: var(--arivu-palette-2);  }
+section.arrow_v > ul > li:nth-child(12n+3)  { --av-color: var(--arivu-palette-3);  }
+section.arrow_v > ul > li:nth-child(12n+4)  { --av-color: var(--arivu-palette-4);  }
+section.arrow_v > ul > li:nth-child(12n+5)  { --av-color: var(--arivu-palette-5);  }
+section.arrow_v > ul > li:nth-child(12n+6)  { --av-color: var(--arivu-palette-6);  }
+section.arrow_v > ul > li:nth-child(12n+7)  { --av-color: var(--arivu-palette-7);  }
+section.arrow_v > ul > li:nth-child(12n+8)  { --av-color: var(--arivu-palette-8);  }
+section.arrow_v > ul > li:nth-child(12n+9)  { --av-color: var(--arivu-palette-9);  }
+section.arrow_v > ul > li:nth-child(12n+10) { --av-color: var(--arivu-palette-10); }
+section.arrow_v > ul > li:nth-child(12n+11) { --av-color: var(--arivu-palette-11); }
+section.arrow_v > ul > li:nth-child(12n+12) { --av-color: var(--arivu-palette-12); }
+
 
 /*--------------------------------------------------------------------
   FROST EXTENSION — adds frost modifier support to parallelogram,
   folder_tab, pennant, banner_card, tab_card, chevron_panel,
-  fold_banner, dash_button, chevron_block, envelop, and cap_card
+  fold_banner, dash_button, chevron_block, envelop, cap_card,
+  and arrow_v
   (not listed in the original S9/S10 :is() selectors because they
   were added later).
 
@@ -12255,6 +12371,7 @@ section.arrow_tab>ul>li:nth-child(12n+12) {
     <!-- _class: aurora fold_banner frost -->
     <!-- _class: aurora dash_button frost -->
     <!-- _class: aurora cap_card frost -->
+    <!-- _class: aurora arrow_v frost -->
 ---------------------------------------------------------------------*/
 
 /* ---- parallelogram + folder_tab: li goes transparent (remove opaque bg) ---- */
@@ -13004,6 +13121,47 @@ section.frost.icon_card_alt>ul>li>p:first-child {
 
 section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.icon_card_alt>ul>li>ul,
 section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.icon_card_alt>ul>li>ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+/* ---- arrow_v: li transparent (required for backdrop-filter to see slide bg) ---- */
+section.frost.arrow_v > ul > li {
+  background-color: transparent;
+}
+
+/* ---- arrow_v: pentagon → frosted glass ---- */
+section.frost.arrow_v > ul > li > p:first-child {
+  color: #ffffff;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+/* hue-tinted glass per position */
+section.frost.arrow_v > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.55); }
+section.frost.arrow_v > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.55); }
+section.frost.arrow_v > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.55); }
+section.frost.arrow_v > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.55); }
+section.frost.arrow_v > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.55); }
+section.frost.arrow_v > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.55); }
+section.frost.arrow_v > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.55); }
+section.frost.arrow_v > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.55); }
+
+/* ---- arrow_v: description text → white in frost context ---- */
+section.frost.arrow_v > ul > li > ul {
+  color: #ffffff;
+}
+
+section.frost.arrow_v > ul > li > ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.arrow_v > ul > li > ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.arrow_v > ul > li > ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }

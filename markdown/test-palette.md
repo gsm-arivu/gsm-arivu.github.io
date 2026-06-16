@@ -6,117 +6,53 @@ paginate: true
 
 
 
+<!-- _class: arrow_v -->
 
+## Timeline
 
+* :rocket:
 
-<!-- _class: icon_shirt4 softfrag-->
-
-## heading
-
-* :airplane:
-
-  - **Air Travel**
-  
+  - **Launch Phase**
+  - Planning and requirements gathering
 
 * :car:
 
-  - **Road Trip**
-  
+  - **Design Phase**
+  - Architecture and wireframes
 
-* :bus:
+* :busts_in_silhouette:
 
-  - **Bus Service**
- 
+  - **Build Phase**
+  - Development and collaboration
 
-* :bicyclist:
+* :bulb:
 
-  - **Cycling**
-  
-
-
-
-
+  - **Ship Phase**
+  - Testing, deployment and go-live
 
 ---
 
-<!-- _class: icon_shirt4 invert softfrag ember frost-->
+<!-- _class: arrow_v aurora frost -->
 
-## heading
+## Timeline
 
-* :airplane:
+* :rocket:
 
-  - **Air Travel**
-  
-
-* :car:
-
-  - **Road Trip**
-  
-
-* :bus:
-
-  - **Bus Service**
- 
-
-* :bicyclist:
-
-  - **Cycling**
-  
-
-
----
-
-<!-- _class: icon_pillar4 softfrag-->
-
-## heading
-
-* :airplane:
-
-  - **Air Travel**
-  
+  - **Launch Phase**
+  - Planning and requirements gathering
 
 * :car:
 
-  - **Road Trip**
-  
+  - **Design Phase**
+  - Architecture and wireframes
 
-* :bus:
+* :busts_in_silhouette:
 
-  - **Bus Service**
- 
+  - **Build Phase**
+  - Development and collaboration
 
-* :bicyclist:
+* :bulb:
 
-  - **Cycling**
-  
+  - **Ship Phase**
+  - Testing, deployment and go-live
 
-
-
-
-
-
----
-
-<!-- _class: icon_pillar4 invert softfrag ember frost-->
-
-## heading
-
-* :airplane:
-
-  - **Air Travel**
-  
-
-* :car:
-
-  - **Road Trip**
-  
-
-* :bus:
-
-  - **Bus Service**
- 
-
-* :bicyclist:
-
-  - **Cycling**
-  
