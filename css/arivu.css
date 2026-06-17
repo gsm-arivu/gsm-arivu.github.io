@@ -12255,7 +12255,7 @@ section.arrow_v {
   flex-direction: column;
 }
 
-section.arrow_v > ul {
+section.arrow_v>ul {
   flex: 1;
   list-style: none;
   padding: 0;
@@ -12266,7 +12266,7 @@ section.arrow_v > ul {
   align-items: stretch;
 }
 
-section.arrow_v > ul > li {
+section.arrow_v>ul>li {
   --av-color: var(--arivu-palette-1);
   flex: 1 1 0;
   display: flex;
@@ -12275,21 +12275,21 @@ section.arrow_v > ul > li {
   transition: transform 0.25s ease;
 }
 
-section.arrow_v > ul > li::marker {
+section.arrow_v>ul>li::marker {
   display: none;
 }
 
-section.arrow_v > ul > li:hover {
+section.arrow_v>ul>li:hover {
   transform: translateY(-4px);
 }
 
 /* ODD: column-reverse → description (ul) above, pentagon (p) at bottom */
-section.arrow_v > ul > li:nth-child(odd) {
+section.arrow_v>ul>li:nth-child(odd) {
   flex-direction: column-reverse;
 }
 
 /* Pentagon icon zone */
-section.arrow_v > ul > li > p:first-child {
+section.arrow_v>ul>li>p:first-child {
   background-color: var(--av-color);
   color: #ffffff;
   margin: 0;
@@ -12306,19 +12306,19 @@ section.arrow_v > ul > li > p:first-child {
 }
 
 /* Down-pointing pentagon (odd): rectangle top, triangle tip bottom */
-section.arrow_v > ul > li:nth-child(odd) > p:first-child {
+section.arrow_v>ul>li:nth-child(odd)>p:first-child {
   clip-path: polygon(0% 0%, 100% 0%, 100% 72%, 50% 100%, 0% 72%);
   padding: 16px 16px 38px;
 }
 
 /* Up-pointing pentagon (even): triangle tip top, rectangle body below */
-section.arrow_v > ul > li:nth-child(even) > p:first-child {
+section.arrow_v>ul>li:nth-child(even)>p:first-child {
   clip-path: polygon(50% 0%, 100% 28%, 100% 100%, 0% 100%, 0% 28%);
   padding: 38px 16px 16px;
 }
 
 /* Description text zone */
-section.arrow_v > ul > li > ul {
+section.arrow_v>ul>li>ul {
   flex: 1;
   list-style: none;
   padding: 10px 8px;
@@ -12334,31 +12334,526 @@ section.arrow_v > ul > li > ul {
   gap: 2px;
 }
 
-section.arrow_v > ul > li > ul > li {
+section.arrow_v>ul>li>ul>li {
   margin: 0;
   padding: 0;
 }
 
 /* 12-colour cycle — CSS custom property set on li */
-section.arrow_v > ul > li:nth-child(12n+1)  { --av-color: var(--arivu-palette-1);  }
-section.arrow_v > ul > li:nth-child(12n+2)  { --av-color: var(--arivu-palette-2);  }
-section.arrow_v > ul > li:nth-child(12n+3)  { --av-color: var(--arivu-palette-3);  }
-section.arrow_v > ul > li:nth-child(12n+4)  { --av-color: var(--arivu-palette-4);  }
-section.arrow_v > ul > li:nth-child(12n+5)  { --av-color: var(--arivu-palette-5);  }
-section.arrow_v > ul > li:nth-child(12n+6)  { --av-color: var(--arivu-palette-6);  }
-section.arrow_v > ul > li:nth-child(12n+7)  { --av-color: var(--arivu-palette-7);  }
-section.arrow_v > ul > li:nth-child(12n+8)  { --av-color: var(--arivu-palette-8);  }
-section.arrow_v > ul > li:nth-child(12n+9)  { --av-color: var(--arivu-palette-9);  }
-section.arrow_v > ul > li:nth-child(12n+10) { --av-color: var(--arivu-palette-10); }
-section.arrow_v > ul > li:nth-child(12n+11) { --av-color: var(--arivu-palette-11); }
-section.arrow_v > ul > li:nth-child(12n+12) { --av-color: var(--arivu-palette-12); }
+section.arrow_v>ul>li:nth-child(12n+1) {
+  --av-color: var(--arivu-palette-1);
+}
+
+section.arrow_v>ul>li:nth-child(12n+2) {
+  --av-color: var(--arivu-palette-2);
+}
+
+section.arrow_v>ul>li:nth-child(12n+3) {
+  --av-color: var(--arivu-palette-3);
+}
+
+section.arrow_v>ul>li:nth-child(12n+4) {
+  --av-color: var(--arivu-palette-4);
+}
+
+section.arrow_v>ul>li:nth-child(12n+5) {
+  --av-color: var(--arivu-palette-5);
+}
+
+section.arrow_v>ul>li:nth-child(12n+6) {
+  --av-color: var(--arivu-palette-6);
+}
+
+section.arrow_v>ul>li:nth-child(12n+7) {
+  --av-color: var(--arivu-palette-7);
+}
+
+section.arrow_v>ul>li:nth-child(12n+8) {
+  --av-color: var(--arivu-palette-8);
+}
+
+section.arrow_v>ul>li:nth-child(12n+9) {
+  --av-color: var(--arivu-palette-9);
+}
+
+section.arrow_v>ul>li:nth-child(12n+10) {
+  --av-color: var(--arivu-palette-10);
+}
+
+section.arrow_v>ul>li:nth-child(12n+11) {
+  --av-color: var(--arivu-palette-11);
+}
+
+section.arrow_v>ul>li:nth-child(12n+12) {
+  --av-color: var(--arivu-palette-12);
+}
+
+
+/*--------------------------------------------------------------------
+  icon_quad — 2×2 quadrant layout: large coloured icon square +
+              adjacent transparent text container.
+              Odd items  (1, 3): icon on RIGHT  — icons cluster to center
+              Even items (2, 4): icon on LEFT   — icons cluster to center
+              Best with exactly 4 items.
+              Usage:   <!-- _class: icon_quad -->
+              Markdown:
+                * :icon:
+                  - **Bold Title**
+                  - Description text
+--------------------------------------------------------------------*/
+
+section.icon_quad {
+  display: flex;
+  flex-direction: column;
+}
+
+section.icon_quad>ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 6px;
+}
+
+section.icon_quad>ul>li {
+  --iq-color: var(--arivu-palette-1);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+section.icon_quad>ul>li::marker {
+  display: none;
+}
+
+section.icon_quad>ul>li:hover {
+  transform: scale(1.015);
+}
+
+/* odd items: icon on right → all 4 icons cluster in the slide center */
+section.icon_quad>ul>li:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+/* icon square — large, coloured, centred emoji */
+section.icon_quad>ul>li>p:first-child {
+  background-color: var(--iq-color);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  border-radius: var(--arivu-radius);
+}
+
+/* transparent text area — floats on the slide background */
+section.icon_quad>ul>li>ul {
+  flex: 1;
+  background-color: transparent;
+  list-style: none;
+  padding: 8px 14px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+section.icon_quad>ul>li>ul>li {
+  margin: 0;
+  padding: 0;
+}
+
+/* 12-colour cycle — set via CSS custom property on li, consumed by p:first-child */
+section.icon_quad>ul>li:nth-child(12n+1) {
+  --iq-color: var(--arivu-palette-1);
+}
+
+section.icon_quad>ul>li:nth-child(12n+2) {
+  --iq-color: var(--arivu-palette-2);
+}
+
+section.icon_quad>ul>li:nth-child(12n+3) {
+  --iq-color: var(--arivu-palette-3);
+}
+
+section.icon_quad>ul>li:nth-child(12n+4) {
+  --iq-color: var(--arivu-palette-4);
+}
+
+section.icon_quad>ul>li:nth-child(12n+5) {
+  --iq-color: var(--arivu-palette-5);
+}
+
+section.icon_quad>ul>li:nth-child(12n+6) {
+  --iq-color: var(--arivu-palette-6);
+}
+
+section.icon_quad>ul>li:nth-child(12n+7) {
+  --iq-color: var(--arivu-palette-7);
+}
+
+section.icon_quad>ul>li:nth-child(12n+8) {
+  --iq-color: var(--arivu-palette-8);
+}
+
+section.icon_quad>ul>li:nth-child(12n+9) {
+  --iq-color: var(--arivu-palette-9);
+}
+
+section.icon_quad>ul>li:nth-child(12n+10) {
+  --iq-color: var(--arivu-palette-10);
+}
+
+section.icon_quad>ul>li:nth-child(12n+11) {
+  --iq-color: var(--arivu-palette-11);
+}
+
+section.icon_quad>ul>li:nth-child(12n+12) {
+  --iq-color: var(--arivu-palette-12);
+}
+
+
+/*--------------------------------------------------------------------
+  hex_card — 6 circular icon containers in a hexagonal ring with
+             adjacent transparent text labels.
+             Grid: 3 cols × 4 rows; positions go clockwise from top:
+               1=top (col2 row1)  2=upper-right (col3 row2)
+               3=lower-right (col3 row3)  4=bottom (col2 row4)
+               5=lower-left (col1 row3)  6=upper-left (col1 row2)
+             Best with exactly 6 items.
+             Usage:   <!-- _class: hex_card -->
+             Markdown:
+               * :icon:
+                 - **Bold Title**
+                 - Description text
+--------------------------------------------------------------------*/
+
+section.hex_card {
+  display: flex;
+  flex-direction: column;
+}
+
+section.hex_card>ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.3fr 1.3fr 1fr;
+  gap: 6px;
+  min-height: 0;
+}
+
+section.hex_card>ul>li {
+  --hc-color: var(--arivu-palette-1);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 8px;
+}
+
+section.hex_card>ul>li::marker {
+  display: none;
+}
+
+/* Hex grid placement — clockwise from top */
+section.hex_card>ul>li:nth-child(1) {
+  grid-column: 2;
+  grid-row: 1;
+  flex-direction: row-reverse;
+}
+
+section.hex_card>ul>li:nth-child(2) {
+  grid-column: 3;
+  grid-row: 2;
+  flex-direction: row;
+}
+
+section.hex_card>ul>li:nth-child(3) {
+  grid-column: 3;
+  grid-row: 3;
+  flex-direction: row;
+}
+
+section.hex_card>ul>li:nth-child(4) {
+  grid-column: 2;
+  grid-row: 4;
+  flex-direction: row;
+}
+
+section.hex_card>ul>li:nth-child(5) {
+  grid-column: 1;
+  grid-row: 3;
+  flex-direction: row-reverse;
+}
+
+section.hex_card>ul>li:nth-child(6) {
+  grid-column: 1;
+  grid-row: 2;
+  flex-direction: row-reverse;
+}
+
+/* Circle icon container */
+section.hex_card>ul>li>p:first-child {
+  background-color: var(--hc-color);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+section.hex_card>ul>li:hover>p:first-child {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+/* Transparent text label area */
+section.hex_card>ul>li>ul {
+  flex: 1;
+  background-color: transparent;
+  list-style: none;
+  padding: 0 6px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  font-size: 0.80em;
+  line-height: 1.4;
+  min-width: 0;
+}
+
+section.hex_card>ul>li>ul>li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Right-align text for left-side and top items (text appears to the left of circle) */
+section.hex_card>ul>li:nth-child(1)>ul,
+section.hex_card>ul>li:nth-child(5)>ul,
+section.hex_card>ul>li:nth-child(6)>ul {
+  text-align: right;
+}
+
+/* 12-colour cycle — CSS custom property set on li */
+section.hex_card>ul>li:nth-child(12n+1) {
+  --hc-color: var(--arivu-palette-1);
+}
+
+section.hex_card>ul>li:nth-child(12n+2) {
+  --hc-color: var(--arivu-palette-2);
+}
+
+section.hex_card>ul>li:nth-child(12n+3) {
+  --hc-color: var(--arivu-palette-3);
+}
+
+section.hex_card>ul>li:nth-child(12n+4) {
+  --hc-color: var(--arivu-palette-4);
+}
+
+section.hex_card>ul>li:nth-child(12n+5) {
+  --hc-color: var(--arivu-palette-5);
+}
+
+section.hex_card>ul>li:nth-child(12n+6) {
+  --hc-color: var(--arivu-palette-6);
+}
+
+section.hex_card>ul>li:nth-child(12n+7) {
+  --hc-color: var(--arivu-palette-7);
+}
+
+section.hex_card>ul>li:nth-child(12n+8) {
+  --hc-color: var(--arivu-palette-8);
+}
+
+section.hex_card>ul>li:nth-child(12n+9) {
+  --hc-color: var(--arivu-palette-9);
+}
+
+section.hex_card>ul>li:nth-child(12n+10) {
+  --hc-color: var(--arivu-palette-10);
+}
+
+section.hex_card>ul>li:nth-child(12n+11) {
+  --hc-color: var(--arivu-palette-11);
+}
+
+section.hex_card>ul>li:nth-child(12n+12) {
+  --hc-color: var(--arivu-palette-12);
+}
+
+
+/* roadmap_pin — alternating timeline: colored icon badge + transparent text card */
+
+section.roadmap_pin {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+/* Vertical spine line through all icon badges */
+section.roadmap_pin::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 13%;
+  height: 74%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.13) 12%,
+    rgba(0, 0, 0, 0.13) 88%,
+    transparent
+  );
+  z-index: 0;
+}
+
+section.roadmap_pin ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  --spacing: 120px;
+}
+
+/* Base card */
+section.roadmap_pin > ul > li {
+  position: absolute;
+  width: 500px;
+  height: 110px;
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  --rm-color: var(--arivu-palette-1);
+  z-index: 1;
+  transition: var(--arivu-transition-fast);
+}
+
+/* Odd: right of center; icon left edge at spine − 50px so icon center = spine */
+section.roadmap_pin > ul > li:nth-child(odd) {
+  left: -50px;
+  flex-direction: row;
+}
+
+/* Even: left of center; icon right edge at spine + 50px so icon center = spine */
+section.roadmap_pin > ul > li:nth-child(even) {
+  left: -450px;
+  flex-direction: row-reverse;
+}
+
+/* Icon badge — solid color, always visible */
+section.roadmap_pin > ul > li > p:first-child {
+  margin: 0;
+  flex: 0 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--rm-color);
+  border-radius: 12px;
+  font-size: 2.2em;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+/* Text card — transparent with colored border */
+section.roadmap_pin > ul > li > ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 8px 14px;
+  background: transparent;
+  border: 2px solid var(--rm-color);
+  border-radius: 12px;
+  color: inherit;
+}
+
+section.roadmap_pin > ul > li > ul > li {
+  margin: 0;
+  padding: 0;
+  font-size: 0.82em;
+  line-height: 1.3;
+  color: inherit;
+}
+
+section.roadmap_pin > ul > li > ul > li:first-child {
+  font-size: 0.92em;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+/* Color + vertical position per item */
+section.roadmap_pin > ul > li:nth-child(12n+1)  { top: calc(50% - 2 * var(--spacing)); --rm-color: var(--arivu-palette-1);  }
+section.roadmap_pin > ul > li:nth-child(12n+2)  { top: calc(50% - 1 * var(--spacing)); --rm-color: var(--arivu-palette-2);  }
+section.roadmap_pin > ul > li:nth-child(12n+3)  { top: calc(50% + 0 * var(--spacing)); --rm-color: var(--arivu-palette-3);  }
+section.roadmap_pin > ul > li:nth-child(12n+4)  { top: calc(50% + 1 * var(--spacing)); --rm-color: var(--arivu-palette-4);  }
+section.roadmap_pin > ul > li:nth-child(12n+5)  { top: calc(50% + 2 * var(--spacing)); --rm-color: var(--arivu-palette-5);  }
+section.roadmap_pin > ul > li:nth-child(12n+6)  { --rm-color: var(--arivu-palette-6);  }
+section.roadmap_pin > ul > li:nth-child(12n+7)  { --rm-color: var(--arivu-palette-7);  }
+section.roadmap_pin > ul > li:nth-child(12n+8)  { --rm-color: var(--arivu-palette-8);  }
+section.roadmap_pin > ul > li:nth-child(12n+9)  { --rm-color: var(--arivu-palette-9);  }
+section.roadmap_pin > ul > li:nth-child(12n+10) { --rm-color: var(--arivu-palette-10); }
+section.roadmap_pin > ul > li:nth-child(12n+11) { --rm-color: var(--arivu-palette-11); }
+section.roadmap_pin > ul > li:nth-child(12n+12) { --rm-color: var(--arivu-palette-12); }
+
+/* Heading */
+section.roadmap_pin h1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  line-height: 1 !important;
+}
+
+/* Hover */
+section.roadmap_pin > ul > li:hover {
+  transform: scale(1.03);
+  z-index: 10;
+}
 
 
 /*--------------------------------------------------------------------
   FROST EXTENSION — adds frost modifier support to parallelogram,
   folder_tab, pennant, banner_card, tab_card, chevron_panel,
   fold_banner, dash_button, chevron_block, envelop, cap_card,
-  and arrow_v
+  arrow_v, icon_quad, hex_card and roadmap_pin
   (not listed in the original S9/S10 :is() selectors because they
   were added later).
 
@@ -12372,6 +12867,7 @@ section.arrow_v > ul > li:nth-child(12n+12) { --av-color: var(--arivu-palette-12
     <!-- _class: aurora dash_button frost -->
     <!-- _class: aurora cap_card frost -->
     <!-- _class: aurora arrow_v frost -->
+    <!-- _class: aurora roadmap_pin frost -->
 ---------------------------------------------------------------------*/
 
 /* ---- parallelogram + folder_tab: li goes transparent (remove opaque bg) ---- */
@@ -13126,12 +13622,12 @@ section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.icon_card_alt>ul>l
 }
 
 /* ---- arrow_v: li transparent (required for backdrop-filter to see slide bg) ---- */
-section.frost.arrow_v > ul > li {
+section.frost.arrow_v>ul>li {
   background-color: transparent;
 }
 
 /* ---- arrow_v: pentagon → frosted glass ---- */
-section.frost.arrow_v > ul > li > p:first-child {
+section.frost.arrow_v>ul>li>p:first-child {
   color: #ffffff;
   background-color: transparent;
   -webkit-backdrop-filter: blur(12px) saturate(160%);
@@ -13141,27 +13637,219 @@ section.frost.arrow_v > ul > li > p:first-child {
 }
 
 /* hue-tinted glass per position */
-section.frost.arrow_v > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.55); }
-section.frost.arrow_v > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.55); }
-section.frost.arrow_v > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.55); }
-section.frost.arrow_v > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.55); }
-section.frost.arrow_v > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.55); }
-section.frost.arrow_v > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.55); }
-section.frost.arrow_v > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.55); }
-section.frost.arrow_v > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.55); }
+section.frost.arrow_v>ul>li:nth-child(1)>p:first-child {
+  background: rgba(60, 90, 130, 0.55);
+}
+
+section.frost.arrow_v>ul>li:nth-child(2)>p:first-child {
+  background: rgba(142, 68, 173, 0.55);
+}
+
+section.frost.arrow_v>ul>li:nth-child(3)>p:first-child {
+  background: rgba(22, 160, 133, 0.55);
+}
+
+section.frost.arrow_v>ul>li:nth-child(4)>p:first-child {
+  background: rgba(211, 84, 0, 0.55);
+}
+
+section.frost.arrow_v>ul>li:nth-child(5)>p:first-child {
+  background: rgba(41, 128, 185, 0.55);
+}
+
+section.frost.arrow_v>ul>li:nth-child(6)>p:first-child {
+  background: rgba(192, 57, 43, 0.55);
+}
+
+section.frost.arrow_v>ul>li:nth-child(7)>p:first-child {
+  background: rgba(39, 174, 96, 0.55);
+}
+
+section.frost.arrow_v>ul>li:nth-child(8)>p:first-child {
+  background: rgba(243, 156, 18, 0.55);
+}
 
 /* ---- arrow_v: description text → white in frost context ---- */
-section.frost.arrow_v > ul > li > ul {
+section.frost.arrow_v>ul>li>ul {
   color: #ffffff;
 }
 
-section.frost.arrow_v > ul > li > ul li {
+section.frost.arrow_v>ul>li>ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.arrow_v > ul > li > ul,
-section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.arrow_v > ul > li > ul li {
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.arrow_v>ul>li>ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.arrow_v>ul>li>ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+/* ---- icon_quad: li transparent (required for backdrop-filter to see slide bg) ---- */
+section.frost.icon_quad>ul>li {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* ---- icon_quad: icon square → hue-tinted frosted glass ---- */
+section.frost.icon_quad>ul>li>p:first-child {
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+/* hue-tinted glass per position */
+section.frost.icon_quad>ul>li:nth-child(1)>p:first-child {
+  background: rgba(60, 90, 130, 0.55);
+}
+
+section.frost.icon_quad>ul>li:nth-child(2)>p:first-child {
+  background: rgba(142, 68, 173, 0.55);
+}
+
+section.frost.icon_quad>ul>li:nth-child(3)>p:first-child {
+  background: rgba(22, 160, 133, 0.55);
+}
+
+section.frost.icon_quad>ul>li:nth-child(4)>p:first-child {
+  background: rgba(211, 84, 0, 0.55);
+}
+
+section.frost.icon_quad>ul>li:nth-child(5)>p:first-child {
+  background: rgba(41, 128, 185, 0.55);
+}
+
+section.frost.icon_quad>ul>li:nth-child(6)>p:first-child {
+  background: rgba(192, 57, 43, 0.55);
+}
+
+section.frost.icon_quad>ul>li:nth-child(7)>p:first-child {
+  background: rgba(39, 174, 96, 0.55);
+}
+
+section.frost.icon_quad>ul>li:nth-child(8)>p:first-child {
+  background: rgba(243, 156, 18, 0.55);
+}
+
+/* ---- icon_quad: text area → white in frost context ---- */
+section.frost.icon_quad>ul>li>ul {
+  color: #ffffff;
+}
+
+section.frost.icon_quad>ul>li>ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.icon_quad>ul>li>ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.icon_quad>ul>li>ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+/* ---- hex_card: li transparent (required for backdrop-filter to see slide bg) ---- */
+section.frost.hex_card>ul>li {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* ---- hex_card: circle → hue-tinted frosted glass ---- */
+section.frost.hex_card>ul>li>p:first-child {
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+section.frost.hex_card>ul>li:nth-child(1)>p:first-child {
+  background: rgba(60, 90, 130, 0.55);
+}
+
+section.frost.hex_card>ul>li:nth-child(2)>p:first-child {
+  background: rgba(142, 68, 173, 0.55);
+}
+
+section.frost.hex_card>ul>li:nth-child(3)>p:first-child {
+  background: rgba(22, 160, 133, 0.55);
+}
+
+section.frost.hex_card>ul>li:nth-child(4)>p:first-child {
+  background: rgba(211, 84, 0, 0.55);
+}
+
+section.frost.hex_card>ul>li:nth-child(5)>p:first-child {
+  background: rgba(41, 128, 185, 0.55);
+}
+
+section.frost.hex_card>ul>li:nth-child(6)>p:first-child {
+  background: rgba(192, 57, 43, 0.55);
+}
+
+/* ---- hex_card: text area → white in frost context ---- */
+section.frost.hex_card>ul>li>ul {
+  color: #ffffff;
+}
+
+section.frost.hex_card>ul>li>ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.hex_card>ul>li>ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.hex_card>ul>li>ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+/* ---- roadmap_pin: li transparent (required so backdrop-filter sees the slide bg) ---- */
+section.frost.roadmap_pin > ul > li {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* ---- roadmap_pin: text card → dark frosted glass ---- */
+section.frost.roadmap_pin > ul > li > ul {
+  background: linear-gradient(150deg,
+    rgba(22, 32, 52, 0.50) 0%,
+    rgba(22, 32, 52, 0.34) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  backdrop-filter: blur(14px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  border-top-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.30),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+section.frost.roadmap_pin > ul > li > ul li {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
+}
+
+/* ---- roadmap_pin: icon badge → hue-tinted glass ---- */
+section.frost.roadmap_pin > ul > li > p:first-child {
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+section.frost.roadmap_pin > ul > li:nth-child(1) > p:first-child { background: rgba( 60,  90, 130, 0.55); }
+section.frost.roadmap_pin > ul > li:nth-child(2) > p:first-child { background: rgba(142,  68, 173, 0.55); }
+section.frost.roadmap_pin > ul > li:nth-child(3) > p:first-child { background: rgba( 22, 160, 133, 0.55); }
+section.frost.roadmap_pin > ul > li:nth-child(4) > p:first-child { background: rgba(211,  84,   0, 0.55); }
+section.frost.roadmap_pin > ul > li:nth-child(5) > p:first-child { background: rgba( 41, 128, 185, 0.55); }
+section.frost.roadmap_pin > ul > li:nth-child(6) > p:first-child { background: rgba(192,  57,  43, 0.55); }
+section.frost.roadmap_pin > ul > li:nth-child(7) > p:first-child { background: rgba( 39, 174,  96, 0.55); }
+section.frost.roadmap_pin > ul > li:nth-child(8) > p:first-child { background: rgba(243, 156,  18, 0.55); }
+
+/* dark-bg text override */
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.roadmap_pin > ul > li > ul,
+section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.roadmap_pin > ul > li > ul li {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
