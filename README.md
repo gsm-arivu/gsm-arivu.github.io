@@ -6,7 +6,7 @@
 
 ## ✨ Features
 
-*   **60+ Slide Layouts:** A wide variety of styles for bullet points, cards, panels, timelines, and more.
+*   **70+ Slide Layouts:** A wide variety of styles for bullet points, cards, panels, timelines, and more.
 *   **Animated Backgrounds:** Three cinematic background modes — `vortex`, `aurora`, and `ember`.
 *   **Soft Fragments:** Use `softfrag` for smooth per-item reveal animations.
 *   **Customizable:** Easily add headers, footers, and logos.
@@ -145,6 +145,15 @@ These classes were added most recently. All support the `frost` modifier when pa
 | `chevron_block` | Stacked rows alternating icon strip and chevron text panel | 2–6 |
 | `envelop` | Portrait lollipop cards with dome icon zone and step-counter badge | 3–5 |
 | `arrow_tab` | Portrait cards with a coloured pentagon (downward-arrow) icon zone and auto-counter badge | 3–5 |
+| `icon_card_alt` | Horizontal icon cards with alternating icon side (odd left, even right) | 4–6 |
+| `icon_quad` | 2×2 grid of horizontal icon cards with icons clustering toward the centre | **4** |
+| `hex_card` | Six icon+text cards arranged in a hexagonal ring (3-column, 4-row grid) | **6** |
+| `cap_card` | Upright cards with a thick colour-cap border at the top (icon zone) and grey content zone | 3–5 |
+| `arrow_v` | Vertical columns of alternating up/down pentagon arrows for process flow | 3–5 |
+| `roadmap_pin` | Absolute-positioned vertical roadmap cards alternating left/right on a centre spine | **5** |
+| `roadmap_split` | Vertical roadmap with text panels splitting left and right off a centre spine | **5** |
+| `timeline_pin` | Absolute-positioned horizontal timeline cards alternating above/below a centre spine | **5** |
+| `timeline_split` | Horizontal timeline with text panels alternating above and below a centre spine | **5** |
 
 Markdown structure for all new shape classes:
 ```markdown

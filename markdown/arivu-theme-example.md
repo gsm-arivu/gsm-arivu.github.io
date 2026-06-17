@@ -819,6 +819,70 @@ footer: <span class="date"></span>
 
 ---
 
+<!-- _class: vortex timeline_pin softfrag -->
+
+# timeline pin · vortex
+
+* :rocket:
+
+  - **Phase 1**
+  - Discovery
+
+* :pencil:
+
+  - **Phase 2**
+  - Design
+
+* :wrench:
+
+  - **Phase 3**
+  - Build
+
+* :chart_with_upwards_trend:
+
+  - **Phase 4**
+  - Launch
+
+* :trophy:
+
+  - **Phase 5**
+  - Grow
+
+
+---
+
+<!-- _class: aurora timeline_split softfrag -->
+
+# timeline split · aurora
+
+* :rocket:
+
+  - **Phase 1**
+  - Discovery
+
+* :pencil:
+
+  - **Phase 2**
+  - Design
+
+* :wrench:
+
+  - **Phase 3**
+  - Build
+
+* :chart_with_upwards_trend:
+
+  - **Phase 4**
+  - Launch
+
+* :trophy:
+
+  - **Phase 5**
+  - Grow
+
+
+---
+
 <!-- _class: aurora roadmap softfrag -->
 
 # roadmap top to bottom · aurora
@@ -869,6 +933,102 @@ footer: <span class="date"></span>
 * :evergreen_tree:
 
   - point five
+
+
+---
+
+<!-- _class: vortex roadmap_pin softfrag -->
+
+# roadmap pin · vortex
+
+* :rocket:
+
+  - **Phase 1 — Discovery**
+  - Research & requirements
+
+* :pencil:
+
+  - **Phase 2 — Design**
+  - Wireframes & architecture
+
+* :wrench:
+
+  - **Phase 3 — Build**
+  - Development & testing
+
+* :chart_with_upwards_trend:
+
+  - **Phase 4 — Launch**
+  - Deploy & monitor
+
+* :trophy:
+
+  - **Phase 5 — Grow**
+  - Scale & optimize
+
+
+---
+
+<!-- _class: ember roadmap_split softfrag -->
+
+# roadmap split · ember
+
+* :rocket:
+
+  - **Phase 1 — Discovery**
+  - Research & requirements
+
+* :pencil:
+
+  - **Phase 2 — Design**
+  - Wireframes & architecture
+
+* :wrench:
+
+  - **Phase 3 — Build**
+  - Development & testing
+
+* :chart_with_upwards_trend:
+
+  - **Phase 4 — Launch**
+  - Deploy & monitor
+
+* :trophy:
+
+  - **Phase 5 — Grow**
+  - Scale & optimize
+
+
+---
+
+<!-- _class: aurora arrow_v softfrag -->
+
+# arrow flow · aurora
+
+* :bulb:
+
+  - **Ideate**
+  - lorem ipsum dolor
+
+* :pencil:
+
+  - **Plan**
+  - consectetur elit
+
+* :wrench:
+
+  - **Build**
+  - sed do eiusmod
+
+* :rocket:
+
+  - **Launch**
+  - ut labore
+
+* :trophy:
+
+  - **Grow**
+  - magna aliqua
 
 
 ---
@@ -1290,6 +1450,37 @@ footer: <span class="date"></span>
 
 ---
 
+<!-- _class: ember icon_card_alt softfrag -->
+
+### icon card alt · ember
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
 <!-- _class: vortex icon_flower softfrag -->
 
 # icon flower · vortex
@@ -1375,6 +1566,29 @@ footer: <span class="date"></span>
 
 ---
 
+<!-- _class: aurora icon_quad softfrag -->
+
+### icon quad 2×2 · aurora
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
 <!-- _class: vortex icon_shirt softfrag -->
 
 # icon shirt 3X2 · vortex
@@ -1409,6 +1623,60 @@ footer: <span class="date"></span>
 <!-- _class: aurora icon_shirt4 softfrag -->
 
 # icon shirt 2X2 · aurora
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: vortex hex_card softfrag -->
+
+### hex cards · vortex
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: aurora cap_card softfrag -->
+
+### cap cards · aurora
 
 * :one:
 
@@ -2765,6 +3033,70 @@ footer: <span class="date"></span>
 
 ---
 
+<!-- _class: timeline_pin softfrag -->
+
+# timeline pin
+
+* :rocket:
+
+  - **Phase 1**
+  - Discovery
+
+* :pencil:
+
+  - **Phase 2**
+  - Design
+
+* :wrench:
+
+  - **Phase 3**
+  - Build
+
+* :chart_with_upwards_trend:
+
+  - **Phase 4**
+  - Launch
+
+* :trophy:
+
+  - **Phase 5**
+  - Grow
+
+
+---
+
+<!-- _class: timeline_split softfrag -->
+
+# timeline split
+
+* :rocket:
+
+  - **Phase 1**
+  - Discovery
+
+* :pencil:
+
+  - **Phase 2**
+  - Design
+
+* :wrench:
+
+  - **Phase 3**
+  - Build
+
+* :chart_with_upwards_trend:
+
+  - **Phase 4**
+  - Launch
+
+* :trophy:
+
+  - **Phase 5**
+  - Grow
+
+
+---
+
 <!-- _class: roadmap softfrag -->
 
 # roadmap top to bottom
@@ -2815,6 +3147,102 @@ footer: <span class="date"></span>
 * :evergreen_tree:
 
   - point five
+
+
+---
+
+<!-- _class: roadmap_pin softfrag -->
+
+# roadmap pin
+
+* :rocket:
+
+  - **Phase 1 — Discovery**
+  - Research & requirements
+
+* :pencil:
+
+  - **Phase 2 — Design**
+  - Wireframes & architecture
+
+* :wrench:
+
+  - **Phase 3 — Build**
+  - Development & testing
+
+* :chart_with_upwards_trend:
+
+  - **Phase 4 — Launch**
+  - Deploy & monitor
+
+* :trophy:
+
+  - **Phase 5 — Grow**
+  - Scale & optimize
+
+
+---
+
+<!-- _class: roadmap_split softfrag -->
+
+# roadmap split
+
+* :rocket:
+
+  - **Phase 1 — Discovery**
+  - Research & requirements
+
+* :pencil:
+
+  - **Phase 2 — Design**
+  - Wireframes & architecture
+
+* :wrench:
+
+  - **Phase 3 — Build**
+  - Development & testing
+
+* :chart_with_upwards_trend:
+
+  - **Phase 4 — Launch**
+  - Deploy & monitor
+
+* :trophy:
+
+  - **Phase 5 — Grow**
+  - Scale & optimize
+
+
+---
+
+<!-- _class: arrow_v softfrag -->
+
+# arrow flow
+
+* :bulb:
+
+  - **Ideate**
+  - lorem ipsum dolor
+
+* :pencil:
+
+  - **Plan**
+  - consectetur elit
+
+* :wrench:
+
+  - **Build**
+  - sed do eiusmod
+
+* :rocket:
+
+  - **Launch**
+  - ut labore
+
+* :trophy:
+
+  - **Grow**
+  - magna aliqua
 
 
 ---
@@ -3236,6 +3664,37 @@ footer: <span class="date"></span>
 
 ---
 
+<!-- _class: icon_card_alt softfrag -->
+
+### icon card alt
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
 <!-- _class: icon_flower softfrag -->
 
 # icon flower
@@ -3321,6 +3780,29 @@ footer: <span class="date"></span>
 
 ---
 
+<!-- _class: icon_quad softfrag -->
+
+### icon quad 2×2
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
 <!-- _class: icon_shirt softfrag -->
 
 # icon shirt 3X2
@@ -3355,6 +3837,60 @@ footer: <span class="date"></span>
 <!-- _class: icon_shirt4 softfrag -->
 
 # icon shirt 2X2
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+
+---
+
+<!-- _class: hex_card softfrag -->
+
+### hex cards
+
+* :one:
+
+  - **alpha** <br> lorem ipsum dolor
+
+* :book:
+
+  - **bravo** <br> consectetur elit
+
+* :bulb:
+
+  - **charlie** <br> sed do eiusmod
+
+* :rofl:
+
+  - **delta** <br> ut labore
+
+* :gem:
+
+  - **echo** <br> magna aliqua
+
+* :key:
+
+  - **foxtrot** <br> minim veniam
+
+
+---
+
+<!-- _class: cap_card softfrag -->
+
+### cap cards
 
 * :one:
 
