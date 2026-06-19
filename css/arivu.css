@@ -13854,4 +13854,584 @@ section:is(.vortex, .aurora, .ember, .backcolor, .neon).frost.roadmap_pin > ul >
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.40);
 }
 
+/*--------------------------------------------------------------------
+  roadmap_split — vertical alternating timeline
+  Icon badge sits at the outer extreme (left for even, right for odd);
+  text card is transparent and extends inward toward the spine.
+  Uses color: inherit so text is readable on any theme (gaia, aurora…).
+----------------------------------------------------------------------*/
+
+section.roadmap_split {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+/* Faint vertical spine thread */
+section.roadmap_split::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 11%;
+  height: 78%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(128, 128, 128, 0.22) 10%,
+    rgba(128, 128, 128, 0.22) 90%,
+    transparent
+  );
+  z-index: 0;
+}
+
+section.roadmap_split ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  --spacing: 120px;
+}
+
+/* Base item — inherits slide text color for theme-safe contrast */
+section.roadmap_split > ul > li {
+  position: absolute;
+  width: 500px;
+  height: 110px;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  color: inherit;
+  font-size: 18px;
+  font-weight: normal;
+  --rm-color: var(--arivu-palette-1);
+  z-index: 1;
+  transition: var(--arivu-transition-fast);
+}
+
+/* Small colored dot at the spine on the inner edge */
+section.roadmap_split > ul > li::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--rm-color);
+  box-shadow: 0 0 0 2px rgba(128, 128, 128, 0.18);
+  z-index: 2;
+}
+
+/* Odd: item right of spine — icon at far right, text runs leftward */
+section.roadmap_split > ul > li:nth-child(odd) {
+  left: 0;
+  flex-direction: row-reverse;
+}
+section.roadmap_split > ul > li:nth-child(odd)::after {
+  left: -5px;
+}
+
+/* Even: item left of spine — icon at far left, text runs rightward */
+section.roadmap_split > ul > li:nth-child(even) {
+  left: -500px;
+  flex-direction: row;
+}
+section.roadmap_split > ul > li:nth-child(even)::after {
+  right: -5px;
+  left: auto;
+}
+
+/* Icon badge at outer extreme — always white text for contrast */
+section.roadmap_split > ul > li > p:first-child {
+  margin: 0;
+  flex: 0 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--rm-color);
+  border-radius: 14px;
+  font-size: 2.2em;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.20);
+}
+
+/* Text card — transparent, thin colored edge toward the spine */
+section.roadmap_split > ul > li > ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 8px 14px;
+  background: transparent;
+  color: inherit;
+  position: static;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: auto;
+  height: auto;
+}
+
+/* Border on the INNER edge (side facing the spine / spine dot) */
+section.roadmap_split > ul > li:nth-child(odd) > ul {
+  border-left: 2px solid var(--rm-color);
+  text-align: right;
+}
+section.roadmap_split > ul > li:nth-child(even) > ul {
+  border-right: 2px solid var(--rm-color);
+  text-align: left;
+}
+
+/* Sub-items */
+section.roadmap_split > ul > li > ul > li {
+  display: block;
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  clip-path: none;
+  transform: none;
+  font-size: 0.82em;
+  line-height: 1.38;
+  color: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+}
+
+section.roadmap_split > ul > li > ul > li::before,
+section.roadmap_split > ul > li > ul > li::after {
+  content: none;
+}
+
+section.roadmap_split > ul > li > ul > li:first-child {
+  font-size: 0.95em;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+/* Color + vertical position */
+section.roadmap_split > ul > li:nth-child(12n+1)  { top: calc(50% - 2 * var(--spacing)); --rm-color: var(--arivu-palette-1);  }
+section.roadmap_split > ul > li:nth-child(12n+2)  { top: calc(50% - 1 * var(--spacing)); --rm-color: var(--arivu-palette-2);  }
+section.roadmap_split > ul > li:nth-child(12n+3)  { top: calc(50% + 0 * var(--spacing)); --rm-color: var(--arivu-palette-3);  }
+section.roadmap_split > ul > li:nth-child(12n+4)  { top: calc(50% + 1 * var(--spacing)); --rm-color: var(--arivu-palette-4);  }
+section.roadmap_split > ul > li:nth-child(12n+5)  { top: calc(50% + 2 * var(--spacing)); --rm-color: var(--arivu-palette-5);  }
+section.roadmap_split > ul > li:nth-child(12n+6)  { --rm-color: var(--arivu-palette-6);  }
+section.roadmap_split > ul > li:nth-child(12n+7)  { --rm-color: var(--arivu-palette-7);  }
+section.roadmap_split > ul > li:nth-child(12n+8)  { --rm-color: var(--arivu-palette-8);  }
+section.roadmap_split > ul > li:nth-child(12n+9)  { --rm-color: var(--arivu-palette-9);  }
+section.roadmap_split > ul > li:nth-child(12n+10) { --rm-color: var(--arivu-palette-10); }
+section.roadmap_split > ul > li:nth-child(12n+11) { --rm-color: var(--arivu-palette-11); }
+section.roadmap_split > ul > li:nth-child(12n+12) { --rm-color: var(--arivu-palette-12); }
+
+/* Heading */
+section.roadmap_split h1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  line-height: 1 !important;
+}
+
+/* Hover */
+section.roadmap_split > ul > li:hover {
+  transform: scale(1.03);
+  z-index: 10;
+}
+
+/*--------------------------------------------------------------------
+  timeline_pin — horizontal alternating timeline
+  Horizontal analog of roadmap_pin: icon badge sits AT the spine,
+  text card extends outward (up for odd, down for even) with a full
+  colored border.  color: inherit keeps text readable on any theme.
+----------------------------------------------------------------------*/
+
+section.timeline_pin {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+/* Horizontal spine line through all icon badges */
+section.timeline_pin::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  right: 13%;
+  height: 2px;
+  transform: translateY(-50%);
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.13) 12%,
+    rgba(0, 0, 0, 0.13) 88%,
+    transparent
+  );
+  z-index: 0;
+}
+
+section.timeline_pin ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Base card: 160 × 300 px, icon 100 px tall centered on the spine */
+section.timeline_pin > ul > li {
+  position: absolute;
+  width: 160px;
+  height: 300px;
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  color: inherit;
+  font-size: 15px;
+  font-weight: normal;
+  --tm-color: var(--arivu-palette-1);
+  z-index: 1;
+  transition: var(--arivu-transition-fast);
+}
+
+/* Odd: above spine — icon at bottom (col-reverse), center of icon = spine
+   top = -(height - 50px) so item bottom = spine + 50px, icon center = spine */
+section.timeline_pin > ul > li:nth-child(odd) {
+  top: -250px;
+  flex-direction: column-reverse;
+}
+
+/* Even: below spine — icon at top (column), center of icon = spine
+   top = -50px so item top = spine - 50px, icon center = spine */
+section.timeline_pin > ul > li:nth-child(even) {
+  top: -50px;
+  flex-direction: column;
+}
+
+/* Icon badge — solid color, centered on the spine */
+section.timeline_pin > ul > li > p:first-child {
+  margin: 0;
+  flex: 0 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tm-color);
+  border-radius: 12px;
+  font-size: 2.2em;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+/* Text card — transparent with full colored border, override outer ul rules */
+section.timeline_pin > ul > li > ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 8px 10px;
+  background: transparent;
+  border: 2px solid var(--tm-color);
+  border-radius: 12px;
+  color: inherit;
+  text-align: center;
+  position: static;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: auto;
+  height: auto;
+}
+
+/* Sub-items */
+section.timeline_pin > ul > li > ul > li {
+  display: block;
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  clip-path: none;
+  transform: none;
+  font-size: 0.82em;
+  line-height: 1.3;
+  color: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+}
+
+section.timeline_pin > ul > li > ul > li::before,
+section.timeline_pin > ul > li > ul > li::after {
+  content: none;
+}
+
+section.timeline_pin > ul > li > ul > li:first-child {
+  font-size: 0.92em;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+/* Horizontal position + color — 5 items symmetric about center */
+section.timeline_pin > ul > li:nth-child(12n+1)  { left: calc(50% - 430px); --tm-color: var(--arivu-palette-1);  }
+section.timeline_pin > ul > li:nth-child(12n+2)  { left: calc(50% - 255px); --tm-color: var(--arivu-palette-2);  }
+section.timeline_pin > ul > li:nth-child(12n+3)  { left: calc(50% -  80px); --tm-color: var(--arivu-palette-3);  }
+section.timeline_pin > ul > li:nth-child(12n+4)  { left: calc(50% +  95px); --tm-color: var(--arivu-palette-4);  }
+section.timeline_pin > ul > li:nth-child(12n+5)  { left: calc(50% + 270px); --tm-color: var(--arivu-palette-5);  }
+section.timeline_pin > ul > li:nth-child(12n+6)  { --tm-color: var(--arivu-palette-6);  }
+section.timeline_pin > ul > li:nth-child(12n+7)  { --tm-color: var(--arivu-palette-7);  }
+section.timeline_pin > ul > li:nth-child(12n+8)  { --tm-color: var(--arivu-palette-8);  }
+section.timeline_pin > ul > li:nth-child(12n+9)  { --tm-color: var(--arivu-palette-9);  }
+section.timeline_pin > ul > li:nth-child(12n+10) { --tm-color: var(--arivu-palette-10); }
+section.timeline_pin > ul > li:nth-child(12n+11) { --tm-color: var(--arivu-palette-11); }
+section.timeline_pin > ul > li:nth-child(12n+12) { --tm-color: var(--arivu-palette-12); }
+
+/* Heading */
+section.timeline_pin h1,
+section.timeline_pin h2 {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  line-height: 1 !important;
+}
+
+/* Hover */
+section.timeline_pin > ul > li:hover {
+  transform: scale(1.03);
+  z-index: 10;
+}
+
+/*--------------------------------------------------------------------
+  timeline_split — horizontal alternating timeline
+  Mirrors roadmap_split's logic rotated 90°: icon badge sits at the
+  outer vertical extreme (top for above-spine items, bottom for
+  below-spine items); text card transparent, extends toward the spine.
+  Uses color: inherit for theme-safe text (works in gaia, aurora…).
+----------------------------------------------------------------------*/
+
+section.timeline_split {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+/* Faint horizontal spine thread */
+section.timeline_split::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  transform: translateY(-50%);
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(128, 128, 128, 0.22) 10%,
+    rgba(128, 128, 128, 0.22) 90%,
+    transparent
+  );
+  z-index: 0;
+}
+
+section.timeline_split ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Base item — inherits slide text color for theme-safe contrast */
+section.timeline_split > ul > li {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  color: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  --tm-color: var(--arivu-palette-1);
+  z-index: 1;
+  transition: var(--arivu-transition-fast);
+}
+
+/* Odd: hangs above spine — icon at top outer extreme, text toward spine */
+section.timeline_split > ul > li:nth-child(odd) {
+  bottom: 0;
+  flex-direction: column;
+}
+
+/* Even: hangs below spine — icon at bottom outer extreme, text toward spine */
+section.timeline_split > ul > li:nth-child(even) {
+  top: 0;
+  flex-direction: column-reverse;
+}
+
+/* Small colored dot at the spine-facing edge */
+section.timeline_split > ul > li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--tm-color);
+  box-shadow: 0 0 0 2px rgba(128, 128, 128, 0.18);
+  z-index: 2;
+}
+
+section.timeline_split > ul > li:nth-child(odd)::after  { bottom: -5px; }
+section.timeline_split > ul > li:nth-child(even)::after { top: -5px; }
+
+/* Icon badge at outer extreme — always white */
+section.timeline_split > ul > li > p:first-child {
+  margin: 0;
+  flex: 0 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tm-color);
+  border-radius: 12px;
+  font-size: 2em;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.20);
+}
+
+/* Text card — transparent, centered, override outer ul positioning */
+section.timeline_split > ul > li > ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 6px 10px;
+  background: transparent;
+  color: inherit;
+  text-align: center;
+  position: static;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: auto;
+  height: auto;
+}
+
+/* Thin colored border as icon/text divider (on the side facing the icon) */
+section.timeline_split > ul > li:nth-child(odd) > ul  { border-top: 2px solid var(--tm-color); }
+section.timeline_split > ul > li:nth-child(even) > ul { border-bottom: 2px solid var(--tm-color); }
+
+/* Sub-items */
+section.timeline_split > ul > li > ul > li {
+  display: block;
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  clip-path: none;
+  transform: none;
+  font-size: 0.82em;
+  line-height: 1.35;
+  color: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+}
+
+section.timeline_split > ul > li > ul > li::before,
+section.timeline_split > ul > li > ul > li::after {
+  content: none;
+}
+
+section.timeline_split > ul > li > ul > li:first-child {
+  font-size: 0.92em;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+/* Horizontal position + color — 5 items symmetric about center */
+section.timeline_split > ul > li:nth-child(12n+1)  { left: calc(50% - 430px); --tm-color: var(--arivu-palette-1);  }
+section.timeline_split > ul > li:nth-child(12n+2)  { left: calc(50% - 255px); --tm-color: var(--arivu-palette-2);  }
+section.timeline_split > ul > li:nth-child(12n+3)  { left: calc(50% -  80px); --tm-color: var(--arivu-palette-3);  }
+section.timeline_split > ul > li:nth-child(12n+4)  { left: calc(50% +  95px); --tm-color: var(--arivu-palette-4);  }
+section.timeline_split > ul > li:nth-child(12n+5)  { left: calc(50% + 270px); --tm-color: var(--arivu-palette-5);  }
+section.timeline_split > ul > li:nth-child(12n+6)  { --tm-color: var(--arivu-palette-6);  }
+section.timeline_split > ul > li:nth-child(12n+7)  { --tm-color: var(--arivu-palette-7);  }
+section.timeline_split > ul > li:nth-child(12n+8)  { --tm-color: var(--arivu-palette-8);  }
+section.timeline_split > ul > li:nth-child(12n+9)  { --tm-color: var(--arivu-palette-9);  }
+section.timeline_split > ul > li:nth-child(12n+10) { --tm-color: var(--arivu-palette-10); }
+section.timeline_split > ul > li:nth-child(12n+11) { --tm-color: var(--arivu-palette-11); }
+section.timeline_split > ul > li:nth-child(12n+12) { --tm-color: var(--arivu-palette-12); }
+
+/* Heading — centered at top, works for both h1 and h2 */
+section.timeline_split h1,
+section.timeline_split h2 {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  line-height: 1 !important;
+}
+
+/* Hover */
+section.timeline_split > ul > li:hover {
+  transform: scale(1.03);
+  z-index: 10;
+}
+
 /*===================== end of arivu fix layer 3 ==================*/
